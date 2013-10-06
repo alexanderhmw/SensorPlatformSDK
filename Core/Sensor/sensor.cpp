@@ -5,9 +5,10 @@ fptr=(fptrtype) library.resolve(#fptr);	\
 if(fptr==NULL)	\
 {QMessageBox::information(NULL,QString("Sensor Error"),QString("No function %1 in Share Library %2").arg(QString(#fptr)).arg(library.fileName()));exit(0);}
 
-Sensor::Sensor(SensorDescriptor descriptor, int buffersize)
+Sensor::Sensor(QString libraryname, QString sensorname, int buffersize)
 {
-	_library.setFileName(descriptor.libraryname);
+	_library.setFileName(libraryname);
+	_sensorname=sensorname;
 	if(_library.load())
 	{
 		FptrLoadCheck(loadParams, loadParamsFptr,_library);
@@ -44,7 +45,7 @@ void Sensor::loadParamsSlot(QString configfilename)
 	_configfilename=configfilename;
 	if(!loadParams(_configfilename,_sensorclass,_sensorname,&_params))
 	{
-		QMessageBox::information(NULL,QString("Sensor Error"),QString("Parameters Initialization Error:\n%1_%2_%3").arg(_configfilename).arg(_sensorclass).arg(_sensorname));
+		QMessageBox::information(NULL,QString("Sensor Error"),QString("Parameters Initialization Error:%1_%2").arg(_sensorclass).arg(_sensorname));
 		exit(0);
 	}
 }

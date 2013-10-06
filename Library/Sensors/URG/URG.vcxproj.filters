@@ -36,5 +36,8 @@
     <ClInclude Include="urg_global.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="urgdef.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

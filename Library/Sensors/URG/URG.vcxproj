@@ -133,6 +133,7 @@
     <ClCompile Include="urg.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="urgdef.h" />
     <ClInclude Include="urg.h" />
     <ClInclude Include="urg_global.h" />
   </ItemGroup>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Sensor Class="USBCamera" Name="camera">
+	<deviceid ValueType="Value" DataType="int">
+		<Default>0</Default>
+	</deviceid>
+	<width ValueType="Value" DataType="int">
+		<Default>640</Default>
+	</width>
+	<height ValueType="Value" DataType="int">
+		<Default>480</Default>
+	</height>
+</Sensor>

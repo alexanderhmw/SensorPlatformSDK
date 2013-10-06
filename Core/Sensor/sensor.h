@@ -7,17 +7,11 @@
 #include<qlibrary.h>
 #include<qmessagebox.h>
 
-struct SensorDescriptor
-{
-	QString libraryname;
-	QString sensorname;
-};
-
 class Sensor : public QObject
 {
 	Q_OBJECT
 public:
-	Sensor(SensorDescriptor descriptor, int buffersize=10);
+	Sensor(QString libraryname, QString sensorname, int buffersize=10);
 	~Sensor();
 protected:
 	QLibrary _library;

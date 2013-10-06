@@ -57,6 +57,7 @@ bool captureData(void * params, void ** data)
 	{
 		return 0;
 	}
+
 	URGDATA * tempdata;
 	if(*data==NULL)
 	{
