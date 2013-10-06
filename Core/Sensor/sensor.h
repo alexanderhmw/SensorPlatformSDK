@@ -22,6 +22,7 @@ protected:
 	void * _params;
 	QVector<void *> _databuffer;
 	int _curdataid;
+	bool openflag;
 protected:
 	typedef bool (*loadParamsFptr)(QString & configfilename, QString & sensorclass, QString & sensorname, void ** params);
 	loadParamsFptr loadParams;

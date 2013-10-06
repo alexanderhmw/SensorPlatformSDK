@@ -27,10 +27,15 @@ Sensor::Sensor(QString libraryname, QString sensorname, int buffersize)
 	_params=NULL;
 	_databuffer.resize(buffersize);
 	_curdataid=0;
+	openflag=0;
 }
 
 Sensor::~Sensor()
 {
+	if(openflag)
+	{
+		closeSensorSlot();
+	}
 	releaseParams(&_params);
 	int i,n=_databuffer.size();
 	for(i=0;i<n;i++)
@@ -43,7 +48,7 @@ Sensor::~Sensor()
 void Sensor::loadParamsSlot(QString configfilename)
 {
 	_configfilename=configfilename;
-	if(!loadParams(_configfilename,_sensorclass,_sensorname,&_params))
+	if(openflag||!loadParams(_configfilename,_sensorclass,_sensorname,&_params))
 	{
 		QMessageBox::information(NULL,QString("Sensor Error"),QString("Parameters Initialization Error:%1_%2").arg(_sensorclass).arg(_sensorname));
 		exit(0);
@@ -52,8 +57,9 @@ void Sensor::loadParamsSlot(QString configfilename)
 
 void Sensor::openSensorSlot()
 {
-	if(openSensor(_params))
+	if(!openflag&&openSensor(_params))
 	{
+		openflag=1;
 		emit sensorOpenSignal();
 	}
 	else
@@ -64,7 +70,7 @@ void Sensor::openSensorSlot()
 
 void Sensor::captureDataSlot()
 {
-	if(captureData(_params,&(_databuffer[_curdataid])))
+	if(openflag&&captureData(_params,&(_databuffer[_curdataid])))
 	{
 		emit dataCaptureSignal(_databuffer[_curdataid]);
 		_curdataid=(_curdataid+1)%_databuffer.size();
@@ -77,8 +83,9 @@ void Sensor::captureDataSlot()
 
 void Sensor::closeSensorSlot()
 {
-	if(closeSensor(_params))
+	if(openflag&&closeSensor(_params))
 	{
+		openflag=0;
 		emit sensorCloseSignal();
 	}
 	else

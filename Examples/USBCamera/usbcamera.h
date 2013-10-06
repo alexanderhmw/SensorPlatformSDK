@@ -19,10 +19,16 @@ public:
 private:
 	Ui::USBCameraClass ui;
 public:
-	Sensor * sensor;
-	QTimer timer;
+	Sensor * sensor1;
+	Sensor * sensor2;
+	Sensor * sensor3;
+	QTimer timer1;
+	QTimer timer2;
+	QTimer timer3;
 public slots:
-	void showImage(void * data);
+	void showImage1(void * data);
+	void showImage2(void * data);
+	void showImage3(void * data);
 };
 
 #endif // USBCAMERA_H
