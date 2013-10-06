@@ -1,0 +1,23 @@
+﻿Build started 2013/10/6 17:06:16.
+     1>Project "C:\PossDemo\GitHub\HMW-Alexander\SensorPlatformSDK\Library\Sensors\URG\URG.vcxproj" on node 2 (rebuild target(s)).
+     1>PrepareForBuild:
+         Creating directory "C:\PossDemo\GitHub\HMW-Alexander\SensorPlatformSDK\Library\Sensors\x64\Debug\".
+       InitializeBuildStatus:
+         Creating "x64\Debug\URG.unsuccessfulbuild" because "AlwaysCreate" was specified.
+       ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\x86_amd64\CL.exe /c /I.\GeneratedFiles /I. /I"C:\SDK\Qt\qt-4.8.5\include" /I.\GeneratedFiles\Debug /I"C:\SDK\Qt\qt-4.8.5\include\QtCore" /Zi /nologo /W1 /WX- /Od /D UNICODE /D WIN32 /D QT_DLL /D QT_CORE_LIB /D URG_LIB /D _WINDLL /Gm- /EHsc /MDd /GS /fp:precise /Zc:wchar_t- /Zc:forScope /openmp /Fo"x64\Debug\\" /Fd"x64\Debug\vc100.pdb" /Gd /TP /errorReport:prompt urg.cpp
+         urg.cpp
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\x86_amd64\link.exe /ERRORREPORT:PROMPT /OUT:"C:\PossDemo\GitHub\HMW-Alexander\SensorPlatformSDK\Library\Sensors\x64\Debug\\URG.dll" /NOLOGO /LIBPATH:"C:\SDK\Qt\qt-4.8.5\lib" qtmaind.lib QtCored4.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"x64\Debug\URG.dll.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"C:\PossDemo\GitHub\HMW-Alexander\SensorPlatformSDK\Library\Sensors\x64\Debug\URG.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\PossDemo\GitHub\HMW-Alexander\SensorPlatformSDK\Library\Sensors\x64\Debug\URG.lib" /MACHINE:X64 /DLL x64\Debug\urg.obj
+            Creating library C:\PossDemo\GitHub\HMW-Alexander\SensorPlatformSDK\Library\Sensors\x64\Debug\URG.lib and object C:\PossDemo\GitHub\HMW-Alexander\SensorPlatformSDK\Library\Sensors\x64\Debug\URG.exp
+         URG.vcxproj -> C:\PossDemo\GitHub\HMW-Alexander\SensorPlatformSDK\Library\Sensors\x64\Debug\URG.dll
+       Manifest:
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /outputresource:"C:\PossDemo\GitHub\HMW-Alexander\SensorPlatformSDK\Library\Sensors\x64\Debug\\URG.dll;#2" /manifest x64\Debug\URG.dll.intermediate.manifest
+       FinalizeBuildStatus:
+         Deleting file "x64\Debug\URG.unsuccessfulbuild".
+         Touching "x64\Debug\URG.lastbuildstate".
+     1>Done Building Project "C:\PossDemo\GitHub\HMW-Alexander\SensorPlatformSDK\Library\Sensors\URG\URG.vcxproj" (rebuild target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:02.11

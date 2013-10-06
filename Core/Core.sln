@@ -1,0 +1,29 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Sensor", "Sensor\Sensor.vcxproj", "{505FAD3A-419D-474D-A0E7-012A7EFA6F83}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Debug|x64 = Debug|x64
+		Release|Win32 = Release|Win32
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{505FAD3A-419D-474D-A0E7-012A7EFA6F83}.Debug|Win32.ActiveCfg = Debug|Win32
+		{505FAD3A-419D-474D-A0E7-012A7EFA6F83}.Debug|Win32.Build.0 = Debug|Win32
+		{505FAD3A-419D-474D-A0E7-012A7EFA6F83}.Debug|x64.ActiveCfg = Debug|x64
+		{505FAD3A-419D-474D-A0E7-012A7EFA6F83}.Debug|x64.Build.0 = Debug|x64
+		{505FAD3A-419D-474D-A0E7-012A7EFA6F83}.Release|Win32.ActiveCfg = Release|Win32
+		{505FAD3A-419D-474D-A0E7-012A7EFA6F83}.Release|Win32.Build.0 = Release|Win32
+		{505FAD3A-419D-474D-A0E7-012A7EFA6F83}.Release|x64.ActiveCfg = Release|x64
+		{505FAD3A-419D-474D-A0E7-012A7EFA6F83}.Release|x64.Build.0 = Release|x64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		QtVersion = qt-4.8.5
+	EndGlobalSection
+EndGlobal
