@@ -13,11 +13,12 @@
 #include <QtGui/QAction>
 #include <QtGui/QApplication>
 #include <QtGui/QButtonGroup>
+#include <QtGui/QHBoxLayout>
 #include <QtGui/QHeaderView>
 #include <QtGui/QMainWindow>
-#include <QtGui/QMenuBar>
-#include <QtGui/QStatusBar>
-#include <QtGui/QToolBar>
+#include <QtGui/QPushButton>
+#include <QtGui/QSpacerItem>
+#include <QtGui/QVBoxLayout>
 #include <QtGui/QWidget>
 
 QT_BEGIN_NAMESPACE
@@ -25,28 +26,64 @@ QT_BEGIN_NAMESPACE
 class Ui_USBCameraClass
 {
 public:
-    QMenuBar *menuBar;
-    QToolBar *mainToolBar;
     QWidget *centralWidget;
-    QStatusBar *statusBar;
+    QVBoxLayout *verticalLayout_2;
+    QHBoxLayout *horizontalLayout;
+    QPushButton *open;
+    QPushButton *start;
+    QPushButton *stop;
+    QPushButton *close;
+    QHBoxLayout *layout;
+    QSpacerItem *verticalSpacer;
 
     void setupUi(QMainWindow *USBCameraClass)
     {
         if (USBCameraClass->objectName().isEmpty())
             USBCameraClass->setObjectName(QString::fromUtf8("USBCameraClass"));
         USBCameraClass->resize(600, 400);
-        menuBar = new QMenuBar(USBCameraClass);
-        menuBar->setObjectName(QString::fromUtf8("menuBar"));
-        USBCameraClass->setMenuBar(menuBar);
-        mainToolBar = new QToolBar(USBCameraClass);
-        mainToolBar->setObjectName(QString::fromUtf8("mainToolBar"));
-        USBCameraClass->addToolBar(mainToolBar);
         centralWidget = new QWidget(USBCameraClass);
         centralWidget->setObjectName(QString::fromUtf8("centralWidget"));
+        verticalLayout_2 = new QVBoxLayout(centralWidget);
+        verticalLayout_2->setSpacing(6);
+        verticalLayout_2->setContentsMargins(11, 11, 11, 11);
+        verticalLayout_2->setObjectName(QString::fromUtf8("verticalLayout_2"));
+        horizontalLayout = new QHBoxLayout();
+        horizontalLayout->setSpacing(6);
+        horizontalLayout->setObjectName(QString::fromUtf8("horizontalLayout"));
+        open = new QPushButton(centralWidget);
+        open->setObjectName(QString::fromUtf8("open"));
+
+        horizontalLayout->addWidget(open);
+
+        start = new QPushButton(centralWidget);
+        start->setObjectName(QString::fromUtf8("start"));
+
+        horizontalLayout->addWidget(start);
+
+        stop = new QPushButton(centralWidget);
+        stop->setObjectName(QString::fromUtf8("stop"));
+
+        horizontalLayout->addWidget(stop);
+
+        close = new QPushButton(centralWidget);
+        close->setObjectName(QString::fromUtf8("close"));
+
+        horizontalLayout->addWidget(close);
+
+
+        verticalLayout_2->addLayout(horizontalLayout);
+
+        layout = new QHBoxLayout();
+        layout->setSpacing(6);
+        layout->setObjectName(QString::fromUtf8("layout"));
+
+        verticalLayout_2->addLayout(layout);
+
+        verticalSpacer = new QSpacerItem(20, 40, QSizePolicy::Minimum, QSizePolicy::Expanding);
+
+        verticalLayout_2->addItem(verticalSpacer);
+
         USBCameraClass->setCentralWidget(centralWidget);
-        statusBar = new QStatusBar(USBCameraClass);
-        statusBar->setObjectName(QString::fromUtf8("statusBar"));
-        USBCameraClass->setStatusBar(statusBar);
 
         retranslateUi(USBCameraClass);
 
@@ -56,6 +93,10 @@ public:
     void retranslateUi(QMainWindow *USBCameraClass)
     {
         USBCameraClass->setWindowTitle(QApplication::translate("USBCameraClass", "USBCamera", 0, QApplication::UnicodeUTF8));
+        open->setText(QApplication::translate("USBCameraClass", "Open Sensor", 0, QApplication::UnicodeUTF8));
+        start->setText(QApplication::translate("USBCameraClass", "Start", 0, QApplication::UnicodeUTF8));
+        stop->setText(QApplication::translate("USBCameraClass", "Stop", 0, QApplication::UnicodeUTF8));
+        close->setText(QApplication::translate("USBCameraClass", "Close Sensor", 0, QApplication::UnicodeUTF8));
     } // retranslateUi
 
 };

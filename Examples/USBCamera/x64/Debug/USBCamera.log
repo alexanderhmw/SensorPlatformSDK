@@ -1,4 +1,4 @@
-﻿Build started 2013/10/7 11:19:46.
+﻿Build started 2013/10/7 17:40:26.
      1>Project "C:\PossDemo\GitHub\HMW-Alexander\SensorPlatformSDK\Examples\USBCamera\USBCamera.vcxproj" on node 2 (build target(s)).
      1>InitializeBuildStatus:
          Creating "x64\Debug\USBCamera.unsuccessfulbuild" because "AlwaysCreate" was specified.
@@ -25,4 +25,4 @@
 
 Build succeeded.
 
-Time Elapsed 00:00:02.23
+Time Elapsed 00:00:01.92

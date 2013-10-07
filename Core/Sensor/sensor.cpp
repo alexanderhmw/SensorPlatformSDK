@@ -1,5 +1,7 @@
 #include "sensor.h"
 
+#pragma comment(lib,"NodeBase.lib")
+
 Sensor::Sensor(QString libraryname, QString sensorname, int buffersize)
 	: NodeBase(libraryname,QString("Sensor"),sensorname)
 {

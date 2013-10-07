@@ -1,4 +1,4 @@
-﻿Build started 2013/10/7 11:22:35.
+﻿Build started 2013/10/7 16:14:37.
      1>Project "C:\PossDemo\GitHub\HMW-Alexander\SensorPlatformSDK\Core\Sensor\Sensor.vcxproj" on node 2 (rebuild target(s)).
      1>_PrepareForClean:
          Deleting file "x64\Debug\Sensor.lastbuildstate".
@@ -6,14 +6,19 @@
          Creating "x64\Debug\Sensor.unsuccessfulbuild" because "AlwaysCreate" was specified.
        CustomBuild:
          Moc'ing sensor.h...
+         Moc'ing sensorwidget.h...
        ClCompile:
-         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\x86_amd64\CL.exe /c /I.\GeneratedFiles /I. /I"C:\SDK\Qt\qt-4.8.5\include" /I.\GeneratedFiles\Debug /I"C:\SDK\Qt\qt-4.8.5\include\QtCore" /I"C:\SDK\Qt\qt-4.8.5\include\QtGui" /Zi /nologo /W1 /WX- /Od /D UNICODE /D WIN32 /D QT_DLL /D QT_CORE_LIB /D QT_GUI_LIB /D SENSOR_LIB /Gm- /EHsc /MDd /GS /fp:precise /Zc:wchar_t- /Zc:forScope /Fo"x64\Debug\\" /Fd"x64\Debug\vc100.pdb" /Gd /TP /errorReport:prompt GeneratedFiles\Debug\moc_sensor.cpp sensor.cpp
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\x86_amd64\CL.exe /c /I.\GeneratedFiles /I. /I"C:\SDK\Qt\qt-4.8.5\include" /I.\GeneratedFiles\Debug /I"C:\SDK\Qt\qt-4.8.5\include\QtCore" /I"C:\SDK\Qt\qt-4.8.5\include\QtGui" /Zi /nologo /W1 /WX- /Od /D UNICODE /D WIN32 /D QT_DLL /D QT_CORE_LIB /D QT_GUI_LIB /D SENSOR_LIB /Gm- /EHsc /MDd /GS /fp:precise /Zc:wchar_t- /Zc:forScope /Fo"x64\Debug\\" /Fd"x64\Debug\vc100.pdb" /Gd /TP /errorReport:prompt GeneratedFiles\Debug\moc_sensor.cpp GeneratedFiles\Debug\moc_sensorwidget.cpp sensor.cpp sensorwidget.cpp
          moc_sensor.cpp
+         moc_sensorwidget.cpp
          sensor.cpp
+         sensorwidget.cpp
          Generating Code...
        Lib:
          C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\x86_amd64\Lib.exe /OUT:"C:\PossDemo\GitHub\HMW-Alexander\SensorPlatformSDK\Core\x64\Debug\\Sensor.lib" /LIBPATH:"C:\SDK\Qt\qt-4.8.5\lib" /NOLOGO x64\Debug\moc_sensor.obj
+         x64\Debug\moc_sensorwidget.obj
          x64\Debug\sensor.obj
+         x64\Debug\sensorwidget.obj
          Sensor.vcxproj -> C:\PossDemo\GitHub\HMW-Alexander\SensorPlatformSDK\Core\x64\Debug\Sensor.lib
        FinalizeBuildStatus:
          Deleting file "x64\Debug\Sensor.unsuccessfulbuild".
@@ -22,4 +27,4 @@
 
 Build succeeded.
 
-Time Elapsed 00:00:01.63
+Time Elapsed 00:00:02.85

@@ -1,14 +1,14 @@
-﻿Build started 2013/10/7 10:56:59.
-     1>Project "C:\PossDemo\GitHub\HMW-Alexander\SensorPlatformSDK\Library\Sensors\URG\URG.vcxproj" on node 2 (rebuild target(s)).
+﻿Build started 2013/10/7 17:39:29.
+     1>Project "C:\PossDemo\GitHub\HMW-Alexander\SensorPlatformSDK\Library\Sensors\URG\URG.vcxproj" on node 3 (rebuild target(s)).
      1>_PrepareForClean:
          Deleting file "x64\Debug\URG.lastbuildstate".
        InitializeBuildStatus:
          Creating "x64\Debug\URG.unsuccessfulbuild" because "AlwaysCreate" was specified.
        ClCompile:
-         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\x86_amd64\CL.exe /c /I.\GeneratedFiles /I. /I"C:\SDK\Qt\qt-4.8.5\include" /I.\GeneratedFiles\Debug /I"C:\SDK\Qt\qt-4.8.5\include\QtCore" /Zi /nologo /W1 /WX- /Od /D UNICODE /D WIN32 /D QT_DLL /D QT_CORE_LIB /D URG_LIB /D _WINDLL /Gm- /EHsc /MDd /GS /fp:precise /Zc:wchar_t- /Zc:forScope /openmp /Fo"x64\Debug\\" /Fd"x64\Debug\vc100.pdb" /Gd /TP /errorReport:prompt urg.cpp
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\x86_amd64\CL.exe /c /I.\GeneratedFiles /I. /I"C:\SDK\Qt\qt-4.8.5\include" /I.\GeneratedFiles\Debug /I"C:\SDK\Qt\qt-4.8.5\include\QtCore" /I"C:\SDK\Qt\qt-4.8.5\include\QtGui" /Zi /nologo /W1 /WX- /Od /D UNICODE /D WIN32 /D QT_DLL /D QT_CORE_LIB /D URG_LIB /D QT_GUI_LIB /D _WINDLL /Gm- /EHsc /MDd /GS /fp:precise /Zc:wchar_t- /Zc:forScope /openmp /Fo"x64\Debug\\" /Fd"x64\Debug\vc100.pdb" /Gd /TP /errorReport:prompt urg.cpp
          urg.cpp
        Link:
-         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\x86_amd64\link.exe /ERRORREPORT:PROMPT /OUT:"C:\PossDemo\GitHub\HMW-Alexander\SensorPlatformSDK\Library\Sensors\x64\Debug\\URG.dll" /NOLOGO /LIBPATH:"C:\SDK\Qt\qt-4.8.5\lib" qtmaind.lib QtCored4.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"x64\Debug\URG.dll.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"C:\PossDemo\GitHub\HMW-Alexander\SensorPlatformSDK\Library\Sensors\x64\Debug\URG.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\PossDemo\GitHub\HMW-Alexander\SensorPlatformSDK\Library\Sensors\x64\Debug\URG.lib" /MACHINE:X64 /DLL x64\Debug\urg.obj
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\x86_amd64\link.exe /ERRORREPORT:PROMPT /OUT:"C:\PossDemo\GitHub\HMW-Alexander\SensorPlatformSDK\Library\Sensors\x64\Debug\\URG.dll" /NOLOGO /LIBPATH:"C:\SDK\Qt\qt-4.8.5\lib" qtmaind.lib QtCored4.lib QtGuid4.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"x64\Debug\URG.dll.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"C:\PossDemo\GitHub\HMW-Alexander\SensorPlatformSDK\Library\Sensors\x64\Debug\URG.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\PossDemo\GitHub\HMW-Alexander\SensorPlatformSDK\Library\Sensors\x64\Debug\URG.lib" /MACHINE:X64 /DLL x64\Debug\urg.obj
             Creating library C:\PossDemo\GitHub\HMW-Alexander\SensorPlatformSDK\Library\Sensors\x64\Debug\URG.lib and object C:\PossDemo\GitHub\HMW-Alexander\SensorPlatformSDK\Library\Sensors\x64\Debug\URG.exp
          URG.vcxproj -> C:\PossDemo\GitHub\HMW-Alexander\SensorPlatformSDK\Library\Sensors\x64\Debug\URG.dll
        Manifest:
@@ -20,4 +20,4 @@
 
 Build succeeded.
 
-Time Elapsed 00:00:01.41
+Time Elapsed 00:00:01.86

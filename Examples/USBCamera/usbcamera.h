@@ -4,11 +4,13 @@
 #include <QtGui/QMainWindow>
 #include "ui_usbcamera.h"
 #include<Sensor\sensor.h>
+#include<Sensor\sensorwidget.h>
 #include<Storage\storage.h>
 #include<qtimer.h>
 #include<qdatetime.h>
 #include <opencv2\opencv.hpp>
 #include <qthread.h>
+#include <qboxlayout.h>
 
 class USBCamera : public QMainWindow
 {
@@ -25,11 +27,12 @@ public:
 	Sensor * sensor2;
 	QTimer timer1;
 	QTimer timer2;
-	Storage * storage;
+	Storage * storage1;
+	Storage * storage2;
+	SensorWidget * sensorwidget1;
+	SensorWidget * sensorwidget2;
 	QThread thread1;
 	QThread thread2;
-public slots:
-	void showImage(void * data);
 };
 
 #endif // USBCAMERA_H

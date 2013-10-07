@@ -44,9 +44,21 @@
     <ClCompile Include="GeneratedFiles\Release\moc_nodebase.cpp">
       <Filter>Generated Files\Release</Filter>
     </ClCompile>
+    <ClCompile Include="nodewidgetbase.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_nodewidgetbase.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_nodewidgetbase.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <CustomBuild Include="nodebase.h">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="nodewidgetbase.h">
       <Filter>Header Files</Filter>
     </CustomBuild>
   </ItemGroup>

@@ -7,6 +7,9 @@
 #include<qdatetime.h>
 #include<qstring.h>
 #include<qfile.h>
+#include <qboxlayout.h>
+#include<qlabel.h>
+#include<qlineedit.h>
 
 struct URG_EXPORT URGPARAMS
 {
@@ -34,6 +37,14 @@ struct URG_EXPORT URGSTORAGEPARAMS
 	QFile file;
 	QString storagepath;
 	QString extension;
+};
+
+struct URG_EXPORT URGWIDGETS
+{
+	QLabel label;
+	QLabel status;
+	QLineEdit framenum;
+	QLineEdit info;
 };
 
 #endif

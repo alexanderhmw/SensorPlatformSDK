@@ -1,9 +1,12 @@
 #include "storage.h"
 
-Storage::Storage(Sensor * sensor)
-	: NodeBase(sensor->getLibraryName(),QString("Storage"),sensor->getNodeName())
+#pragma comment(lib,"NodeBase.lib")
+#pragma comment(lib,"Sensor.lib")
+
+Storage::Storage(NodeBase * nodebase)
+	: NodeBase(nodebase->getLibraryName(),QString("Storage"),nodebase->getNodeName())
 {
-	_sensor=sensor;
+	_nodebase=nodebase;
 	FptrLoadCheck(openStorageFptr,openStorage,_library);
 	FptrLoadCheck(storeDataFptr,storeData,_library);
 	FptrLoadCheck(closeStorageFptr,closeStorage,_library);
@@ -20,7 +23,7 @@ Storage::~Storage()
 
 void Storage::openStorageSlot()
 {
-	if(!openflag&&openStorage(_params,_sensor->getParams()))
+	if(!openflag&&openStorage(_params,_nodebase->getParams()))
 	{
 		openflag=1;
 		emit storageOpenSignal();

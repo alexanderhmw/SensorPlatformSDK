@@ -1,16 +1,16 @@
 #ifndef STORAGE_H
 #define STORAGE_H
 
-#include<Sensor\sensor.h>
+#include<NodeBase\nodebase.h>
 
 class Storage : public NodeBase
 {
 	Q_OBJECT
 public:
-	Storage(Sensor * sensor);
+	Storage(NodeBase * nodebase);
 	~Storage();
 protected:
-	Sensor * _sensor;
+	NodeBase * _nodebase;
 protected:
 	bool openflag;
 protected:
