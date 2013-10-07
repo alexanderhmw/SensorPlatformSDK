@@ -1,32 +1,15 @@
 #include "sensor.h"
 
-#define FptrLoadCheck(fptr,fptrtype,library) \
-fptr=(fptrtype) library.resolve(#fptr);	\
-if(fptr==NULL)	\
-{QMessageBox::information(NULL,QString("Sensor Error"),QString("No function %1 in Share Library %2").arg(QString(#fptr)).arg(library.fileName()));exit(0);}
-
 Sensor::Sensor(QString libraryname, QString sensorname, int buffersize)
+	: NodeBase(libraryname,QString("Sensor"),sensorname)
 {
-	_library.setFileName(libraryname);
-	_sensorname=sensorname;
-	if(_library.load())
-	{
-		FptrLoadCheck(loadParams, loadParamsFptr,_library);
-		FptrLoadCheck(openSensor,openSensorFptr,_library);
-		FptrLoadCheck(captureData,captureDataFptr,_library);
-		FptrLoadCheck(closeSensor,closeSensorFptr,_library);
-		FptrLoadCheck(releaseParams,releaseParamsFptr,_library);
-		FptrLoadCheck(releaseData,releaseDataFptr,_library);
-	}
-	else
-	{
-		QMessageBox::information(NULL,QString("Sensor Error"),QString("Share Library %1 missing").arg(_library.fileName()));
-		exit(0);
-	}
+	FptrLoadCheck(openSensorFptr,openSensor,_library);
+	FptrLoadCheck(captureDataFptr,captureData,_library);
+	FptrLoadCheck(closeSensorFptr,closeSensor,_library);
+	FptrLoadCheck(releaseDataFptr,releaseData,_library);
 
-	_params=NULL;
-	_databuffer.resize(buffersize);
-	_curdataid=0;
+	databuffer.resize(buffersize);
+	curdataid=0;
 	openflag=0;
 }
 
@@ -36,23 +19,12 @@ Sensor::~Sensor()
 	{
 		closeSensorSlot();
 	}
-	releaseParams(&_params);
-	int i,n=_databuffer.size();
+	int i,n=databuffer.size();
 	for(i=0;i<n;i++)
 	{
-		releaseData(&(_databuffer[i]));
+		releaseData(&(databuffer[i]));
 	}
-	_databuffer.clear();
-}
-
-void Sensor::loadParamsSlot(QString configfilename)
-{
-	_configfilename=configfilename;
-	if(openflag||!loadParams(_configfilename,_sensorclass,_sensorname,&_params))
-	{
-		QMessageBox::information(NULL,QString("Sensor Error"),QString("Parameters Initialization Error:%1_%2").arg(_sensorclass).arg(_sensorname));
-		exit(0);
-	}
+	databuffer.clear();
 }
 
 void Sensor::openSensorSlot()
@@ -70,10 +42,10 @@ void Sensor::openSensorSlot()
 
 void Sensor::captureDataSlot()
 {
-	if(openflag&&captureData(_params,&(_databuffer[_curdataid])))
+	if(openflag&&captureData(_params,&(databuffer[curdataid])))
 	{
-		emit dataCaptureSignal(_databuffer[_curdataid]);
-		_curdataid=(_curdataid+1)%_databuffer.size();
+		emit dataCaptureSignal(databuffer[curdataid]);
+		curdataid=(curdataid+1)%databuffer.size();
 	}
 	else
 	{
@@ -94,11 +66,6 @@ void Sensor::closeSensorSlot()
 	}
 }
 
-bool Sensor::connectLoadParamsSignal(QObject *sender, const char *signal)
-{
-    return connect(sender,signal,this,SLOT(loadParamsSlot(QString)));
-}
-
 bool Sensor::connectOpenSensorSignal(QObject * sender, const char * signal)
 {
     return connect(sender,signal,this,SLOT(openSensorSlot()));
@@ -112,11 +79,6 @@ bool Sensor::connectCaptureDataSignal(QObject *sender, const char *signal)
 bool Sensor::connectCloseSensorSignal(QObject *sender, const char *signal)
 {
     return connect(sender,signal,this,SLOT(closeSensorSlot()));
-}
-
-bool Sensor::disconnectLoadParamsSignal(QObject *sender, const char *signal)
-{
-    return disconnect(sender,signal,this,SLOT(loadParamsSlot(QString)));
 }
 
 bool Sensor::disconnectOpenSensorSignal(QObject * sender, const char * signal)

@@ -1,60 +1,44 @@
 #ifndef SENSOR_H
 #define SENSOR_H
 
-#include<qobject.h>
+#include<NodeBase\nodebase.h>
 #include<qvector.h>
-#include<qstring.h>
-#include<qlibrary.h>
-#include<qmessagebox.h>
 
-class Sensor : public QObject
+class Sensor : public NodeBase
 {
 	Q_OBJECT
 public:
 	Sensor(QString libraryname, QString sensorname, int buffersize=10);
 	~Sensor();
 protected:
-	QLibrary _library;
-	QString _sensorclass;
-	QString _sensorname;
-	QString _configfilename;
-protected:
-	void * _params;
-	QVector<void *> _databuffer;
-	int _curdataid;
+	QVector<void *> databuffer;
+	int curdataid;
 	bool openflag;
 protected:
-	typedef bool (*loadParamsFptr)(QString & configfilename, QString & sensorclass, QString & sensorname, void ** params);
-	loadParamsFptr loadParams;
 	typedef bool (*openSensorFptr)(void * params);
 	openSensorFptr openSensor;
 	typedef bool (*captureDataFptr)(void * params, void ** data);
 	captureDataFptr captureData;
 	typedef bool (*closeSensorFptr)(void * params);
 	closeSensorFptr closeSensor;
-	typedef void (*releaseParamsFptr)(void ** params);
-	releaseParamsFptr releaseParams;
 	typedef void (*releaseDataFptr)(void ** data);
 	releaseDataFptr releaseData;
 public slots:
-	void loadParamsSlot(QString configfilename);
 	void openSensorSlot();
 	void captureDataSlot();
 	void closeSensorSlot();
 signals:
 	void sensorOpenSignal();
 	void sensorOpenErrorSignal();
-    void dataCaptureSignal(void * data);
+	void dataCaptureSignal(void * data);
 	void dataCaptureErrorSignal();
 	void sensorCloseSignal();
 	void sensorCloseErrorSignal();
 public:
-    bool connectLoadParamsSignal(QObject * sender, const char * signal);
 	bool connectOpenSensorSignal(QObject * sender, const char * signal);
 	bool connectCaptureDataSignal(QObject * sender, const char * signal);
 	bool connectCloseSensorSignal(QObject * sender, const char * signal);
 
-    bool disconnectLoadParamsSignal(QObject *sender, const char *signal);
 	bool disconnectOpenSensorSignal(QObject * sender, const char * signal);
 	bool disconnectCaptureDataSignal(QObject * sender, const char * signal);
 	bool disconnectCloseSensorSignal(QObject * sender, const char * signal);

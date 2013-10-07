@@ -1,30 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Cameras>
-	<Sensor Class="USBCamera" Name="camera1">
+	<Sensor Class="USBCamera" Name="camera">
 		<deviceid ValueType="Value" DataType="int">
 			<Default>0</Default>
-		</deviceid>
-		<width ValueType="Value" DataType="int">
-			<Default>640</Default>
-		</width>
-		<height ValueType="Value" DataType="int">
-			<Default>480</Default>
-		</height>
-	</Sensor>
-	<Sensor Class="USBCamera" Name="camera2">
-		<deviceid ValueType="Value" DataType="int">
-			<Default>1</Default>
-		</deviceid>
-		<width ValueType="Value" DataType="int">
-			<Default>640</Default>
-		</width>
-		<height ValueType="Value" DataType="int">
-			<Default>480</Default>
-		</height>
-	</Sensor>
-	<Sensor Class="USBCamera" Name="camera3">
-		<deviceid ValueType="Value" DataType="int">
-			<Default>2</Default>
 		</deviceid>
 		<width ValueType="Value" DataType="int">
 			<Default>640</Default>
@@ -67,4 +45,12 @@
 			<Default>2</Default>
 		</skip_step>
 	</Sensor>
+	<Storage Class="URG" Name="urg">
+		<storagepath ValueType="Value" DataType="string">
+			<Default>D:\data\urg</Default>
+		</storagepath>
+		<extension ValueType="Value" DataType="string">
+			<Default>lms</Default>
+		</extension>
+	</Storage>
 </Cameras>

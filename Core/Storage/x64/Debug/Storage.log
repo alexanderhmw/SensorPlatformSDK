@@ -1,0 +1,25 @@
+﻿Build started 2013/10/7 11:22:40.
+     1>Project "C:\PossDemo\GitHub\HMW-Alexander\SensorPlatformSDK\Core\Storage\Storage.vcxproj" on node 2 (rebuild target(s)).
+     1>_PrepareForClean:
+         Deleting file "x64\Debug\Storage.lastbuildstate".
+       InitializeBuildStatus:
+         Creating "x64\Debug\Storage.unsuccessfulbuild" because "AlwaysCreate" was specified.
+       CustomBuild:
+         Moc'ing storage.h...
+       ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\x86_amd64\CL.exe /c /I.\GeneratedFiles /I. /I"C:\SDK\Qt\qt-4.8.5\include" /I.\GeneratedFiles\Debug /I"C:\SDK\Qt\qt-4.8.5\include\QtCore" /I"C:\SDK\Qt\qt-4.8.5\include\QtGui" /Zi /nologo /W1 /WX- /Od /D UNICODE /D WIN32 /D QT_DLL /D QT_CORE_LIB /D SENSORSTORAGE_LIB /D QT_GUI_LIB /Gm- /EHsc /MDd /GS /fp:precise /Zc:wchar_t- /Zc:forScope /Fo"x64\Debug\\" /Fd"x64\Debug\vc100.pdb" /Gd /TP /errorReport:prompt GeneratedFiles\Debug\moc_storage.cpp storage.cpp
+         moc_storage.cpp
+         storage.cpp
+         Generating Code...
+       Lib:
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\x86_amd64\Lib.exe /OUT:"C:\PossDemo\GitHub\HMW-Alexander\SensorPlatformSDK\Core\x64\Debug\\Storage.lib" /LIBPATH:"C:\SDK\Qt\qt-4.8.5\lib" /NOLOGO x64\Debug\moc_storage.obj
+         x64\Debug\storage.obj
+         Storage.vcxproj -> C:\PossDemo\GitHub\HMW-Alexander\SensorPlatformSDK\Core\x64\Debug\Storage.lib
+       FinalizeBuildStatus:
+         Deleting file "x64\Debug\Storage.unsuccessfulbuild".
+         Touching "x64\Debug\Storage.lastbuildstate".
+     1>Done Building Project "C:\PossDemo\GitHub\HMW-Alexander\SensorPlatformSDK\Core\Storage\Storage.vcxproj" (rebuild target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:01.61

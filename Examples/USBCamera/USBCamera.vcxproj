@@ -57,7 +57,7 @@
     <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(SolutionDir)$(Platform)\$(Configuration)\</OutDir>
     <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(SolutionDir)$(Platform)\$(Configuration)\</OutDir>
     <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(SolutionDir)$(Platform)\$(Configuration)\</OutDir>
-    <IncludePath Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\SDK\OpenCV\opencv\build\include;C:\PossDemo\GitHub\HMW-Alexander\SensorPlatformSDK\Core\Sensor;$(IncludePath)</IncludePath>
+    <IncludePath Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\SDK\OpenCV\opencv\build\include;C:\PossDemo\GitHub\HMW-Alexander\SensorPlatformSDK\Core;$(IncludePath)</IncludePath>
     <LibraryPath Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\SDK\OpenCV\opencv\build\x64\vc10\lib;C:\PossDemo\GitHub\HMW-Alexander\SensorPlatformSDK\Core\x64\Debug;$(LibraryPath)</LibraryPath>
     <ExecutablePath Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\PossDemo\GitHub\HMW-Alexander\SensorPlatformSDK\Library\Sensors\x64\Debug;$(ExecutablePath)</ExecutablePath>
   </PropertyGroup>

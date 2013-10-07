@@ -4,15 +4,15 @@
 #pragma comment(lib, "opencv_highgui246d.lib")
 #pragma comment(lib, "XMLParamsLoader.lib")
 
-bool loadParams(QString & configfilename, QString & sensorclass, QString & sensorname, void ** params)
+bool loadParamsSensor(QString configfilename,QString nodetype, QString & nodeclass, QString nodename, void ** params)
 {
 	XMLParamsLoader loader;
-	sensorclass=QString("USBCamera");
-	if(!loader.loadParams(configfilename,QString("Sensor"),sensorclass,sensorname))
+	nodeclass=QString("USBCamera");
+	if(!loader.loadParams(configfilename,nodetype,nodeclass,nodename))
 	{
 		return 0;
 	}
-	releaseParams(params);
+	releaseParamsSensor(params);
 	*params=(void *)new USBCAMERAPARAMS;
 	USBCAMERAPARAMS * tempparams=(USBCAMERAPARAMS *)(*params);
 	bool flag=1;
@@ -20,6 +20,16 @@ bool loadParams(QString & configfilename, QString & sensorclass, QString & senso
 	flag&=loader.getParam("width",tempparams->width);
 	flag&=loader.getParam("height",tempparams->height);
 	return flag;
+}
+
+void releaseParamsSensor(void ** params)
+{
+	USBCAMERAPARAMS * tempparams=(USBCAMERAPARAMS *)(*params);
+	if(tempparams!=NULL)
+	{
+		delete tempparams;
+		*params=NULL;
+	}
 }
 
 bool openSensor(void * params)
@@ -60,16 +70,6 @@ bool closeSensor(void * params)
 	USBCAMERAPARAMS * tempparams=(USBCAMERAPARAMS *)params;
 	tempparams->cap.release();
 	return 1;
-}
-
-void releaseParams(void ** params)
-{
-	USBCAMERAPARAMS * tempparams=(USBCAMERAPARAMS *)(*params);
-	if(tempparams!=NULL)
-	{
-		delete tempparams;
-		*params=NULL;
-	}
 }
 
 void releaseData(void ** data)

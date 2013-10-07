@@ -6,6 +6,7 @@
 #include".\Resources\urg\urg_utils.h"
 #include<qdatetime.h>
 #include<qstring.h>
+#include<qfile.h>
 
 struct URG_EXPORT URGPARAMS
 {
@@ -26,6 +27,13 @@ struct URG_EXPORT URGDATA
 	QTime qtimestamp;
 	int datasize;
 	short * data;
+};
+
+struct URG_EXPORT URGSTORAGEPARAMS
+{
+	QFile file;
+	QString storagepath;
+	QString extension;
 };
 
 #endif

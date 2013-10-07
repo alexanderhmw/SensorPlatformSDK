@@ -1,6 +1,7 @@
 #include "usbcamera.h"
 
 #pragma comment(lib,"Sensor.lib")
+#pragma comment(lib,"Storage.lib")
 #pragma comment(lib, "opencv_core246d.lib")
 #pragma comment(lib, "opencv_imgproc246d.lib")
 #pragma comment(lib, "opencv_highgui246d.lib")
@@ -10,39 +11,46 @@ USBCamera::USBCamera(QWidget *parent, Qt::WFlags flags)
 {
 	ui.setupUi(this);
 
-	QString configfilename=QString("C:/PossDemo/GitHub/HMW-Alexander/SensorPlatformSDK/Examples/USBCamera/usbcamera.xml");
+	QString configfilename=QString("usbcamera.xml");
+	bool flag=1;
 
-	sensor1=new Sensor("USBCamera","camera1");
+	sensor1=new Sensor("URG","urg",10);
 	sensor1->loadParamsSlot(configfilename);
 	sensor1->openSensorSlot();
-	sensor1->connectCaptureDataSignal(&timer1,SIGNAL(timeout()));
-	sensor1->connectDataCaptureSlot(this,SLOT(showImage1(void *)));
+	sensor1->moveToThread(&thread1);
 
-	sensor2=new Sensor("USBCamera","camera2");
+	storage=new Storage(sensor1);
+	storage->loadParamsSlot(configfilename);
+	storage->openStorageSlot();	
+
+	sensor2=new Sensor("USBCamera","camera",10);
 	sensor2->loadParamsSlot(configfilename);
 	sensor2->openSensorSlot();
-	sensor2->connectCaptureDataSignal(&timer2,SIGNAL(timeout()));
-	sensor2->connectDataCaptureSlot(this,SLOT(showImage2(void *)));
+	sensor2->moveToThread(&thread2);
 
-	sensor3=new Sensor("URG","urg");
-	sensor3->loadParamsSlot(configfilename);
-	sensor3->openSensorSlot();
-	sensor3->connectCaptureDataSignal(&timer3,SIGNAL(timeout()));
-	sensor3->connectDataCaptureSlot(this,SLOT(showImage3(void *)));
+	flag&=sensor1->connectCaptureDataSignal(&timer1,SIGNAL(timeout()));
+	flag&=sensor1->connectDataCaptureSlot(storage,SLOT(storeDataSlot(void *)));
+	flag&=sensor2->connectCaptureDataSignal(&timer2,SIGNAL(timeout()));
+	flag&=sensor2->connectDataCaptureSlot(this,SLOT(showImage(void *)));
 
-	timer1.start(100);
-	timer2.start(100);
-	timer3.start(100);
+	thread1.start();
+	thread2.start();
+
+	timer1.start(25);
+	timer2.start(25);
 }
 
 USBCamera::~USBCamera()
 {
 	timer1.stop();
 	timer2.stop();
-	timer3.stop();
+	thread1.exit();
+	thread1.wait();
+	thread2.exit();
+	thread2.wait();
+	delete storage;
 	delete sensor1;
-	delete sensor2;
-	delete sensor3;
+	delete sensor2;	
 }
 
 struct USBCameraData
@@ -51,20 +59,8 @@ struct USBCameraData
 	cv::Mat image;
 };
 
-void USBCamera::showImage1(void * data)
+void USBCamera::showImage(void * data)
 {
 	USBCameraData * tempdata=(USBCameraData *)data;
-	cv::imshow("USBCamera1",tempdata->image);
-}
-
-void USBCamera::showImage2(void * data)
-{
-	USBCameraData * tempdata=(USBCameraData *)data;
-	cv::imshow("USBCamera2",tempdata->image);
-}
-
-void USBCamera::showImage3(void * data)
-{
-//	USBCameraData * tempdata=(USBCameraData *)data;
-//	cv::imshow("USBCamera3",tempdata->image);
+	cv::imshow("USBCamera",tempdata->image);
 }

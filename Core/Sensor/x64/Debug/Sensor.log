@@ -1,9 +1,9 @@
-﻿Build started 2013/10/6 22:33:15.
+﻿Build started 2013/10/7 11:22:35.
      1>Project "C:\PossDemo\GitHub\HMW-Alexander\SensorPlatformSDK\Core\Sensor\Sensor.vcxproj" on node 2 (rebuild target(s)).
      1>_PrepareForClean:
          Deleting file "x64\Debug\Sensor.lastbuildstate".
        InitializeBuildStatus:
-         Touching "x64\Debug\Sensor.unsuccessfulbuild".
+         Creating "x64\Debug\Sensor.unsuccessfulbuild" because "AlwaysCreate" was specified.
        CustomBuild:
          Moc'ing sensor.h...
        ClCompile:
@@ -22,4 +22,4 @@
 
 Build succeeded.
 
-Time Elapsed 00:00:02.33
+Time Elapsed 00:00:01.63
