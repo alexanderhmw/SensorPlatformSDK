@@ -14,7 +14,7 @@
 #define FptrLoadCheckType(fptrtype,fptr,library,nodetype) \
 	fptr=(fptrtype) library.resolve(QString("%1%2").arg(#fptr).arg(nodetype).toLocal8Bit().constData());	\
 	if(fptr==NULL)	\
-{QMessageBox::information(NULL,QString("%1 Error").arg(nodetype),QString("No function %1 in Share Library %2").arg(QString(#fptr)).arg(library.fileName()));exit(0);}
+{QMessageBox::information(NULL,QString("%1 Error").arg(nodetype),QString("No function %1%2 in Share Library %3").arg(QString(#fptr)).arg(nodetype).arg(library.fileName()));exit(0);}
 
 class NodeBase : public QObject
 {

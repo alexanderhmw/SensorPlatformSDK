@@ -8,7 +8,7 @@ extern "C" Q_DECL_EXPORT bool loadParamsStorage(QString configfilename,QString n
 extern "C" Q_DECL_EXPORT void releaseParamsStorage(void ** params);
 
 extern "C" Q_DECL_EXPORT bool openStorage(void * params, void * sensorparams);
-extern "C" Q_DECL_EXPORT int storeData(void * params, void * data);
+extern "C" Q_DECL_EXPORT bool storeData(void * params, void * data);
 extern "C" Q_DECL_EXPORT bool closeStorage(void * params);
 
 

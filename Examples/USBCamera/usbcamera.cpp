@@ -26,8 +26,12 @@ USBCamera::USBCamera(QWidget *parent, Qt::WFlags flags)
 	sensorwidget1->connectSignals();
 	
 	storage1=new Storage(sensor1);
+	storage1->moveToThread(&thread1);
 	storage1->loadParamsSlot(configfilename);
-	storage1->openStorageSlot();
+
+	storagewidget1=new StorageWidget(storage1);
+	ui.layout1->addWidget(storagewidget1);
+	flag&=storagewidget1->connectSignals();
 	
 	flag&=sensor1->connectDataCaptureSlot(storage1,SLOT(storeDataSlot(void *)));
 
@@ -42,8 +46,12 @@ USBCamera::USBCamera(QWidget *parent, Qt::WFlags flags)
 	sensorwidget2->connectSignals();
 
 	storage2=new Storage(sensor2);
+	storage2->moveToThread(&thread2);
 	storage2->loadParamsSlot(configfilename);
-	storage2->openStorageSlot();
+
+	storagewidget2=new StorageWidget(storage2);
+	ui.layout1->addWidget(storagewidget2);
+	storagewidget2->connectSignals();
 
 	flag&=sensor2->connectDataCaptureSlot(storage2,SLOT(storeDataSlot(void *)));
 
@@ -63,6 +71,11 @@ USBCamera::USBCamera(QWidget *parent, Qt::WFlags flags)
 	flag&=sensor2->connectOpenSensorSignal(ui.open,SIGNAL(clicked()));
 	flag&=sensor2->connectCloseSensorSignal(ui.close,SIGNAL(clicked()));
 
+	flag&=storage1->connectOpenStorageSignal(ui.openstorage,SIGNAL(clicked()));
+	flag&=storage1->connectCloseStorageSignal(ui.closestorage,SIGNAL(clicked()));
+	flag&=storage2->connectOpenStorageSignal(ui.openstorage,SIGNAL(clicked()));
+	flag&=storage2->connectCloseStorageSignal(ui.closestorage,SIGNAL(clicked()));
+
 //==========================================
 	thread1.start();
 	thread2.start();
@@ -77,6 +90,8 @@ USBCamera::~USBCamera()
 	timer2.stop();
 	sensorwidget1->disconnectSignals();
 	sensorwidget2->disconnectSignals();
+	storagewidget1->disconnectSignals();
+	storagewidget2->disconnectSignals();
 	
 	thread1.exit();
 	thread1.wait();

@@ -6,6 +6,7 @@
 #include<Sensor\sensor.h>
 #include<Sensor\sensorwidget.h>
 #include<Storage\storage.h>
+#include<Storage\storagewidget.h>
 #include<qtimer.h>
 #include<qdatetime.h>
 #include <opencv2\opencv.hpp>
@@ -31,6 +32,8 @@ public:
 	Storage * storage2;
 	SensorWidget * sensorwidget1;
 	SensorWidget * sensorwidget2;
+	StorageWidget * storagewidget1;
+	StorageWidget * storagewidget2;
 	QThread thread1;
 	QThread thread2;
 };

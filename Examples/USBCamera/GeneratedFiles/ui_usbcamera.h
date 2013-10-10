@@ -34,6 +34,10 @@ public:
     QPushButton *stop;
     QPushButton *close;
     QHBoxLayout *layout;
+    QHBoxLayout *horizontalLayout_2;
+    QPushButton *openstorage;
+    QPushButton *closestorage;
+    QHBoxLayout *layout1;
     QSpacerItem *verticalSpacer;
 
     void setupUi(QMainWindow *USBCameraClass)
@@ -79,6 +83,28 @@ public:
 
         verticalLayout_2->addLayout(layout);
 
+        horizontalLayout_2 = new QHBoxLayout();
+        horizontalLayout_2->setSpacing(6);
+        horizontalLayout_2->setObjectName(QString::fromUtf8("horizontalLayout_2"));
+        openstorage = new QPushButton(centralWidget);
+        openstorage->setObjectName(QString::fromUtf8("openstorage"));
+
+        horizontalLayout_2->addWidget(openstorage);
+
+        closestorage = new QPushButton(centralWidget);
+        closestorage->setObjectName(QString::fromUtf8("closestorage"));
+
+        horizontalLayout_2->addWidget(closestorage);
+
+
+        verticalLayout_2->addLayout(horizontalLayout_2);
+
+        layout1 = new QHBoxLayout();
+        layout1->setSpacing(6);
+        layout1->setObjectName(QString::fromUtf8("layout1"));
+
+        verticalLayout_2->addLayout(layout1);
+
         verticalSpacer = new QSpacerItem(20, 40, QSizePolicy::Minimum, QSizePolicy::Expanding);
 
         verticalLayout_2->addItem(verticalSpacer);
@@ -97,6 +123,8 @@ public:
         start->setText(QApplication::translate("USBCameraClass", "Start", 0, QApplication::UnicodeUTF8));
         stop->setText(QApplication::translate("USBCameraClass", "Stop", 0, QApplication::UnicodeUTF8));
         close->setText(QApplication::translate("USBCameraClass", "Close Sensor", 0, QApplication::UnicodeUTF8));
+        openstorage->setText(QApplication::translate("USBCameraClass", "Open Storage", 0, QApplication::UnicodeUTF8));
+        closestorage->setText(QApplication::translate("USBCameraClass", "Close Storage", 0, QApplication::UnicodeUTF8));
     } // retranslateUi
 
 };

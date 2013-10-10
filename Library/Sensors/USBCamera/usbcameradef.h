@@ -8,6 +8,7 @@
 #include <qboxlayout.h>
 #include<qlabel.h>
 #include<qlineedit.h>
+#include<qcheckbox.h>
 
 struct USBCAMERA_EXPORT USBCAMERAPARAMS
 {
@@ -27,6 +28,7 @@ struct USBCAMERA_EXPORT USBCAMERASTORAGEPARAMS
 {
 	QFile timestampwriter;
 	cv::VideoWriter writer;
+	QString videofilename;
 	double fps;
 	QString storagepath;
 	QString extension;
@@ -38,7 +40,17 @@ struct USBCAMERA_EXPORT USBCAMERAWIDGETS
 	QLabel status;
 	QLineEdit framenum;
 	QLineEdit info;
+	QCheckBox showimage;
 	QLabel image;
+};
+
+struct USBCAMERA_EXPORT USBCAMERASTORAGEWIDGETS
+{
+	QLabel label;
+	QLabel status;
+	QLineEdit filename;
+	QLineEdit framenum;
+	QLineEdit info;
 };
 
 #endif

@@ -2,10 +2,19 @@
 Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2010
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Sensor", "Sensor\Sensor.vcxproj", "{505FAD3A-419D-474D-A0E7-012A7EFA6F83}"
+	ProjectSection(ProjectDependencies) = postProject
+		{6821BD88-9A32-4FD2-9494-A8CF54E4055F} = {6821BD88-9A32-4FD2-9494-A8CF54E4055F}
+	EndProjectSection
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Storage", "Storage\Storage.vcxproj", "{16C8FFA7-6A25-430D-8CB0-9D7FE7FD03AB}"
+	ProjectSection(ProjectDependencies) = postProject
+		{505FAD3A-419D-474D-A0E7-012A7EFA6F83} = {505FAD3A-419D-474D-A0E7-012A7EFA6F83}
+		{6821BD88-9A32-4FD2-9494-A8CF54E4055F} = {6821BD88-9A32-4FD2-9494-A8CF54E4055F}
+	EndProjectSection
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "NodeBase", "NodeBase\NodeBase.vcxproj", "{6821BD88-9A32-4FD2-9494-A8CF54E4055F}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "FuncLibrary", "FuncLibrary\FuncLibrary.vcxproj", "{98EB94E7-5297-4251-9F3A-9BF021CA7BCE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +48,13 @@ Global
 		{6821BD88-9A32-4FD2-9494-A8CF54E4055F}.Release|Win32.Build.0 = Release|Win32
 		{6821BD88-9A32-4FD2-9494-A8CF54E4055F}.Release|x64.ActiveCfg = Release|x64
 		{6821BD88-9A32-4FD2-9494-A8CF54E4055F}.Release|x64.Build.0 = Release|x64
+		{98EB94E7-5297-4251-9F3A-9BF021CA7BCE}.Debug|Win32.ActiveCfg = Debug|Win32
+		{98EB94E7-5297-4251-9F3A-9BF021CA7BCE}.Debug|Win32.Build.0 = Debug|Win32
+		{98EB94E7-5297-4251-9F3A-9BF021CA7BCE}.Debug|x64.ActiveCfg = Debug|x64
+		{98EB94E7-5297-4251-9F3A-9BF021CA7BCE}.Debug|x64.Build.0 = Debug|x64
+		{98EB94E7-5297-4251-9F3A-9BF021CA7BCE}.Release|Win32.ActiveCfg = Release|Win32
+		{98EB94E7-5297-4251-9F3A-9BF021CA7BCE}.Release|Win32.Build.0 = Release|Win32
+		{98EB94E7-5297-4251-9F3A-9BF021CA7BCE}.Release|x64.ActiveCfg = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -17,5 +17,7 @@ MOC_DIR += ./GeneratedFiles/debug
 OBJECTS_DIR += debug
 UI_DIR += ./GeneratedFiles
 RCC_DIR += ./GeneratedFiles
-HEADERS += ./sensor.h
-SOURCES += ./sensor.cpp
+HEADERS += ./sensor.h \
+    ./sensorwidget.h
+SOURCES += ./sensor.cpp \
+    ./sensorwidget.cpp

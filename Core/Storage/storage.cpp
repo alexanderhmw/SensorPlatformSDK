@@ -26,7 +26,7 @@ void Storage::openStorageSlot()
 	if(!openflag&&openStorage(_params,_nodebase->getParams()))
 	{
 		openflag=1;
-		emit storageOpenSignal();
+		emit storageOpenSignal(_params);
 	}
 	else
 	{
@@ -38,10 +38,9 @@ void Storage::storeDataSlot(void * data)
 {
 	if(openflag)
 	{
-		int n=storeData(_params,data);
-		if(n>0)
+		if(storeData(_params,data))
 		{
-			emit dataStoreSignal(n);
+			emit dataStoreSignal(data);
 		}
 		else
 		{
@@ -99,7 +98,7 @@ bool Storage::disconnectCloseStorageSignal(QObject *sender, const char *signal)
 
 bool Storage::connectStorageOpenSlot(QObject *receiver, const char *slot)
 {
-    return connect(this,SIGNAL(storageOpenSignal()),receiver,slot);
+    return connect(this,SIGNAL(storageOpenSignal(void *)),receiver,slot);
 }
 
 bool Storage::connectStorageOpenErrorSlot(QObject *receiver, const char *slot)
@@ -109,7 +108,7 @@ bool Storage::connectStorageOpenErrorSlot(QObject *receiver, const char *slot)
 
 bool Storage::connectDataStoreSlot(QObject *receiver, const char *slot)
 {
-    return connect(this,SIGNAL(dataStoreSignal(void*)),receiver,slot);
+    return connect(this,SIGNAL(dataStoreSignal(void *)),receiver,slot);
 }
 
 bool Storage::connectDataStoreErrorSlot(QObject *receiver, const char *slot)
@@ -129,7 +128,7 @@ bool Storage::connectStorageCloseErrorSlot(QObject *receiver, const char *slot)
 
 bool Storage::disconnectStorageOpenSlot(QObject *receiver, const char *slot)
 {
-    return disconnect(this,SIGNAL(storageOpenSignal()),receiver,slot);
+    return disconnect(this,SIGNAL(storageOpenSignal(void *)),receiver,slot);
 }
 
 bool Storage::disconnectStorageOpenErrorSlot(QObject *receiver, const char *slot)
@@ -139,7 +138,7 @@ bool Storage::disconnectStorageOpenErrorSlot(QObject *receiver, const char *slot
 
 bool Storage::disconnectDataStoreSlot(QObject *receiver, const char *slot)
 {
-    return disconnect(this,SIGNAL(dataStoreSignal()),receiver,slot);
+    return disconnect(this,SIGNAL(dataStoreSignal(void *)),receiver,slot);
 }
 
 bool Storage::disconnectDataStoreErrorSlot(QObject *receiver, const char *slot)

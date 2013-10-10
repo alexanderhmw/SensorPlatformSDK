@@ -2,10 +2,9 @@
 #define URG_H
 
 #include"urgdef.h"
-#include<FuncLibrary\sensorfunc.h>
-#include<FuncLibrary\storagefunc.h>
-#include<FuncLibrary\sensorwidgetfunc.h>
 #include<omp.h>
 #include<xmlparamsloader.h>
+
+#define URGMAXSIZE 1081
 
 #endif // URG_H

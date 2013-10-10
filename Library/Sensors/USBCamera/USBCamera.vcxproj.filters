@@ -28,6 +28,18 @@
     <ClCompile Include="usbcamera.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="usbcamerasensor.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="usbcamerastorage.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="usbcamerasensorwidget.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="usbcamerastoragewidget.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="usbcamera.h">

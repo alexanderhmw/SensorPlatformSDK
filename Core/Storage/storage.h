@@ -16,7 +16,7 @@ protected:
 protected:
 	typedef bool (*openStorageFptr)(void * params, void * sensorparams);
 	openStorageFptr openStorage;
-	typedef int (*storeDataFptr)(void * params, void * data);
+	typedef bool (*storeDataFptr)(void * params, void * data);
 	storeDataFptr storeData;
 	typedef bool (*closeStorageFptr)(void * params);
 	closeStorageFptr closeStorage;
@@ -25,9 +25,9 @@ public slots:
 	void storeDataSlot(void * data);
 	void closeStorageSlot();
 signals:
-	void storageOpenSignal();
+	void storageOpenSignal(void * params);
 	void storageOpenErrorSignal();
-	void dataStoreSignal(int bytesize);
+	void dataStoreSignal(void * data);
 	void dataStoreErrorSignal();
 	void storageCloseSignal();
 	void storageCloseErrorSignal();

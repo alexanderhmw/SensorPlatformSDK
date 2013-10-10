@@ -130,6 +130,10 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="usbcamera.cpp" />
+    <ClCompile Include="usbcamerasensor.cpp" />
+    <ClCompile Include="usbcamerasensorwidget.cpp" />
+    <ClCompile Include="usbcamerastorage.cpp" />
+    <ClCompile Include="usbcamerastoragewidget.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="usbcamera.h" />

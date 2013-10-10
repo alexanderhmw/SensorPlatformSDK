@@ -131,6 +131,10 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="urg.cpp" />
+    <ClCompile Include="urgsensor.cpp" />
+    <ClCompile Include="urgsensorwidget.cpp" />
+    <ClCompile Include="urgstorage.cpp" />
+    <ClCompile Include="urgstoragewidget.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="urgdef.h" />

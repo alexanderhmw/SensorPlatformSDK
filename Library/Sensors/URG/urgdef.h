@@ -10,6 +10,7 @@
 #include <qboxlayout.h>
 #include<qlabel.h>
 #include<qlineedit.h>
+#include<qcheckbox.h>
 
 struct URG_EXPORT URGPARAMS
 {
@@ -43,6 +44,15 @@ struct URG_EXPORT URGWIDGETS
 {
 	QLabel label;
 	QLabel status;
+	QLineEdit framenum;
+	QLineEdit info;
+};
+
+struct URG_EXPORT URGSTORAGEWIDGETS
+{
+	QLabel label;
+	QLabel status;
+	QLineEdit filename;
 	QLineEdit framenum;
 	QLineEdit info;
 };
