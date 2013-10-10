@@ -39,7 +39,9 @@ protected:
 public:
 	void * getParams();
 protected:
-	typedef bool (*loadParamsFptr)(QString configfilename,QString nodetype, QString & nodeclass, QString nodename, void ** params);
+	typedef void (*setNodeClassPtr)(QString & nodeclass);
+	setNodeClassPtr setNodeClass;
+	typedef bool (*loadParamsFptr)(QString configfilename,QString nodetype, QString nodeclass, QString nodename, void ** params);
 	loadParamsFptr loadParams;
 	typedef void (*releaseParamsFptr)(void ** params);
 	releaseParamsFptr releaseParams;

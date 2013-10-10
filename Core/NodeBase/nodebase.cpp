@@ -7,6 +7,7 @@ NodeBase::NodeBase(QString libraryname, QString nodetype, QString nodename)
 	_nodename=nodename;
 	if(_library.load())
 	{
+		FptrLoadCheck(setNodeClassPtr,setNodeClass,_library);
 		FptrLoadCheckType(loadParamsFptr,loadParams,_library,_nodetype);
 		FptrLoadCheckType(releaseParamsFptr,releaseParams,_library,_nodetype);
 	}
@@ -15,6 +16,7 @@ NodeBase::NodeBase(QString libraryname, QString nodetype, QString nodename)
 		QMessageBox::information(NULL,QString("Node Error"),QString("Share Library %1 missing").arg(_library.fileName()));
 		exit(0);
 	}
+	setNodeClass(_nodeclass);
 	_params=NULL;
 }
 

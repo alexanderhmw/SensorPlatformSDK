@@ -27,5 +27,8 @@
     <ClInclude Include="storagewidgetfunc.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="nodebasefunc.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

@@ -1,10 +1,9 @@
 #include"usbcamera.h"
 #include<FuncLibrary\storagefunc.h>
 
-bool loadParamsStorage(QString configfilename,QString nodetype, QString & nodeclass, QString nodename, void ** params)
+bool loadParamsStorage(QString configfilename,QString nodetype, QString nodeclass, QString nodename, void ** params)
 {
 	XMLParamsLoader loader;
-	nodeclass=QString("USBCamera");
 	if(!loader.loadParams(configfilename,nodetype,nodeclass,nodename))
 	{
 		return 0;

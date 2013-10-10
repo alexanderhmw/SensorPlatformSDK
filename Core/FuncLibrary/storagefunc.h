@@ -4,7 +4,7 @@
 #include <QtCore/qglobal.h>
 #include<qstring.h>
 
-extern "C" Q_DECL_EXPORT bool loadParamsStorage(QString configfilename,QString nodetype, QString & nodeclass, QString nodename, void ** params);
+extern "C" Q_DECL_EXPORT bool loadParamsStorage(QString configfilename,QString nodetype, QString nodeclass, QString nodename, void ** params);
 extern "C" Q_DECL_EXPORT void releaseParamsStorage(void ** params);
 
 extern "C" Q_DECL_EXPORT bool openStorage(void * params, void * sensorparams);

@@ -1,4 +1,4 @@
-﻿Build started 2013/10/10 15:58:59.
+﻿Build started 2013/10/10 17:46:39.
      1>Project "C:\PossDemo\GitHub\HMW-Alexander\SensorPlatformSDK\Core\FuncLibrary\FuncLibrary.vcxproj" on node 3 (rebuild target(s)).
      1>_PrepareForClean:
          Deleting file "x64\Debug\FuncLibrary.lastbuildstate".
@@ -11,4 +11,4 @@
 
 Build succeeded.
 
-Time Elapsed 00:00:00.02
+Time Elapsed 00:00:00.04
