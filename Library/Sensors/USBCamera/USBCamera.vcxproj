@@ -57,8 +57,8 @@
     <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(SolutionDir)$(Platform)\$(Configuration)\</OutDir>
     <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(SolutionDir)$(Platform)\$(Configuration)\</OutDir>
     <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(SolutionDir)$(Platform)\$(Configuration)\</OutDir>
-    <IncludePath Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\PossDemo\GitHub\HMW-Alexander\SensorPlatformSDK\Core;C:\PossDemo\GitHub\HMW-Alexander\SensorPlatformSDK\Common\XMLParamsLoader;C:\SDK\OpenCV\opencv\build\include;$(IncludePath)</IncludePath>
-    <LibraryPath Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\SDK\OpenCV\opencv\build\x64\vc10\lib;C:\PossDemo\GitHub\HMW-Alexander\SensorPlatformSDK\Common\x64\Debug;$(LibraryPath)</LibraryPath>
+    <IncludePath Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">..\..\..\Core;..\..\..\Common;D:\SDK\OpenCV\opencv\build\include;$(IncludePath)</IncludePath>
+    <LibraryPath Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\SDK\OpenCV\opencv\build\x64\vc10\lib;..\..\..\Common\x64\Debug;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
@@ -137,7 +137,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="usbcamera.h" />
-    <ClInclude Include="usbcameradef.h" />
+    <ClInclude Include="usbcamera_def.h" />
     <ClInclude Include="usbcamera_global.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

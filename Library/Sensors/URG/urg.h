@@ -1,9 +1,10 @@
 #ifndef URG_H
 #define URG_H
 
-#include"urgdef.h"
+#include"urg_def.h"
+#include<XMLParamsLoader\xmlparamsloader.h>
+
 #include<omp.h>
-#include<xmlparamsloader.h>
 
 #define URGMAXSIZE 1081
 

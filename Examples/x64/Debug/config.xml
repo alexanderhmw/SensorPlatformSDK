@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Cameras>
+	<Sensor Class="USBCamera" Name="camera0">
+		<deviceid ValueType="Value" DataType="int">
+			<Default>0</Default>
+		</deviceid>
+		<width ValueType="Value" DataType="int">
+			<Default>640</Default>
+		</width>
+		<height ValueType="Value" DataType="int">
+			<Default>480</Default>
+		</height>
+	</Sensor>
+	<Storage Class="USBCamera" Name="camera0">
+		<fps Valuetype="Value" DataType="double">
+			<Default>20</Default>
+		</fps>
+		<storagepath ValueType="Value" DataType="string">
+			<Default>D:\WorkStation\Data</Default>
+		</storagepath>
+		<extension ValueType="Value" DataType="string">
+			<Default>mpeg</Default>
+		</extension>
+	</Storage>
+	<Sensor Class="USBCamera" Name="camera1">
+		<deviceid ValueType="Value" DataType="int">
+			<Default>1</Default>
+		</deviceid>
+		<width ValueType="Value" DataType="int">
+			<Default>640</Default>
+		</width>
+		<height ValueType="Value" DataType="int">
+			<Default>480</Default>
+		</height>
+	</Sensor>
+	<Storage Class="USBCamera" Name="camera1">
+		<fps Valuetype="Value" DataType="double">
+			<Default>20</Default>
+		</fps>
+		<storagepath ValueType="Value" DataType="string">
+			<Default>D:\data\urg</Default>
+		</storagepath>
+		<extension ValueType="Value" DataType="string">
+			<Default>mpeg</Default>
+		</extension>
+	</Storage>
+	<Sensor Class="URG" Name="urg">
+		<connection_type ValueType="Options" DataType="urg_connection_type_t">
+			<URG_SERIAL>0</URG_SERIAL>
+			<URG_ETHERNET>1</URG_ETHERNET>
+			<Default>0</Default>
+		</connection_type>
+		<device_or_address ValueType="Value" DataType="string">
+			<Default>COM3</Default>
+		</device_or_address>
+		<baudrate_or_port ValueType="Value" DataType="int">
+			<Default>115200</Default>
+		</baudrate_or_port>
+		<measurement_type ValueType="Options" DataType="urg_measurement_type_t">
+			<URG_DISTANCE>0</URG_DISTANCE>
+			<URG_DISTANCE_INTENSITY>1</URG_DISTANCE_INTENSITY>
+			<URG_MULTIECHO>2</URG_MULTIECHO>
+			<URG_MULTIECHO_INTENSITY>3</URG_MULTIECHO_INTENSITY>
+			<URG_STOP>4</URG_STOP>
+			<URG_UNKNOWN>5</URG_UNKNOWN>
+			<Default>0</Default>
+		</measurement_type>
+		<skip_scan ValueType="Value" DataType="int">
+			<Default>0</Default>
+		</skip_scan>
+		<first_step ValueType="Value" DataType="int">
+			<Default>-360</Default>
+		</first_step>
+		<last_step ValueType="Value" DataType="int">
+			<Default>360</Default>
+		</last_step>
+		<skip_step ValueType="Value" DataType="int">
+			<Default>2</Default>
+		</skip_step>
+	</Sensor>
+	<Storage Class="URG" Name="urg">
+		<storagepath ValueType="Value" DataType="string">
+			<Default>D:\WorkStation\Data</Default>
+		</storagepath>
+		<extension ValueType="Value" DataType="string">
+			<Default>lms</Default>
+		</extension>
+	</Storage>
+</Cameras>

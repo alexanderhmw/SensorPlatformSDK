@@ -1,7 +1,7 @@
 #ifndef USBCAMERA_H
 #define USBCAMERA_H
 
-#include"usbcameradef.h"
-#include<xmlparamsloader.h>
+#include"usbcamera_def.h"
+#include<XMLParamsLoader\xmlparamsloader.h>
 
 #endif // USBCAMERA_H

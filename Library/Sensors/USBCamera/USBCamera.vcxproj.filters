@@ -48,7 +48,7 @@
     <ClInclude Include="usbcamera_global.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="usbcameradef.h">
+    <ClInclude Include="usbcamera_def.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
