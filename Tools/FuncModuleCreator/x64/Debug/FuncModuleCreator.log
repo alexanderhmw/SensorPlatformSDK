@@ -1,0 +1,39 @@
+﻿Build started 2013/10/11 21:26:29.
+     1>Project "C:\PossDemo\GitHub\HMW-Alexander\SensorPlatformSDK\Tools\FuncModuleCreator\FuncModuleCreator.vcxproj" on node 2 (rebuild target(s)).
+     1>_PrepareForClean:
+         Deleting file "x64\Debug\FuncModuleCreator.lastbuildstate".
+       InitializeBuildStatus:
+         Creating "x64\Debug\FuncModuleCreator.unsuccessfulbuild" because "AlwaysCreate" was specified.
+       CustomBuild:
+         Rcc'ing funcmodulecreator.qrc...
+     1>RCC : warning : No resources in 'C:\PossDemo\GitHub\HMW-Alexander\SensorPlatformSDK\Tools\FuncModuleCreator\funcmodulecreator.qrc'.
+         
+         Moc'ing mainwindow.h...
+         Uic'ing mainwindow.ui...
+       ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\x86_amd64\CL.exe /c /I.\GeneratedFiles /I. /I"C:\SDK\Qt\qt-4.8.5\include" /I.\GeneratedFiles\Debug /I"C:\SDK\Qt\qt-4.8.5\include\QtCore" /I"C:\SDK\Qt\qt-4.8.5\include\QtGui" /Zi /nologo /W1 /WX- /Od /D UNICODE /D WIN32 /D QT_DLL /D QT_CORE_LIB /D QT_GUI_LIB /Gm- /EHsc /MDd /GS /fp:precise /Zc:wchar_t- /Zc:forScope /Fo"x64\Debug\\" /Fd"x64\Debug\vc100.pdb" /Gd /TP /errorReport:prompt GeneratedFiles\Debug\moc_mainwindow.cpp main.cpp mainwindow.cpp
+         moc_mainwindow.cpp
+         main.cpp
+         mainwindow.cpp
+     1>mainwindow.cpp(379): warning C4129: ')' : unrecognized character escape sequence
+     1>mainwindow.cpp(476): warning C4129: ')' : unrecognized character escape sequence
+         Generating Code...
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\x86_amd64\CL.exe /c /I.\GeneratedFiles /I. /I"C:\SDK\Qt\qt-4.8.5\include" /I.\GeneratedFiles\Debug /I"C:\SDK\Qt\qt-4.8.5\include\QtCore" /I"C:\SDK\Qt\qt-4.8.5\include\QtGui" /Zi /nologo /W1 /WX- /Od /D UNICODE /D WIN32 /D QT_DLL /D QT_CORE_LIB /D QT_GUI_LIB /Gm- /EHsc /MDd /GS /fp:precise /Zc:wchar_t- /Zc:forScope /Fo"x64\Debug\\" /Fd"x64\Debug\vc100.pdb" /Gd /TP /errorReport:prompt GeneratedFiles\qrc_funcmodulecreator.cpp
+         qrc_funcmodulecreator.cpp
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\x86_amd64\link.exe /ERRORREPORT:PROMPT /OUT:"C:\PossDemo\GitHub\HMW-Alexander\SensorPlatformSDK\Tools\x64\Debug\\FuncModuleCreator.exe" /NOLOGO /LIBPATH:"C:\SDK\Qt\qt-4.8.5\lib" qtmaind.lib QtCored4.lib QtGuid4.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"x64\Debug\FuncModuleCreator.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"C:\PossDemo\GitHub\HMW-Alexander\SensorPlatformSDK\Tools\x64\Debug\FuncModuleCreator.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\PossDemo\GitHub\HMW-Alexander\SensorPlatformSDK\Tools\x64\Debug\FuncModuleCreator.lib" /MACHINE:X64 x64\Debug\moc_mainwindow.obj
+         x64\Debug\qrc_funcmodulecreator.obj
+         x64\Debug\main.obj
+         x64\Debug\mainwindow.obj
+     1>qtmaind.lib(qtmain_win.obj) : warning LNK4099: PDB 'vc100.pdb' was not found with 'qtmaind.lib(qtmain_win.obj)' or at 'C:\PossDemo\GitHub\HMW-Alexander\SensorPlatformSDK\Tools\x64\Debug\vc100.pdb'; linking object as if no debug info
+         FuncModuleCreator.vcxproj -> C:\PossDemo\GitHub\HMW-Alexander\SensorPlatformSDK\Tools\x64\Debug\FuncModuleCreator.exe
+       Manifest:
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /outputresource:"C:\PossDemo\GitHub\HMW-Alexander\SensorPlatformSDK\Tools\x64\Debug\\FuncModuleCreator.exe;#1" /manifest x64\Debug\FuncModuleCreator.exe.intermediate.manifest
+       FinalizeBuildStatus:
+         Deleting file "x64\Debug\FuncModuleCreator.unsuccessfulbuild".
+         Touching "x64\Debug\FuncModuleCreator.lastbuildstate".
+     1>Done Building Project "C:\PossDemo\GitHub\HMW-Alexander\SensorPlatformSDK\Tools\FuncModuleCreator\FuncModuleCreator.vcxproj" (rebuild target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:04.07

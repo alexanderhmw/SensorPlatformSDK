@@ -5,14 +5,14 @@
 #include<qstring.h>
 #include<qwidget.h>
 
-extern "C" Q_DECL_EXPORT void setWidgetsSensor(QWidget * widget, void ** widgets);
-extern "C" Q_DECL_EXPORT void releaseWidgetsSensor(QWidget * widget, void ** widgets);
+extern "C" Q_DECL_EXPORT void setWidgetsSensor(QWidget * widget, void ** widgets);	//initial the widget
+extern "C" Q_DECL_EXPORT void releaseWidgetsSensor(QWidget * widget, void ** widgets);	//release the widget
 
-extern "C" Q_DECL_EXPORT void sensorOpen(void * widgets);
-extern "C" Q_DECL_EXPORT void sensorOpenError(void * widgets);
-extern "C" Q_DECL_EXPORT void dataCapture(void * widgets,void * data);
-extern "C" Q_DECL_EXPORT void dataCaptureError(void * widgets);
-extern "C" Q_DECL_EXPORT void sensorClose(void * widgets);
-extern "C" Q_DECL_EXPORT void sensorCloseError(void * widgets);
+extern "C" Q_DECL_EXPORT void sensorOpen(void * widgets);	//handle opensensor signal
+extern "C" Q_DECL_EXPORT void sensorOpenError(void * widgets);	//handle opensensorerror signal
+extern "C" Q_DECL_EXPORT void dataCapture(void * widgets,void * data);	//handle capturedata signal
+extern "C" Q_DECL_EXPORT void dataCaptureError(void * widgets);	//handle capturedataerror signal
+extern "C" Q_DECL_EXPORT void sensorClose(void * widgets);	//handle closesensor signal
+extern "C" Q_DECL_EXPORT void sensorCloseError(void * widgets);	//handle closesensorerror signal
 
 #endif

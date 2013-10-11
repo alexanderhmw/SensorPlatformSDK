@@ -1,0 +1,52 @@
+﻿Build started 2013/10/12 0:19:37.
+     1>Project "C:\PossDemo\GitHub\HMW-Alexander\SensorPlatformSDK\Library\Sensors\Xtion\Xtion.vcxproj" on node 2 (build target(s)).
+     1>InitializeBuildStatus:
+         Creating "x64\Debug\Xtion.unsuccessfulbuild" because "AlwaysCreate" was specified.
+       ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\x86_amd64\CL.exe /c /I.\GeneratedFiles /I. /I"C:\SDK\Qt\qt-4.8.5\include" /I.\GeneratedFiles\Debug /I"C:\SDK\Qt\qt-4.8.5\include\QtCore" /I"C:\SDK\Qt\qt-4.8.5\include\QtGui" /Zi /nologo /W1 /WX- /Od /D UNICODE /D WIN32 /D QT_DLL /D XTION_LIB /D QT_CORE_LIB /D QT_GUI_LIB /D _WINDLL /Gm- /EHsc /MDd /GS /fp:precise /Zc:wchar_t- /Zc:forScope /Fo"x64\Debug\\" /Fd"x64\Debug\vc100.pdb" /Gd /TP /errorReport:prompt Xtion_sensor.cpp Xtion_storage.cpp
+         Xtion_sensor.cpp
+     1>C:\SDK\OpenNI2\Include\OpenNI.h(544): warning C4805: '==' : unsafe mix of type 'OniBool' and type 'bool' in operation
+     1>C:\SDK\OpenNI2\Include\OpenNI.h(1023): warning C4805: '==' : unsafe mix of type 'int' and type 'bool' in operation
+     1>C:\SDK\OpenNI2\Include\OpenNI.h(1072): warning C4805: '==' : unsafe mix of type 'OniBool' and type 'bool' in operation
+     1>C:\SDK\OpenNI2\Include\OpenNI.h(1150): warning C4805: '==' : unsafe mix of type 'OniBool' and type 'bool' in operation
+     1>C:\SDK\OpenNI2\Include\OpenNI.h(1199): warning C4805: '==' : unsafe mix of type 'openni::Status' and type 'bool' in operation
+     1>C:\SDK\OpenNI2\Include\OpenNI.h(1452): warning C4805: '==' : unsafe mix of type 'OniBool' and type 'bool' in operation
+     1>C:\SDK\OpenNI2\Include\OpenNI.h(1537): warning C4805: '==' : unsafe mix of type 'OniBool' and type 'bool' in operation
+     1>C:\SDK\OpenNI2\Include\OpenNI.h(1579): warning C4805: '==' : unsafe mix of type 'OniBool' and type 'bool' in operation
+     1>C:\SDK\OpenNI2\Include\OpenNI.h(1618): warning C4805: '==' : unsafe mix of type 'OniBool' and type 'bool' in operation
+     1>C:\SDK\OpenNI2\Include\OpenNI.h(1744): warning C4805: '==' : unsafe mix of type 'OniBool' and type 'bool' in operation
+     1>C:\SDK\OpenNI2\Include\OpenNI.h(1858): warning C4805: '==' : unsafe mix of type 'OniBool' and type 'bool' in operation
+     1>C:\SDK\OpenNI2\Include\OpenNI.h(1865): warning C4805: '==' : unsafe mix of type 'OniBool' and type 'bool' in operation
+         Xtion_storage.cpp
+     1>C:\SDK\OpenNI2\Include\OpenNI.h(544): warning C4805: '==' : unsafe mix of type 'OniBool' and type 'bool' in operation
+     1>C:\SDK\OpenNI2\Include\OpenNI.h(1023): warning C4805: '==' : unsafe mix of type 'int' and type 'bool' in operation
+     1>C:\SDK\OpenNI2\Include\OpenNI.h(1072): warning C4805: '==' : unsafe mix of type 'OniBool' and type 'bool' in operation
+     1>C:\SDK\OpenNI2\Include\OpenNI.h(1150): warning C4805: '==' : unsafe mix of type 'OniBool' and type 'bool' in operation
+     1>C:\SDK\OpenNI2\Include\OpenNI.h(1199): warning C4805: '==' : unsafe mix of type 'openni::Status' and type 'bool' in operation
+     1>C:\SDK\OpenNI2\Include\OpenNI.h(1452): warning C4805: '==' : unsafe mix of type 'OniBool' and type 'bool' in operation
+     1>C:\SDK\OpenNI2\Include\OpenNI.h(1537): warning C4805: '==' : unsafe mix of type 'OniBool' and type 'bool' in operation
+     1>C:\SDK\OpenNI2\Include\OpenNI.h(1579): warning C4805: '==' : unsafe mix of type 'OniBool' and type 'bool' in operation
+     1>C:\SDK\OpenNI2\Include\OpenNI.h(1618): warning C4805: '==' : unsafe mix of type 'OniBool' and type 'bool' in operation
+     1>C:\SDK\OpenNI2\Include\OpenNI.h(1744): warning C4805: '==' : unsafe mix of type 'OniBool' and type 'bool' in operation
+     1>C:\SDK\OpenNI2\Include\OpenNI.h(1858): warning C4805: '==' : unsafe mix of type 'OniBool' and type 'bool' in operation
+     1>C:\SDK\OpenNI2\Include\OpenNI.h(1865): warning C4805: '==' : unsafe mix of type 'OniBool' and type 'bool' in operation
+         Generating Code...
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\x86_amd64\link.exe /ERRORREPORT:PROMPT /OUT:"C:\PossDemo\GitHub\HMW-Alexander\SensorPlatformSDK\Library\Sensors\x64\Debug\\Xtion.dll" /NOLOGO /LIBPATH:"C:\SDK\Qt\qt-4.8.5\lib" qtmaind.lib QtCored4.lib QtGuid4.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"x64\Debug\Xtion.dll.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"C:\PossDemo\GitHub\HMW-Alexander\SensorPlatformSDK\Library\Sensors\x64\Debug\Xtion.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\PossDemo\GitHub\HMW-Alexander\SensorPlatformSDK\Library\Sensors\x64\Debug\Xtion.lib" /MACHINE:X64 /DLL x64\Debug\Xtion.obj
+         x64\Debug\Xtion_sensor.obj
+         x64\Debug\Xtion_sensorwidget.obj
+         x64\Debug\Xtion_storage.obj
+         x64\Debug\Xtion_storagewidget.obj
+         LINK : C:\PossDemo\GitHub\HMW-Alexander\SensorPlatformSDK\Library\Sensors\x64\Debug\\Xtion.dll not found or not built by the last incremental link; performing full link
+            Creating library C:\PossDemo\GitHub\HMW-Alexander\SensorPlatformSDK\Library\Sensors\x64\Debug\Xtion.lib and object C:\PossDemo\GitHub\HMW-Alexander\SensorPlatformSDK\Library\Sensors\x64\Debug\Xtion.exp
+         Xtion.vcxproj -> C:\PossDemo\GitHub\HMW-Alexander\SensorPlatformSDK\Library\Sensors\x64\Debug\Xtion.dll
+       Manifest:
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /outputresource:"C:\PossDemo\GitHub\HMW-Alexander\SensorPlatformSDK\Library\Sensors\x64\Debug\\Xtion.dll;#2" /manifest x64\Debug\Xtion.dll.intermediate.manifest
+       FinalizeBuildStatus:
+         Deleting file "x64\Debug\Xtion.unsuccessfulbuild".
+         Touching "x64\Debug\Xtion.lastbuildstate".
+     1>Done Building Project "C:\PossDemo\GitHub\HMW-Alexander\SensorPlatformSDK\Library\Sensors\Xtion\Xtion.vcxproj" (build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:03.86

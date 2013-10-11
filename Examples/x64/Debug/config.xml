@@ -51,7 +51,7 @@
 			<Default>0</Default>
 		</connection_type>
 		<device_or_address ValueType="Value" DataType="string">
-			<Default>COM3</Default>
+			<Default>COM4</Default>
 		</device_or_address>
 		<baudrate_or_port ValueType="Value" DataType="int">
 			<Default>115200</Default>
@@ -80,10 +80,32 @@
 	</Sensor>
 	<Storage Class="URG" Name="urg">
 		<storagepath ValueType="Value" DataType="string">
-			<Default>D:\WorkStation\Data</Default>
+			<Default>D:\data\urg</Default>
 		</storagepath>
 		<extension ValueType="Value" DataType="string">
 			<Default>lms</Default>
+		</extension>
+	</Storage>
+	<Sensor Class="Xtion" Name="Xtion">
+		<resolutionx ValueType="Value" DataType="int">
+			<Default>640</Default>
+		</resolutionx>
+		<resolutiony ValueType="Value" DataType="int">
+			<Default>480</Default>
+		</resolutiony>
+		<fps ValueType="Value" DataType="int">
+			<Default>30</Default>
+		</fps>
+	</Sensor>
+	<Storage Class="Xtion" Name="Xtion">
+		<fps Valuetype="Value" DataType="double">
+			<Default>30</Default>
+		</fps>
+		<storagepath ValueType="Value" DataType="string">
+			<Default>D:\data\urg</Default>
+		</storagepath>
+		<extension ValueType="Value" DataType="string">
+			<Default>mpeg</Default>
 		</extension>
 	</Storage>
 </Cameras>

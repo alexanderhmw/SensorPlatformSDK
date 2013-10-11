@@ -1,0 +1,76 @@
+﻿Build started 2013/10/11 21:56:05.
+     1>Project "C:\PossDemo\GitHub\HMW-Alexander\SensorPlatformSDK\Library\Sensors\urglib\urglib.vcxproj" on node 2 (rebuild target(s)).
+     1>_PrepareForClean:
+         Deleting file "Debug\urglib.lastbuildstate".
+       PrepareForBuild:
+         Creating directory "C:\PossDemo\GitHub\HMW-Alexander\SensorPlatformSDK\Library\Sensors\Win32\Debug\".
+       InitializeBuildStatus:
+         Creating "Debug\urglib.unsuccessfulbuild" because "AlwaysCreate" was specified.
+       ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _LIB /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TC /analyze- /errorReport:prompt urg_connection.c urg_debug.c urg_ring_buffer.c urg_sensor.c urg_serial.c urg_serial_utils.c urg_serial_utils_windows.c urg_serial_windows.c urg_tcpclient.c urg_utils.c
+         urg_utils.c
+         urg_tcpclient.c
+         urg_serial_windows.c
+     1>c:\possdemo\github\hmw-alexander\sensorplatformsdk\library\sensors\urglib\urg_serial_windows.c(49): warning C4996: '_snprintf': This function or variable may be unsafe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(363) : see declaration of '_snprintf'
+         urg_serial_utils_windows.c
+     1>c:\possdemo\github\hmw-alexander\sensorplatformsdk\library\sensors\urglib\urg_serial_utils_windows.c(51): warning C4996: 'strncpy': This function or variable may be unsafe. Consider using strncpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\string.h(188) : see declaration of 'strncpy'
+     1>c:\possdemo\github\hmw-alexander\sensorplatformsdk\library\sensors\urglib\urg_serial_utils_windows.c(52): warning C4996: 'strncpy': This function or variable may be unsafe. Consider using strncpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\string.h(188) : see declaration of 'strncpy'
+     1>c:\possdemo\github\hmw-alexander\sensorplatformsdk\library\sensors\urglib\urg_serial_utils_windows.c(53): warning C4996: 'strncpy': This function or variable may be unsafe. Consider using strncpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\string.h(188) : see declaration of 'strncpy'
+     1>c:\possdemo\github\hmw-alexander\sensorplatformsdk\library\sensors\urglib\urg_serial_utils_windows.c(134): warning C4996: '_snprintf': This function or variable may be unsafe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(363) : see declaration of '_snprintf'
+         urg_serial_utils.c
+     1>c:\possdemo\github\hmw-alexander\sensorplatformsdk\library\sensors\urglib\urg_serial_utils_windows.c(51): warning C4996: 'strncpy': This function or variable may be unsafe. Consider using strncpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\string.h(188) : see declaration of 'strncpy'
+     1>c:\possdemo\github\hmw-alexander\sensorplatformsdk\library\sensors\urglib\urg_serial_utils_windows.c(52): warning C4996: 'strncpy': This function or variable may be unsafe. Consider using strncpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\string.h(188) : see declaration of 'strncpy'
+     1>c:\possdemo\github\hmw-alexander\sensorplatformsdk\library\sensors\urglib\urg_serial_utils_windows.c(53): warning C4996: 'strncpy': This function or variable may be unsafe. Consider using strncpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\string.h(188) : see declaration of 'strncpy'
+     1>c:\possdemo\github\hmw-alexander\sensorplatformsdk\library\sensors\urglib\urg_serial_utils_windows.c(134): warning C4996: '_snprintf': This function or variable may be unsafe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(363) : see declaration of '_snprintf'
+         urg_serial.c
+     1>c:\possdemo\github\hmw-alexander\sensorplatformsdk\library\sensors\urglib\urg_serial_windows.c(49): warning C4996: '_snprintf': This function or variable may be unsafe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(363) : see declaration of '_snprintf'
+         urg_sensor.c
+     1>c:\possdemo\github\hmw-alexander\sensorplatformsdk\library\sensors\urglib\urg_sensor.c(190): warning C4996: '_snprintf': This function or variable may be unsafe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(363) : see declaration of '_snprintf'
+     1>c:\possdemo\github\hmw-alexander\sensorplatformsdk\library\sensors\urglib\urg_sensor.c(853): warning C4996: '_snprintf': This function or variable may be unsafe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(363) : see declaration of '_snprintf'
+     1>c:\possdemo\github\hmw-alexander\sensorplatformsdk\library\sensors\urglib\urg_sensor.c(860): warning C4996: '_snprintf': This function or variable may be unsafe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(363) : see declaration of '_snprintf'
+         urg_ring_buffer.c
+         urg_debug.c
+         urg_connection.c
+         Generating Code...
+       Lib:
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\Lib.exe /OUT:"C:\PossDemo\GitHub\HMW-Alexander\SensorPlatformSDK\Library\Sensors\Win32\Debug\urglib.lib" /NOLOGO Debug\urg_connection.obj
+         Debug\urg_debug.obj
+         Debug\urg_ring_buffer.obj
+         Debug\urg_sensor.obj
+         Debug\urg_serial.obj
+         Debug\urg_serial_utils.obj
+         Debug\urg_serial_utils_windows.obj
+         Debug\urg_serial_windows.obj
+         Debug\urg_tcpclient.obj
+         Debug\urg_utils.obj
+     1>urg_serial_utils.obj : warning LNK4006: _urg_serial_find_port already defined in urg_serial_utils_windows.obj; second definition ignored
+     1>urg_serial_utils.obj : warning LNK4006: _urg_serial_port_name already defined in urg_serial_utils_windows.obj; second definition ignored
+     1>urg_serial_utils.obj : warning LNK4006: _urg_serial_is_urg_port already defined in urg_serial_utils_windows.obj; second definition ignored
+     1>urg_serial_utils.obj : warning LNK4221: This object file does not define any previously undefined public symbols, so it will not be used by any link operation that consumes this library
+     1>urg_serial.obj : warning LNK4006: _serial_open already defined in urg_serial_windows.obj; second definition ignored
+     1>urg_serial.obj : warning LNK4006: _serial_close already defined in urg_serial_windows.obj; second definition ignored
+     1>urg_serial.obj : warning LNK4006: _serial_set_baudrate already defined in urg_serial_windows.obj; second definition ignored
+     1>urg_serial.obj : warning LNK4006: _serial_write already defined in urg_serial_windows.obj; second definition ignored
+     1>urg_serial.obj : warning LNK4006: _serial_read already defined in urg_serial_windows.obj; second definition ignored
+         urglib.vcxproj -> C:\PossDemo\GitHub\HMW-Alexander\SensorPlatformSDK\Library\Sensors\Win32\Debug\urglib.lib
+       FinalizeBuildStatus:
+         Deleting file "Debug\urglib.unsuccessfulbuild".
+         Touching "Debug\urglib.lastbuildstate".
+     1>Done Building Project "C:\PossDemo\GitHub\HMW-Alexander\SensorPlatformSDK\Library\Sensors\urglib\urglib.vcxproj" (rebuild target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:02.82

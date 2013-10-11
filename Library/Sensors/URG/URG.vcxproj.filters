@@ -25,30 +25,27 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="urg.cpp">
+    <ClCompile Include="URG.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="urgsensor.cpp">
+    <ClCompile Include="URG_sensor.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="urgsensorwidget.cpp">
+    <ClCompile Include="URG_sensorwidget.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="urgstorage.cpp">
+    <ClCompile Include="URG_storage.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="urgstoragewidget.cpp">
+    <ClCompile Include="URG_storagewidget.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="urg.h">
+    <ClInclude Include="URG.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="urg_global.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="urg_def.h">
+    <ClInclude Include="URG_def.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

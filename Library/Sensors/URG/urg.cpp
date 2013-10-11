@@ -1,11 +1,13 @@
-#include "urg.h"
+#include "URG.h"
 #include<FuncLibrary\nodebasefunc.h>
 
-#pragma comment(lib, "urgd.lib")
+//Add static library below (#pragma comment(lib,"XXX.lib")
+
+#pragma comment(lib, "urglib.lib")
 #pragma comment(lib, "ws2_32.lib")
 #pragma comment(lib, "XMLParamsLoader.lib")
 
-void setNodeClass(QString & nodeclass)
+void setNodeClass(QString & nodeclass)	//Set the node class
 {
 	nodeclass=QString("URG");
 }

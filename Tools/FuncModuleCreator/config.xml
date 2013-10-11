@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FuncModule>
+	<Sensor>
+		<nodestruct>
+			<params comment="sensor parameters">SENSORPARAMS</params>
+			<data comment="sensor data">SENSORDATA</data>
+		</nodestruct>
+		<nodefunc>
+			<sensor comment="sensor function">sensorfunc.h</sensor>
+		</nodefunc>
+		<widgetstruct>
+			<widgets comment="sensor widgets">SENSORWIDGETS</widgets>
+		</widgetstruct>
+		<widgetfunc>
+			<sensorwidget comment="sensor widget function">sensorwidgetfunc.h</sensorwidget>
+		</widgetfunc>
+	</Sensor>
+	<Storage>
+		<nodestruct>
+			<params comment="storage parameters">STORAGEPARAMS</params>
+		</nodestruct>
+		<nodefunc>
+			<storage comment="storage function">storagefunc.h</storage>
+		</nodefunc>
+		<widgetstruct>
+			<widgets comment="storage widgets">STORAGEWIDGETS</widgets>
+		</widgetstruct>
+		<widgetfunc>
+			<storagewidget comment="storage widget function">storagewidgetfunc.h</storagewidget>
+		</widgetfunc>
+	</Storage>
+</FuncModule>

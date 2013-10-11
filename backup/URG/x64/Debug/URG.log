@@ -1,0 +1,38 @@
+﻿Build started 2013-10-10 22:50:08.
+     1>Project "D:\WorkStation\Research\GitHub\SensorPlatformSDK\Library\Sensors\URG\URG.vcxproj" on node 2 (rebuild target(s)).
+     1>_PrepareForClean:
+         Deleting file "x64\Debug\URG.lastbuildstate".
+       InitializeBuildStatus:
+         Creating "x64\Debug\URG.unsuccessfulbuild" because "AlwaysCreate" was specified.
+       ClCompile:
+         D:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\x86_amd64\CL.exe /c /I.\GeneratedFiles /I. /I"D:\SDK\Qt\qt-4.8.5\include" /I.\GeneratedFiles\Debug /I"D:\SDK\Qt\qt-4.8.5\include\QtCore" /I"D:\SDK\Qt\qt-4.8.5\include\QtGui" /Zi /nologo /W1 /WX- /Od /D UNICODE /D WIN32 /D QT_DLL /D QT_CORE_LIB /D URG_LIB /D QT_GUI_LIB /D _WINDLL /Gm- /EHsc /MDd /GS /fp:precise /Zc:wchar_t- /Zc:forScope /openmp /Fo"x64\Debug\\" /Fd"x64\Debug\vc100.pdb" /Gd /TP /errorReport:prompt urg.cpp urgsensor.cpp urgsensorwidget.cpp urgstorage.cpp urgstoragewidget.cpp
+         urg.cpp
+         urgsensor.cpp
+         urgsensorwidget.cpp
+         urgstorage.cpp
+         urgstoragewidget.cpp
+         Generating Code...
+       Link:
+         D:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\x86_amd64\link.exe /ERRORREPORT:PROMPT /OUT:"D:\WorkStation\Research\GitHub\SensorPlatformSDK\Library\Sensors\x64\Debug\\URG.dll" /NOLOGO /LIBPATH:"D:\SDK\Qt\qt-4.8.5\lib" qtmaind.lib QtCored4.lib QtGuid4.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"x64\Debug\URG.dll.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"D:\WorkStation\Research\GitHub\SensorPlatformSDK\Library\Sensors\x64\Debug\URG.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:\WorkStation\Research\GitHub\SensorPlatformSDK\Library\Sensors\x64\Debug\URG.lib" /MACHINE:X64 /DLL x64\Debug\urg.obj
+         x64\Debug\urgsensor.obj
+         x64\Debug\urgsensorwidget.obj
+         x64\Debug\urgstorage.obj
+         x64\Debug\urgstoragewidget.obj
+            Creating library D:\WorkStation\Research\GitHub\SensorPlatformSDK\Library\Sensors\x64\Debug\URG.lib and object D:\WorkStation\Research\GitHub\SensorPlatformSDK\Library\Sensors\x64\Debug\URG.exp
+     1>urgd.lib(urg_connection.obj) : warning LNK4099: PDB 'vcwindows7.1sdk.pdb' was not found with 'urgd.lib(urg_connection.obj)' or at 'D:\WorkStation\Research\GitHub\SensorPlatformSDK\Library\Sensors\x64\Debug\vcwindows7.1sdk.pdb'; linking object as if no debug info
+     1>urgd.lib(urg_ring_buffer.obj) : warning LNK4099: PDB 'vcwindows7.1sdk.pdb' was not found with 'urgd.lib(urg_ring_buffer.obj)' or at 'D:\WorkStation\Research\GitHub\SensorPlatformSDK\Library\Sensors\x64\Debug\vcwindows7.1sdk.pdb'; linking object as if no debug info
+     1>urgd.lib(urg_sensor.obj) : warning LNK4099: PDB 'vcwindows7.1sdk.pdb' was not found with 'urgd.lib(urg_sensor.obj)' or at 'D:\WorkStation\Research\GitHub\SensorPlatformSDK\Library\Sensors\x64\Debug\vcwindows7.1sdk.pdb'; linking object as if no debug info
+     1>urgd.lib(urg_serial.obj) : warning LNK4099: PDB 'vcwindows7.1sdk.pdb' was not found with 'urgd.lib(urg_serial.obj)' or at 'D:\WorkStation\Research\GitHub\SensorPlatformSDK\Library\Sensors\x64\Debug\vcwindows7.1sdk.pdb'; linking object as if no debug info
+     1>urgd.lib(urg_tcpclient.obj) : warning LNK4099: PDB 'vcwindows7.1sdk.pdb' was not found with 'urgd.lib(urg_tcpclient.obj)' or at 'D:\WorkStation\Research\GitHub\SensorPlatformSDK\Library\Sensors\x64\Debug\vcwindows7.1sdk.pdb'; linking object as if no debug info
+     1>XMLParamsLoader.lib(xmlparamsloader.obj) : warning LNK4099: PDB 'vc100.pdb' was not found with 'XMLParamsLoader.lib(xmlparamsloader.obj)' or at 'D:\WorkStation\Research\GitHub\SensorPlatformSDK\Library\Sensors\x64\Debug\vc100.pdb'; linking object as if no debug info
+         URG.vcxproj -> D:\WorkStation\Research\GitHub\SensorPlatformSDK\Library\Sensors\x64\Debug\URG.dll
+       Manifest:
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /outputresource:"D:\WorkStation\Research\GitHub\SensorPlatformSDK\Library\Sensors\x64\Debug\\URG.dll;#2" /manifest x64\Debug\URG.dll.intermediate.manifest
+       FinalizeBuildStatus:
+         Deleting file "x64\Debug\URG.unsuccessfulbuild".
+         Touching "x64\Debug\URG.lastbuildstate".
+     1>Done Building Project "D:\WorkStation\Research\GitHub\SensorPlatformSDK\Library\Sensors\URG\URG.vcxproj" (rebuild target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:05.53

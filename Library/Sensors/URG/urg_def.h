@@ -1,9 +1,9 @@
 #ifndef URG_DEF_H
 #define URG_DEF_H
 
-#include"urg_global.h"
-#include".\Resources\urg\urg_sensor.h"
-#include".\Resources\urg\urg_utils.h"
+#include <QtCore/qglobal.h>
+#include <urg_sensor.h>
+#include <urg_utils.h>
 #include<qdatetime.h>
 #include<qstring.h>
 #include<qfile.h>
@@ -12,7 +12,7 @@
 #include<qlineedit.h>
 #include<qcheckbox.h>
 
-struct URG_EXPORT URGPARAMS
+struct Q_DECL_EXPORT URGSENSORPARAMS	//sensor parameters
 {
 	urg_t urg;
 	urg_connection_type_t connection_type;
@@ -25,7 +25,7 @@ struct URG_EXPORT URGPARAMS
 	int skip_step;
 };
 
-struct URG_EXPORT URGDATA
+struct Q_DECL_EXPORT URGSENSORDATA	//sensor data
 {
 	long timestamp;
 	QTime qtimestamp;
@@ -33,14 +33,7 @@ struct URG_EXPORT URGDATA
 	short * data;
 };
 
-struct URG_EXPORT URGSTORAGEPARAMS
-{
-	QFile file;
-	QString storagepath;
-	QString extension;
-};
-
-struct URG_EXPORT URGWIDGETS
+struct Q_DECL_EXPORT URGSENSORWIDGETS	//sensor widgets
 {
 	QLabel label;
 	QLabel status;
@@ -48,7 +41,14 @@ struct URG_EXPORT URGWIDGETS
 	QLineEdit info;
 };
 
-struct URG_EXPORT URGSTORAGEWIDGETS
+struct Q_DECL_EXPORT URGSTORAGEPARAMS	//storage parameters
+{
+	QFile file;
+	QString storagepath;
+	QString extension;
+};
+
+struct Q_DECL_EXPORT URGSTORAGEWIDGETS	//storage widgets
 {
 	QLabel label;
 	QLabel status;
