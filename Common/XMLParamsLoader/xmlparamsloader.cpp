@@ -107,9 +107,9 @@ bool XMLParamsLoader::getParam(QString name, int & param)
 	{
 		return 0;
 	}
-	bool flag;
+	bool flag=1;
 	param=_paramcontents[index].value.back().toInt(&flag,_paramcontents[index].valuebase);
-	return 1;
+	return flag;
 }
 
 bool XMLParamsLoader::getParam(QString name, unsigned int & param)
@@ -119,9 +119,9 @@ bool XMLParamsLoader::getParam(QString name, unsigned int & param)
 	{
 		return 0;
 	}
-	bool flag;
+	bool flag=1;
 	param=_paramcontents[index].value.back().toUInt(&flag,_paramcontents[index].valuebase);
-	return 1;
+	return flag;
 }
 
 bool XMLParamsLoader::getParam(QString name, short & param)
@@ -131,9 +131,9 @@ bool XMLParamsLoader::getParam(QString name, short & param)
 	{
 		return 0;
 	}
-	bool flag;
+	bool flag=1;
 	param=_paramcontents[index].value.back().toShort(&flag,_paramcontents[index].valuebase);
-	return 1;
+	return flag;
 }
 
 bool XMLParamsLoader::getParam(QString name, unsigned short & param)
@@ -143,9 +143,9 @@ bool XMLParamsLoader::getParam(QString name, unsigned short & param)
 	{
 		return 0;
 	}
-	bool flag;
+	bool flag=1;
 	param=_paramcontents[index].value.back().toUShort(&flag,_paramcontents[index].valuebase);
-	return 1;
+	return flag;
 }
 
 bool XMLParamsLoader::getParam(QString name, long & param)
@@ -155,9 +155,9 @@ bool XMLParamsLoader::getParam(QString name, long & param)
 	{
 		return 0;
 	}
-	bool flag;
+	bool flag=1;
 	param=_paramcontents[index].value.back().toLong(&flag,_paramcontents[index].valuebase);
-	return 1;
+	return flag;
 }
 
 bool XMLParamsLoader::getParam(QString name, unsigned long & param)
@@ -167,9 +167,9 @@ bool XMLParamsLoader::getParam(QString name, unsigned long & param)
 	{
 		return 0;
 	}
-	bool flag;
+	bool flag=1;
 	param=_paramcontents[index].value.back().toULong(&flag,_paramcontents[index].valuebase);
-	return 1;
+	return flag;
 }
 
 bool XMLParamsLoader::getParam(QString name, float & param)
@@ -179,8 +179,9 @@ bool XMLParamsLoader::getParam(QString name, float & param)
 	{
 		return 0;
 	}
-	param=_paramcontents[index].value.back().toFloat();
-	return 1;
+	bool flag=1;
+	param=_paramcontents[index].value.back().toFloat(&flag);
+	return flag;
 }
 
 bool XMLParamsLoader::getParam(QString name, double & param)
@@ -190,8 +191,9 @@ bool XMLParamsLoader::getParam(QString name, double & param)
 	{
 		return 0;
 	}
-	param=_paramcontents[index].value.back().toDouble();
-	return 1;
+	bool flag=1;
+	param=_paramcontents[index].value.back().toDouble(&flag);
+	return flag;
 }
 
 bool XMLParamsLoader::getParam(QString name, std::string & param)
@@ -226,7 +228,7 @@ bool XMLParamsLoader::getParam(QString name, QByteArray & param)
 	switch(_paramcontents[index].valuebase)
 	{
 	case 10:
-		param=_paramcontents[index].value.back().toAscii();
+		param=_paramcontents[index].value.back().toUtf8();
 		break;
 	case 16:
 		{
@@ -240,12 +242,243 @@ bool XMLParamsLoader::getParam(QString name, QByteArray & param)
 			{
 				return 0;
 			}
-			param=QByteArray::fromHex(tempqstr.toAscii());
+			param=QByteArray::fromHex(tempqstr.toUtf8());
 		}		
 		break;
 	default:
 		return 0;
 		break;
+	}
+	return 1;
+}
+
+bool XMLParamsLoader::getValueNameList(QString name, QVector<QString> & valuenames)
+{
+	int index=_paramnames.indexOf(name);
+	if(index<0)
+	{
+		return 0;
+	}
+	int n=_paramcontents[index].valuename.size();
+	valuenames=_paramcontents[index].valuename.mid(0,n-1);
+	return 1;
+}
+
+bool XMLParamsLoader::getValueList(QString name, QVector<int> & values)
+{
+	int index=_paramnames.indexOf(name);
+	if(index<0)
+	{
+		return 0;
+	}
+	int n=_paramcontents[index].value.size()-1;
+	values.resize(n);
+	bool flag=1;
+	for(int i=0;i<n;i++)
+	{
+		bool tempflag;
+		values[i]=_paramcontents[index].value[i].toInt(&tempflag,_paramcontents[index].valuebase);
+		flag&=tempflag;
+	}
+	return flag;
+}
+
+bool XMLParamsLoader::getValueList(QString name, QVector<unsigned int> & values)
+{
+	int index=_paramnames.indexOf(name);
+	if(index<0)
+	{
+		return 0;
+	}
+	int n=_paramcontents[index].value.size()-1;
+	values.resize(n);
+	bool flag=1;
+	for(int i=0;i<n;i++)
+	{
+		bool tempflag;
+		values[i]=_paramcontents[index].value[i].toUInt(&tempflag,_paramcontents[index].valuebase);
+		flag&=tempflag;
+	}
+	return flag;
+}
+
+bool XMLParamsLoader::getValueList(QString name, QVector<short> & values)
+{
+	int index=_paramnames.indexOf(name);
+	if(index<0)
+	{
+		return 0;
+	}
+	int n=_paramcontents[index].value.size()-1;
+	values.resize(n);
+	bool flag=1;
+	for(int i=0;i<n;i++)
+	{
+		bool tempflag;
+		values[i]=_paramcontents[index].value[i].toShort(&tempflag,_paramcontents[index].valuebase);
+		flag&=tempflag;
+	}
+	return flag;
+}
+
+bool XMLParamsLoader::getValueList(QString name, QVector<unsigned short> & values)
+{
+	int index=_paramnames.indexOf(name);
+	if(index<0)
+	{
+		return 0;
+	}
+	int n=_paramcontents[index].value.size()-1;
+	values.resize(n);
+	bool flag=1;
+	for(int i=0;i<n;i++)
+	{
+		bool tempflag;
+		values[i]=_paramcontents[index].value[i].toUShort(&tempflag,_paramcontents[index].valuebase);
+		flag&=tempflag;
+	}
+	return flag;
+}
+
+bool XMLParamsLoader::getValueList(QString name, QVector<long> & values)
+{
+	int index=_paramnames.indexOf(name);
+	if(index<0)
+	{
+		return 0;
+	}
+	int n=_paramcontents[index].value.size()-1;
+	values.resize(n);
+	bool flag=1;
+	for(int i=0;i<n;i++)
+	{
+		bool tempflag;
+		values[i]=_paramcontents[index].value[i].toLong(&tempflag,_paramcontents[index].valuebase);
+		flag&=tempflag;
+	}
+	return flag;
+}
+
+bool XMLParamsLoader::getValueList(QString name, QVector<unsigned long> & values)
+{
+	int index=_paramnames.indexOf(name);
+	if(index<0)
+	{
+		return 0;
+	}
+	int n=_paramcontents[index].value.size()-1;
+	values.resize(n);
+	bool flag=1;
+	for(int i=0;i<n;i++)
+	{
+		bool tempflag;
+		values[i]=_paramcontents[index].value[i].toULong(&tempflag,_paramcontents[index].valuebase);
+		flag&=tempflag;
+	}
+	return flag;
+}
+
+bool XMLParamsLoader::getValueList(QString name, QVector<float> & values)
+{
+	int index=_paramnames.indexOf(name);
+	if(index<0)
+	{
+		return 0;
+	}
+	int n=_paramcontents[index].value.size()-1;
+	values.resize(n);
+	bool flag=1;
+	for(int i=0;i<n;i++)
+	{
+		bool tempflag;
+		values[i]=_paramcontents[index].value[i].toFloat(&tempflag);
+		flag&=tempflag;
+	}
+	return flag;
+}
+
+bool XMLParamsLoader::getValueList(QString name, QVector<double> & values)
+{
+	int index=_paramnames.indexOf(name);
+	if(index<0)
+	{
+		return 0;
+	}
+	int n=_paramcontents[index].value.size()-1;
+	values.resize(n);
+	bool flag=1;
+	for(int i=0;i<n;i++)
+	{
+		bool tempflag;
+		values[i]=_paramcontents[index].value[i].toDouble(&tempflag);
+		flag&=tempflag;
+	}
+	return flag;
+}
+
+bool XMLParamsLoader::getValueList(QString name, QVector<std::string> & values)
+{
+	int index=_paramnames.indexOf(name);
+	if(index<0)
+	{
+		return 0;
+	}
+	int n=_paramcontents[index].value.size()-1;
+	values.resize(n);
+	for(int i=0;i<n;i++)
+	{
+		values[i]=_paramcontents[index].value[i].toStdString();
+	}
+	return 1;
+}
+
+bool XMLParamsLoader::getValueList(QString name, QVector<QString> & values)
+{
+	int index=_paramnames.indexOf(name);
+	if(index<0)
+	{
+		return 0;
+	}
+	int n=_paramcontents[index].value.size();
+	values=_paramcontents[index].value.mid(0,n-1);
+	return 1;
+}
+
+bool XMLParamsLoader::getValueList(QString name, QVector<QByteArray> & values)
+{
+	int index=_paramnames.indexOf(name);
+	if(index<0)
+	{
+		return 0;
+	}
+	int n=_paramcontents[index].value.size()-1;
+	values.resize(n);
+	for(int i=0;i<n;i++)
+	{
+		switch(_paramcontents[index].valuebase)
+		{
+		case 10:
+			values[i]=_paramcontents[index].value[i].toUtf8();
+			break;
+		case 16:
+			{
+				QString tempqstr="0x";
+				int hexindex=_paramcontents[index].value[i].indexOf(tempqstr);
+				if(hexindex==0)
+				{
+					tempqstr=_paramcontents[index].value[i].right(_paramcontents[index].value[i].size()-2);
+				}
+				else
+				{
+					return 0;
+				}
+				values[i]=QByteArray::fromHex(tempqstr.toUtf8());
+			}		
+			break;
+		default:
+			return 0;
+			break;
+		}		
 	}
 	return 1;
 }

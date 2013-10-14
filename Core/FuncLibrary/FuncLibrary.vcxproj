@@ -113,6 +113,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="nodebasefunc.h" />
+    <ClInclude Include="processorfunc.h" />
     <ClInclude Include="sensorfunc.h" />
     <ClInclude Include="sensorwidgetfunc.h" />
     <ClInclude Include="storagewidgetfunc.h" />

@@ -1,0 +1,25 @@
+﻿Build started 2013/10/12 14:18:32.
+     1>Project "C:\PossDemo\GitHub\HMW-Alexander\SensorPlatformSDK\Core\Processor\Processor.vcxproj" on node 4 (rebuild target(s)).
+     1>_PrepareForClean:
+         Deleting file "x64\Debug\Processor.lastbuildstate".
+       InitializeBuildStatus:
+         Touching "x64\Debug\Processor.unsuccessfulbuild".
+       CustomBuild:
+         Moc'ing processor.h...
+       ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\x86_amd64\CL.exe /c /I.\GeneratedFiles /I. /I"C:\SDK\Qt\qt-4.8.5\include" /I.\GeneratedFiles\Debug /I"C:\SDK\Qt\qt-4.8.5\include\QtCore" /I"C:\SDK\Qt\qt-4.8.5\include\QtGui" /Zi /nologo /W1 /WX- /Od /D UNICODE /D WIN32 /D QT_DLL /D PROCESSOR_LIB /D QT_CORE_LIB /D QT_GUI_LIB /Gm- /EHsc /MDd /GS /fp:precise /Zc:wchar_t- /Zc:forScope /Fo"x64\Debug\\" /Fd"x64\Debug\vc100.pdb" /Gd /TP /errorReport:prompt GeneratedFiles\Debug\moc_processor.cpp processor.cpp
+         moc_processor.cpp
+         processor.cpp
+         Generating Code...
+       Lib:
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\x86_amd64\Lib.exe /OUT:"C:\PossDemo\GitHub\HMW-Alexander\SensorPlatformSDK\Core\x64\Debug\\Processor.lib" /LIBPATH:"C:\SDK\Qt\qt-4.8.5\lib" /NOLOGO x64\Debug\moc_processor.obj
+         x64\Debug\processor.obj
+         Processor.vcxproj -> C:\PossDemo\GitHub\HMW-Alexander\SensorPlatformSDK\Core\x64\Debug\Processor.lib
+       FinalizeBuildStatus:
+         Deleting file "x64\Debug\Processor.unsuccessfulbuild".
+         Touching "x64\Debug\Processor.lastbuildstate".
+     1>Done Building Project "C:\PossDemo\GitHub\HMW-Alexander\SensorPlatformSDK\Core\Processor\Processor.vcxproj" (rebuild target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:04.25

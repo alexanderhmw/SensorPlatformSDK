@@ -51,6 +51,18 @@ public:
 		}
 		return 0;
 	}
+	bool getValueNameList(QString name, QVector<QString> & valuenames);
+	bool getValueList(QString name, QVector<int> & values);
+	bool getValueList(QString name, QVector<unsigned int> & values);
+	bool getValueList(QString name, QVector<short> & values);
+	bool getValueList(QString name, QVector<unsigned short> & values);
+	bool getValueList(QString name, QVector<long> & values);
+	bool getValueList(QString name, QVector<unsigned long> & values);
+	bool getValueList(QString name, QVector<float> & values);
+	bool getValueList(QString name, QVector<double> & values);
+	bool getValueList(QString name, QVector<std::string> & values);
+	bool getValueList(QString name, QVector<QString> & values);
+	bool getValueList(QString name, QVector<QByteArray> & values);
 };
 
 #endif // XMLPARAMSLOADER_H

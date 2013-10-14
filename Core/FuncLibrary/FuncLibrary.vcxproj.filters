@@ -30,5 +30,8 @@
     <ClInclude Include="nodebasefunc.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="processorfunc.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

@@ -1,9 +1,9 @@
-﻿Build started 2013/10/10 17:46:45.
+﻿Build started 2013/10/12 14:18:41.
      1>Project "C:\PossDemo\GitHub\HMW-Alexander\SensorPlatformSDK\Core\Storage\Storage.vcxproj" on node 2 (rebuild target(s)).
      1>_PrepareForClean:
          Deleting file "x64\Debug\Storage.lastbuildstate".
        InitializeBuildStatus:
-         Creating "x64\Debug\Storage.unsuccessfulbuild" because "AlwaysCreate" was specified.
+         Touching "x64\Debug\Storage.unsuccessfulbuild".
        CustomBuild:
          Moc'ing storage.h...
          Moc'ing storagewidget.h...
@@ -27,4 +27,4 @@
 
 Build succeeded.
 
-Time Elapsed 00:00:02.74
+Time Elapsed 00:00:02.83
