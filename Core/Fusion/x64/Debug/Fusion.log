@@ -1,5 +1,5 @@
-﻿Build started 2013/10/14 11:50:41.
-     1>Project "C:\PossDemo\GitHub\HMW-Alexander\SensorPlatformSDK\Core\Fusion\Fusion.vcxproj" on node 2 (rebuild target(s)).
+﻿Build started 2013-10-15 22:36:50.
+     1>Project "D:\WorkStation\Research\GitHub\SensorPlatformSDK\Core\Fusion\Fusion.vcxproj" on node 3 (rebuild target(s)).
      1>_PrepareForClean:
          Deleting file "x64\Debug\Fusion.lastbuildstate".
        InitializeBuildStatus:
@@ -7,14 +7,19 @@
        CustomBuild:
          Moc'ing fusion.h...
        ClCompile:
-         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\x86_amd64\CL.exe /c /I.\GeneratedFiles /I. /I"C:\SDK\Qt\qt-4.8.5\include" /I.\GeneratedFiles\Debug /I"C:\SDK\Qt\qt-4.8.5\include\QtCore" /I"C:\SDK\Qt\qt-4.8.5\include\QtGui" /Zi /nologo /W1 /WX- /Od /D UNICODE /D WIN32 /D QT_DLL /D QT_CORE_LIB /D QT_GUI_LIB /D FUSION_LIB /Gm- /EHsc /MDd /GS /fp:precise /Zc:wchar_t- /Zc:forScope /Fo"x64\Debug\\" /Fd"x64\Debug\vc100.pdb" /Gd /TP /errorReport:prompt fusion.cpp GeneratedFiles\Debug\moc_fusion.cpp
+         D:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\x86_amd64\CL.exe /c /I.\GeneratedFiles /I. /I"D:\SDK\Qt\qt-4.8.5\include" /I.\GeneratedFiles\Debug /I"D:\SDK\Qt\qt-4.8.5\include\QtGui" /I"D:\SDK\Qt\qt-4.8.5\include\QtCore" /Zi /nologo /W1 /WX- /Od /D UNICODE /D WIN32 /D QT_DLL /D QT_GUI_LIB /D FUSION_LIB /D QT_CORE_LIB /Gm- /EHsc /MDd /GS /fp:precise /Zc:wchar_t- /Zc:forScope /Fo"x64\Debug\\" /Fd"x64\Debug\vc100.pdb" /Gd /TP /errorReport:prompt fusion.cpp GeneratedFiles\Debug\moc_fusion.cpp
          fusion.cpp
-     1>fusion.cpp(4): error C2511: 'Fusion::Fusion(void)' : overloaded member function not found in 'Fusion'
-                 c:\possdemo\github\hmw-alexander\sensorplatformsdk\core\fusion\fusion.h(23) : see declaration of 'Fusion'
          moc_fusion.cpp
          Generating Code...
-     1>Done Building Project "C:\PossDemo\GitHub\HMW-Alexander\SensorPlatformSDK\Core\Fusion\Fusion.vcxproj" (rebuild target(s)) -- FAILED.
+       Lib:
+         D:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\x86_amd64\Lib.exe /OUT:"D:\WorkStation\Research\GitHub\SensorPlatformSDK\Core\x64\Debug\\Fusion.lib" /LIBPATH:"D:\SDK\Qt\qt-4.8.5\lib" /NOLOGO x64\Debug\fusion.obj
+         x64\Debug\moc_fusion.obj
+         Fusion.vcxproj -> D:\WorkStation\Research\GitHub\SensorPlatformSDK\Core\x64\Debug\Fusion.lib
+       FinalizeBuildStatus:
+         Deleting file "x64\Debug\Fusion.unsuccessfulbuild".
+         Touching "x64\Debug\Fusion.lastbuildstate".
+     1>Done Building Project "D:\WorkStation\Research\GitHub\SensorPlatformSDK\Core\Fusion\Fusion.vcxproj" (rebuild target(s)).
 
-Build FAILED.
+Build succeeded.
 
-Time Elapsed 00:00:02.74
+Time Elapsed 00:00:02.36

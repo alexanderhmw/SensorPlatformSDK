@@ -3,6 +3,8 @@ Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2010
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "XMLParamsLoader", "XMLParamsLoader\XMLParamsLoader.vcxproj", "{F1A63011-F0B6-4328-B805-03720AABD295}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "GLViewer", "GLViewer\GLViewer.vcxproj", "{4B1D0CE1-8C68-4C27-AFC5-DB8748C2B8A7}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Win32 = Debug|Win32
@@ -19,6 +21,14 @@ Global
 		{F1A63011-F0B6-4328-B805-03720AABD295}.Release|Win32.Build.0 = Release|Win32
 		{F1A63011-F0B6-4328-B805-03720AABD295}.Release|x64.ActiveCfg = Release|x64
 		{F1A63011-F0B6-4328-B805-03720AABD295}.Release|x64.Build.0 = Release|x64
+		{4B1D0CE1-8C68-4C27-AFC5-DB8748C2B8A7}.Debug|Win32.ActiveCfg = Debug|Win32
+		{4B1D0CE1-8C68-4C27-AFC5-DB8748C2B8A7}.Debug|Win32.Build.0 = Debug|Win32
+		{4B1D0CE1-8C68-4C27-AFC5-DB8748C2B8A7}.Debug|x64.ActiveCfg = Debug|x64
+		{4B1D0CE1-8C68-4C27-AFC5-DB8748C2B8A7}.Debug|x64.Build.0 = Debug|x64
+		{4B1D0CE1-8C68-4C27-AFC5-DB8748C2B8A7}.Release|Win32.ActiveCfg = Release|Win32
+		{4B1D0CE1-8C68-4C27-AFC5-DB8748C2B8A7}.Release|Win32.Build.0 = Release|Win32
+		{4B1D0CE1-8C68-4C27-AFC5-DB8748C2B8A7}.Release|x64.ActiveCfg = Release|x64
+		{4B1D0CE1-8C68-4C27-AFC5-DB8748C2B8A7}.Release|x64.Build.0 = Release|x64
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

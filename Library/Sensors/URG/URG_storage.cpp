@@ -39,7 +39,7 @@ void releaseParamsStorage(void ** params)	//release params
 	}
 }
 
-bool openStorage(void * params, void * sensorparams)	//open for store
+bool openStorage(void * params, void * nodeparams)	//open for store
 {
 	URGSTORAGEPARAMS * URGparams=(URGSTORAGEPARAMS *)params;
 	if(URGparams->file.isOpen())
@@ -52,9 +52,9 @@ bool openStorage(void * params, void * sensorparams)	//open for store
 	URGparams->file.setFileName(filename);
 	if(URGparams->file.open(QFile::WriteOnly))
 	{
-		URGSENSORPARAMS * URGsensorparams=(URGSENSORPARAMS *)sensorparams;
-		float angrng=(URGsensorparams->last_step-URGsensorparams->first_step)*0.25;
-		float angres=URGsensorparams->skip_step*0.25;
+		URGSENSORPARAMS * URGnodeparams=(URGSENSORPARAMS *)nodeparams;
+		float angrng=(URGnodeparams->last_step-URGnodeparams->first_step)*0.25;
+		float angres=URGnodeparams->skip_step*0.25;
 		float unit=100.0;
 		URGparams->file.write((char *)&angrng,sizeof(angrng));
 		URGparams->file.write((char *)&angres,sizeof(angres));

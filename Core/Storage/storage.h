@@ -8,13 +8,14 @@ class Storage : public NodeBase
 	Q_OBJECT
 public:
 	Storage(NodeBase * nodebase);
+	Storage(NodeBase * nodebase, QString libraryname);
 	~Storage();
 protected:
 	NodeBase * _nodebase;
 protected:
 	bool openflag;
 protected:
-	typedef bool (*openStorageFptr)(void * params, void * sensorparams);
+	typedef bool (*openStorageFptr)(void * params, void * nodeparams);
 	openStorageFptr openStorage;
 	typedef bool (*storeDataFptr)(void * params, void * data);
 	storeDataFptr storeData;

@@ -33,5 +33,17 @@
     <ClInclude Include="processorfunc.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="fusionfunc.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="simulatorfunc.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="transmitterfunc.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="distributionfunc.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

@@ -15,6 +15,7 @@
 #include <string>
 #include <iostream>
 #include <ios>
+#include <qfileinfo.h>
 
 namespace Ui {
 class MainWindow;

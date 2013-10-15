@@ -5,13 +5,13 @@
 #include<qvector.h>
 #include<qstring.h>
 
-class InputLinker : QObject
+class InputLinker : public QObject
 {
 	Q_OBJECT
 public:
-	InputLinker();
+	InputLinker(int typeclassid,int nameid);
 	~InputLinker();
-public:
+protected:
 	int _typeclassid;
 	int _nameid;
 public slots:
@@ -29,7 +29,7 @@ public:
 protected:
 	QVector<QString> supportnodetypeclass;
 	QVector<QVector<QString>> supportnodename;
-	QVector<QVector<InputLinker>> inputlinkers;
+	QVector<QVector<InputLinker *>> inputlinkers;
 	int _inputbuffersize;
 	QVector<QVector<QVector<void *>>> inputdatabuffer;
 	QVector<void *> outputdatabuffer;
@@ -37,8 +37,8 @@ protected:
 	int curoutputdataid;
 	bool openflag;
 protected:
-	typedef void (*getSupportNodesFptr)(void * params, QVector<QString> & nodetypeclass, QVector<QVector<QString>> & nodename);
-	getSupportNodesFptr getSupportNodes;
+	typedef void (*getSupportInputNodesFptr)(void * params, QVector<QString> & nodetypeclass, QVector<QVector<QString>> & nodename);
+	getSupportInputNodesFptr getSupportInputNodes;
 	typedef bool (*openFusionFptr)(void * params);
 	openFusionFptr openFusion;
 	typedef bool (*inputDataFptr)(void * params, int typeclassid, int nameid, void * data, void ** inputdata);
@@ -64,44 +64,44 @@ signals:
 	void fusionOpenErrorSignal();
 	void dataInputSignal(int typeclassid, int nameid);
 	void dataInputErrorSignal();
-	void dataFusedSignal();
+	void dataFusedSignal(void * data);
 	void dataFusedErrorSignal();
 	void fusionCloseSignal();
 	void fusionCloseErrorSignal();
 public:
-	bool connectGenerateInputLinkersSlot(QObject * sender, const char * signal);
-	bool connectOpenProcessorSignal(QObject * sender, const char * signal);
+	bool connectGenerateInputLinkersSignal(QObject * sender, const char * signal);
+	bool connectOpenFusionSignal(QObject * sender, const char * signal);
 	bool connectInputDataSignal(NodeBase * sender, const char * signal);
 	bool connectFuseDataSignal(QObject * sender, const char * signal);
 	bool connectCloseFusionSignal(QObject * sender, const char * signal);
 
-	bool disconnectGenerateInputLinkersSlot(QObject * sender, const char * signal);
-	bool disconnectOpenProcessorSignal(QObject * sender, const char * signal);
+	bool disconnectGenerateInputLinkersSignal(QObject * sender, const char * signal);
+	bool disconnectOpenFusionSignal(QObject * sender, const char * signal);
 	bool disconnectInputDataSignal(NodeBase * sender, const char * signal);
 	bool disconnectFuseDataSignal(QObject * sender, const char * signal);
 	bool disconnectCloseFusionSignal(QObject * sender, const char * signal);
 
-	bool connectInputLinkersGeneratedSlot(QObject * receiver, const char * signal);
-	bool connectInputLinkersGeneratedErrorSlot(QObject * receiver, const char * signal);
-	bool connectFusionOpenSlot(QObject * receiver, const char * signal);
-	bool connectFusionOpenErrorSlot(QObject * receiver, const char * signal);
-	bool connectDataInputSlot(QObject * receiver, const char * signal);
-	bool connectDataInputErrorSlot(QObject * receiver, const char * signal);
-	bool connectDataFusedSlot(QObject * receiver, const char * signal);
-	bool connectDataFusedErrorSlot(QObject * receiver, const char * signal);
-	bool connectFusionCloseSlot(QObject * receiver, const char * signal);
-	bool connectFusionCloseErrorSlot(QObject * receiver, const char * signal);
+	bool connectInputLinkersGeneratedSlot(QObject * receiver, const char * slot);
+	bool connectInputLinkersGeneratedErrorSlot(QObject * receiver, const char * slot);
+	bool connectFusionOpenSlot(QObject * receiver, const char * slot);
+	bool connectFusionOpenErrorSlot(QObject * receiver, const char * slot);
+	bool connectDataInputSlot(QObject * receiver, const char * slot);
+	bool connectDataInputErrorSlot(QObject * receiver, const char * slot);
+	bool connectDataFusedSlot(QObject * receiver, const char * slot);
+	bool connectDataFusedErrorSlot(QObject * receiver, const char * slot);
+	bool connectFusionCloseSlot(QObject * receiver, const char * slot);
+	bool connectFusionCloseErrorSlot(QObject * receiver, const char * slot);
 
-	bool disconnectInputLinkersGeneratedSlot(QObject * receiver, const char * signal);
-	bool disconnectInputLinkersGeneratedErrorSlot(QObject * receiver, const char * signal);
-	bool disconnectFusionOpenSlot(QObject * receiver, const char * signal);
-	bool disconnectFusionOpenErrorSlot(QObject * receiver, const char * signal);
-	bool disconnectDataInputSlot(QObject * receiver, const char * signal);
-	bool disconnectDataInputErrorSlot(QObject * receiver, const char * signal);
-	bool disconnectDataFusedSlot(QObject * receiver, const char * signal);
-	bool disconnectDataFusedErrorSlot(QObject * receiver, const char * signal);
-	bool disconnectFusionCloseSlot(QObject * receiver, const char * signal);
-	bool disconnectFusionCloseErrorSlot(QObject * receiver, const char * signal);
+	bool disconnectInputLinkersGeneratedSlot(QObject * receiver, const char * slot);
+	bool disconnectInputLinkersGeneratedErrorSlot(QObject * receiver, const char * slot);
+	bool disconnectFusionOpenSlot(QObject * receiver, const char * slot);
+	bool disconnectFusionOpenErrorSlot(QObject * receiver, const char * slot);
+	bool disconnectDataInputSlot(QObject * receiver, const char * slot);
+	bool disconnectDataInputErrorSlot(QObject * receiver, const char * slot);
+	bool disconnectDataFusedSlot(QObject * receiver, const char * slot);
+	bool disconnectDataFusedErrorSlot(QObject * receiver, const char * slot);
+	bool disconnectFusionCloseSlot(QObject * receiver, const char * slot);
+	bool disconnectFusionCloseErrorSlot(QObject * receiver, const char * slot);
 };
 
 #endif // FUSION_H

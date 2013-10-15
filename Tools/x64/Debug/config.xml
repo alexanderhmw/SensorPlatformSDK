@@ -1,5 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <FuncModule>
+	<Distribution>
+		<nodestruct>
+			<params comment="distribution parameters">DISTRIBUTIONPARAMS</params>
+			<data comment="distribution data">DISTRIBUTIONDATA</data>
+		</nodestruct>
+		<nodefunc>
+			<distribution comment="distribution function">distributionfunc.h</distribution>
+		</nodefunc>
+	</Distribution>
+	<Fusion>
+		<nodestruct>
+			<params comment="fusion parameters">FUSIONPARAMS</params>
+			<outputdata commect="fusion outputdata">FUSIONOUTPUTDATA</outputdata>
+		</nodestruct>
+		<nodefunc>
+			<fusion comment="fusion function">fusionfunc.h</fusion>
+		</nodefunc>
+	</Fusion>
+	<Processor>
+		<nodestruct>
+			<params comment="processor parameters">PROCESSORPARAMS</params>
+			<inputdata comment="processor inputdata">PROCESSORINPUTDATA</inputdata>
+			<outputdata comment="processor outputdata">PROCESSOROUTPUTDATA</outputdata>
+		</nodestruct>
+		<nodefunc>
+			<processor comment="processor function">processorfunc.h</processor>
+		</nodefunc>
+	</Processor>
 	<Sensor>
 		<nodestruct>
 			<params comment="sensor parameters">SENSORPARAMS</params>
@@ -15,9 +43,19 @@
 			<sensorwidget comment="sensor widget function">sensorwidgetfunc.h</sensorwidget>
 		</widgetfunc>
 	</Sensor>
+	<Simulator>
+		<nodestruct>
+			<params comment="processor parameters">SIMULATORPARAMS</params>
+			<data comment="processor data">SIMULATORDATA</data>
+		</nodestruct>
+		<nodefunc>
+			<simulator comment="simulator function">simulatorfunc.h</simulator>
+		</nodefunc>
+	</Simulator>
 	<Storage>
 		<nodestruct>
 			<params comment="storage parameters">STORAGEPARAMS</params>
+			<data comment="storage data">STORAGEDATA</data>
 		</nodestruct>
 		<nodefunc>
 			<storage comment="storage function">storagefunc.h</storage>
@@ -29,4 +67,13 @@
 			<storagewidget comment="storage widget function">storagewidgetfunc.h</storagewidget>
 		</widgetfunc>
 	</Storage>
+	<Transmitter>
+		<nodestruct>
+			<params comment="transmitter parameters">TRANSMITTERPARAMS</params>
+			<data comment="transmitter data">STRANSMITTERDATA</data>
+		</nodestruct>
+		<nodefunc>
+			<transmitter comment="transmitter function">transmitterfunc.h</transmitter>
+		</nodefunc>
+	</Transmitter>
 </FuncModule>

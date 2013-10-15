@@ -40,10 +40,10 @@ void releaseParamsStorage(void ** params)	//release params
 	}
 }
 
-bool openStorage(void * params, void * sensorparams)	//open for store
+bool openStorage(void * params, void * nodeparams)	//open for store
 {
 	XTIONSTORAGEPARAMS * Xtionparams=(XTIONSTORAGEPARAMS *)params;
-	XTIONSENSORPARAMS * Xtionsensorparams=(XTIONSENSORPARAMS *)sensorparams;
+	XTIONSENSORPARAMS * Xtionnodeparams=(XTIONSENSORPARAMS *)nodeparams;
 	if(Xtionparams->depthwriter.isOpened())
 	{
 		Xtionparams->depthwriter.release();
@@ -60,7 +60,7 @@ bool openStorage(void * params, void * sensorparams)	//open for store
 	QString timestamp=datetime.toString(QString("yyyyMMdd_hhmmss_zzz"));
 	Xtionparams->depthvideofilename=QString("%1\\%2_depth.%3").arg(Xtionparams->storagepath).arg(timestamp).arg(Xtionparams->extension);
 	Xtionparams->colorvideofilename=QString("%1\\%2_color.%3").arg(Xtionparams->storagepath).arg(timestamp).arg(Xtionparams->extension);
-	cv::Size framesize(Xtionsensorparams->resolutionx,Xtionsensorparams->resolutiony);
+	cv::Size framesize(Xtionnodeparams->resolutionx,Xtionnodeparams->resolutiony);
 	if(Xtionparams->depthwriter.open(Xtionparams->depthvideofilename.toStdString(),CV_FOURCC('P','I','M','1'),Xtionparams->fps,framesize,0))
 	{
 		if(Xtionparams->colorwriter.open(Xtionparams->colorvideofilename.toStdString(),CV_FOURCC('P','I','M','1'),Xtionparams->fps,framesize))

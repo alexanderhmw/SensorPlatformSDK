@@ -8,7 +8,6 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Sensor", "Sensor\Sensor.vcx
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Storage", "Storage\Storage.vcxproj", "{16C8FFA7-6A25-430D-8CB0-9D7FE7FD03AB}"
 	ProjectSection(ProjectDependencies) = postProject
-		{505FAD3A-419D-474D-A0E7-012A7EFA6F83} = {505FAD3A-419D-474D-A0E7-012A7EFA6F83}
 		{6821BD88-9A32-4FD2-9494-A8CF54E4055F} = {6821BD88-9A32-4FD2-9494-A8CF54E4055F}
 	EndProjectSection
 EndProject
@@ -17,18 +16,36 @@ EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "FuncLibrary", "FuncLibrary\FuncLibrary.vcxproj", "{98EB94E7-5297-4251-9F3A-9BF021CA7BCE}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Processor", "Processor\Processor.vcxproj", "{8BF6C140-3509-48C5-8426-0DB5FA327F2D}"
+	ProjectSection(ProjectDependencies) = postProject
+		{6821BD88-9A32-4FD2-9494-A8CF54E4055F} = {6821BD88-9A32-4FD2-9494-A8CF54E4055F}
+	EndProjectSection
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Log", "Log\Log.vcxproj", "{45B337A8-E1AC-442A-975E-BB49CE1A4CE9}"
+	ProjectSection(ProjectDependencies) = postProject
+		{6821BD88-9A32-4FD2-9494-A8CF54E4055F} = {6821BD88-9A32-4FD2-9494-A8CF54E4055F}
+	EndProjectSection
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Simulator", "Simulator\Simulator.vcxproj", "{4D95E369-5EDE-4668-9415-0A0F4C84028A}"
+	ProjectSection(ProjectDependencies) = postProject
+		{6821BD88-9A32-4FD2-9494-A8CF54E4055F} = {6821BD88-9A32-4FD2-9494-A8CF54E4055F}
+	EndProjectSection
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Fusion", "Fusion\Fusion.vcxproj", "{CC8DA9A2-538B-49CC-A74A-8CB9B31C49E5}"
+	ProjectSection(ProjectDependencies) = postProject
+		{6821BD88-9A32-4FD2-9494-A8CF54E4055F} = {6821BD88-9A32-4FD2-9494-A8CF54E4055F}
+	EndProjectSection
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Transmitter", "Transmitter\Transmitter.vcxproj", "{360A34AE-5C9C-49BB-A2D9-5321BECA5214}"
+	ProjectSection(ProjectDependencies) = postProject
+		{6821BD88-9A32-4FD2-9494-A8CF54E4055F} = {6821BD88-9A32-4FD2-9494-A8CF54E4055F}
+	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Kernel", "Kernel", "{37AF41B0-73C2-4876-984C-3403F56C7FB1}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Distribution", "Distribution\Distribution.vcxproj", "{A04DC09A-E8D7-440E-B917-681C4D9E733A}"
+	ProjectSection(ProjectDependencies) = postProject
+		{6821BD88-9A32-4FD2-9494-A8CF54E4055F} = {6821BD88-9A32-4FD2-9494-A8CF54E4055F}
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

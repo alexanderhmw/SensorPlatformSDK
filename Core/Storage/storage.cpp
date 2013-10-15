@@ -1,10 +1,19 @@
 #include "storage.h"
 
 #pragma comment(lib,"NodeBase.lib")
-#pragma comment(lib,"Sensor.lib")
 
 Storage::Storage(NodeBase * nodebase)
 	: NodeBase(nodebase->getLibraryName(),QString("Storage"),nodebase->getNodeName())
+{
+	_nodebase=nodebase;
+	FptrLoadCheck(openStorageFptr,openStorage,_library);
+	FptrLoadCheck(storeDataFptr,storeData,_library);
+	FptrLoadCheck(closeStorageFptr,closeStorage,_library);
+	openflag=0;
+}
+
+Storage::Storage(NodeBase * nodebase, QString libraryname)
+	: NodeBase(libraryname,QString("Storage"),nodebase->getNodeName())
 {
 	_nodebase=nodebase;
 	FptrLoadCheck(openStorageFptr,openStorage,_library);
