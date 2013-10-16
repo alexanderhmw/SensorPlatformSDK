@@ -3,7 +3,7 @@
 #pragma comment(lib,"NodeBase.lib")
 
 Communicator::Communicator(QString libraryname, QString sensorname, int buffersize)
-	: NodeBase(libraryname,QString("Sensor"),sensorname)
+	: NodeBase(libraryname,QString("Communicator"),sensorname)
 {
 	FptrLoadCheck(openCommunicatorFptr,openCommunicator,_library);
 	FptrLoadCheck(receiveDataFptr,receiveData,_library);

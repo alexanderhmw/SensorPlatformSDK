@@ -1,18 +1,18 @@
-﻿Build started 2013-10-16 22:14:31.
+﻿Build started 2013-10-16 22:55:09.
      1>Project "D:\WorkStation\Research\GitHub\SensorPlatformSDK\Examples\Sensor_Storage\Sensor_Storage.vcxproj" on node 2 (build target(s)).
      1>InitializeBuildStatus:
-         Creating "x64\Debug\Sensor_Storage.unsuccessfulbuild" because "AlwaysCreate" was specified.
+         Touching "x64\Debug\Sensor_Storage.unsuccessfulbuild".
        CustomBuild:
          All outputs are up-to-date.
        ClCompile:
-         All outputs are up-to-date.
+         D:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\x86_amd64\CL.exe /c /I.\GeneratedFiles /I. /I"D:\SDK\Qt\qt-4.8.5\include" /I.\GeneratedFiles\Debug /I"D:\SDK\Qt\qt-4.8.5\include\QtCore" /I"D:\SDK\Qt\qt-4.8.5\include\QtGui" /Zi /nologo /W1 /WX- /Od /D UNICODE /D WIN32 /D QT_DLL /D QT_CORE_LIB /D QT_GUI_LIB /Gm- /EHsc /MDd /GS /fp:precise /Zc:wchar_t- /Zc:forScope /Fo"x64\Debug\\" /Fd"x64\Debug\vc100.pdb" /Gd /TP /errorReport:prompt sensor_storage.cpp
+         sensor_storage.cpp
          All outputs are up-to-date.
        Link:
          D:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\x86_amd64\link.exe /ERRORREPORT:PROMPT /OUT:"D:\WorkStation\Research\GitHub\SensorPlatformSDK\Examples\x64\Debug\\Sensor_Storage.exe" /NOLOGO /LIBPATH:"D:\SDK\Qt\qt-4.8.5\lib" qtmaind.lib QtCored4.lib QtGuid4.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"x64\Debug\Sensor_Storage.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"D:\WorkStation\Research\GitHub\SensorPlatformSDK\Examples\x64\Debug\Sensor_Storage.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:\WorkStation\Research\GitHub\SensorPlatformSDK\Examples\x64\Debug\Sensor_Storage.lib" /MACHINE:X64 x64\Debug\moc_sensor_storage.obj
          x64\Debug\qrc_sensor_storage.obj
          x64\Debug\main.obj
          x64\Debug\sensor_storage.obj
-         LINK : D:\WorkStation\Research\GitHub\SensorPlatformSDK\Examples\x64\Debug\\Sensor_Storage.exe not found or not built by the last incremental link; performing full link
      1>qtmaind.lib(qtmain_win.obj) : warning LNK4099: PDB 'vc100.pdb' was not found with 'qtmaind.lib(qtmain_win.obj)' or at 'D:\WorkStation\Research\GitHub\SensorPlatformSDK\Examples\x64\Debug\vc100.pdb'; linking object as if no debug info
          Sensor_Storage.vcxproj -> D:\WorkStation\Research\GitHub\SensorPlatformSDK\Examples\x64\Debug\Sensor_Storage.exe
        Manifest:
@@ -24,4 +24,4 @@
 
 Build succeeded.
 
-Time Elapsed 00:00:00.68
+Time Elapsed 00:00:01.58

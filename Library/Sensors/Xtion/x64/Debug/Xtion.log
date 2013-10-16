@@ -1,4 +1,4 @@
-﻿Build started 2013-10-16 22:06:03.
+﻿Build started 2013-10-16 22:45:38.
      1>Project "D:\WorkStation\Research\GitHub\SensorPlatformSDK\Library\Sensors\Xtion\Xtion.vcxproj" on node 4 (rebuild target(s)).
      1>_PrepareForClean:
          Deleting file "x64\Debug\Xtion.lastbuildstate".
@@ -85,4 +85,4 @@
 
 Build succeeded.
 
-Time Elapsed 00:00:07.62
+Time Elapsed 00:00:08.55

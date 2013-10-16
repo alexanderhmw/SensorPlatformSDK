@@ -7,6 +7,8 @@
 #include<Sensor\sensorwidget.h>
 #include<Storage\storage.h>
 #include<Storage\storagewidget.h>
+#include<Communicator\communicator.h>
+#include<Communicator\communicatorwidget.h>
 #include<qtimer.h>
 #include <qthread.h>
 #include<qfiledialog.h>
@@ -29,8 +31,11 @@ public:
 	QThread sensorthread;
 	QThread storagethread;
 
-	Sensor * sensor;
-	SensorWidget * sensorwidget;
+	//Sensor * sensor;
+	//SensorWidget * sensorwidget;
+	Communicator * sensor;
+	CommunicatorWidget * sensorwidget;
+	
 	Storage * storage;
 	StorageWidget * storagewidget;
 public slots:

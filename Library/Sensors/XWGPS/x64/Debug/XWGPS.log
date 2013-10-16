@@ -1,4 +1,4 @@
-﻿Build started 2013-10-16 22:06:10.
+﻿Build started 2013-10-16 22:45:46.
      1>Project "D:\WorkStation\Research\GitHub\SensorPlatformSDK\Library\Sensors\XWGPS\XWGPS.vcxproj" on node 3 (rebuild target(s)).
      1>_PrepareForClean:
          Deleting file "x64\Debug\XWGPS.lastbuildstate".
@@ -32,4 +32,4 @@
 
 Build succeeded.
 
-Time Elapsed 00:00:05.16
+Time Elapsed 00:00:05.04

@@ -1,5 +1,5 @@
-#ifndef SENSORWIDGET_H
-#define SENSORWIDGET_H
+#ifndef COMMUNICATORWIDGET_H
+#define COMMUNICATORWIDGET_H
 
 #include<NodeBase\nodewidgetbase.h>
 #include<Communicator\communicator.h>
