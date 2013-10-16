@@ -1,5 +1,5 @@
-﻿Build started 2013-10-15 22:36:54.
-     1>Project "D:\WorkStation\Research\GitHub\SensorPlatformSDK\Core\Sensor\Sensor.vcxproj" on node 4 (rebuild target(s)).
+﻿Build started 2013-10-16 12:22:20.
+     1>Project "D:\WorkStation\Research\GitHub\SensorPlatformSDK\Core\Sensor\Sensor.vcxproj" on node 5 (rebuild target(s)).
      1>_PrepareForClean:
          Deleting file "x64\Debug\Sensor.lastbuildstate".
        InitializeBuildStatus:
@@ -27,4 +27,4 @@
 
 Build succeeded.
 
-Time Elapsed 00:00:03.16
+Time Elapsed 00:00:03.23

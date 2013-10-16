@@ -31,12 +31,28 @@ Sensor::~Sensor()
 
 void Sensor::openSensorSlot()
 {
-	if(!openflag&&openSensor(_params))
+	QObject * trigger=NULL;
+	QString triggersignal;
+	if(!openflag&&openSensor(_params,&trigger,triggersignal))
 	{
 		openflag=1;
-		emit sensorOpenSignal();
+		if(trigger!=NULL)
+		{
+			if(connect(trigger,triggersignal.toUtf8().constData(),this,SLOT(captureDataSlot())))
+			{
+				emit sensorOpenSignal();
+			}
+			else
+			{
+				emit sensorOpenErrorSignal();
+			}
+		}
+		else
+		{
+			emit sensorOpenSignal();
+		}
 	}
-	else
+	else if(!openflag)
 	{
 		emit sensorOpenErrorSignal();
 	}
@@ -49,7 +65,7 @@ void Sensor::captureDataSlot()
 		emit dataCaptureSignal(databuffer[curdataid]);
 		curdataid=(curdataid+1)%databuffer.size();
 	}
-	else
+	else if(openflag)
 	{
 		emit dataCaptureErrorSignal();
 	}
@@ -57,12 +73,29 @@ void Sensor::captureDataSlot()
 
 void Sensor::closeSensorSlot()
 {
-	if(openflag&&closeSensor(_params))
+	QObject * trigger=NULL;
+	QString triggersignal;
+	if(openflag&&closeSensor(_params,&trigger,triggersignal))
 	{
 		openflag=0;
+		if(trigger!=NULL)
+		{
+			if(disconnect(trigger,triggersignal.toUtf8().constData(),this,SLOT(captureDataSlot())))
+			{
+				emit sensorCloseSignal();
+			}
+			else
+			{
+				emit sensorCloseErrorSignal();
+			}
+		}
+		else
+		{
+			emit sensorOpenSignal();
+		}
 		emit sensorCloseSignal();
 	}
-	else
+	else if(openflag)
 	{
 		emit sensorCloseErrorSignal();
 	}

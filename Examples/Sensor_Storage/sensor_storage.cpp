@@ -72,7 +72,7 @@ void Sensor_Storage::setSensor()
 	storage=new Storage(sensor);
 	storage->moveToThread(&storagethread);
 
-	flag&=sensor->connectCaptureDataSignal(&timer,SIGNAL(timeout()));
+//	flag&=sensor->connectCaptureDataSignal(&timer,SIGNAL(timeout()));
 	flag&=sensor->connectDataCaptureSlot(storage,SLOT(storeDataSlot(void *)));
 	flag&=sensor->connectOpenSensorSignal(ui.open,SIGNAL(clicked()));
 	flag&=sensor->connectCloseSensorSignal(ui.close,SIGNAL(clicked()));

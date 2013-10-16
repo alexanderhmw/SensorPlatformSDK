@@ -1,5 +1,5 @@
-﻿Build started 2013-10-15 13:20:05.
-     1>Project "D:\WorkStation\Research\GitHub\SensorPlatformSDK\Library\Sensors\URG\URG.vcxproj" on node 3 (rebuild target(s)).
+﻿Build started 2013-10-16 12:54:04.
+     1>Project "D:\WorkStation\Research\GitHub\SensorPlatformSDK\Library\Sensors\URG\URG.vcxproj" on node 4 (rebuild target(s)).
      1>_PrepareForClean:
          Deleting file "x64\Debug\URG.lastbuildstate".
        InitializeBuildStatus:
@@ -30,4 +30,4 @@
 
 Build succeeded.
 
-Time Elapsed 00:00:06.27
+Time Elapsed 00:00:06.13

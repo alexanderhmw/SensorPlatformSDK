@@ -45,7 +45,7 @@ void releaseParamsSensor(void ** params)	//release params
 	}
 }
 
-bool openSensor(void * params)	//open the sensor using params
+bool openSensor(void * params, QObject ** trigger, QString & triggersignal)	//open the sensor using params
 {
 	URGSENSORPARAMS * URGparams=(URGSENSORPARAMS *)params;
 	int n=urg_open(&(URGparams->urg),URGparams->connection_type,URGparams->device_or_address.toStdString().c_str(),URGparams->baudreate_or_port);
@@ -101,9 +101,9 @@ bool captureData(void * params, void ** data)	//capture data using params and st
 	return 1;
 }
 
-bool closeSensor(void * params)	//close the sensor using params
+bool closeSensor(void * params, QObject ** trigger, QString & triggersignal)	//close the sensor using params
 {
-	URGSENSORPARAMS * URGparams=(URGSENSORPARAMS *)params;
+	URGSENSORPARAMS * URGparams=(URGSENSORPARAMS *)params;	
 	urg_close(&(URGparams->urg));
 	return 1;
 }

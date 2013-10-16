@@ -15,11 +15,11 @@ protected:
 	int curdataid;
 	bool openflag;
 protected:
-	typedef bool (*openSensorFptr)(void * params);
+	typedef bool (*openSensorFptr)(void * params, QObject ** trigger, QString & triggersignal);
 	openSensorFptr openSensor;
 	typedef bool (*captureDataFptr)(void * params, void ** data);
 	captureDataFptr captureData;
-	typedef bool (*closeSensorFptr)(void * params);
+	typedef bool (*closeSensorFptr)(void * params, QObject ** trigger, QString & triggersignal);
 	closeSensorFptr closeSensor;
 	typedef void (*releaseDataFptr)(void ** data);
 	releaseDataFptr releaseData;

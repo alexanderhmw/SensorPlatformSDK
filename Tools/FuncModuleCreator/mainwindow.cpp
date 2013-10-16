@@ -227,8 +227,11 @@ void MainWindow::on_create_clicked()
             switch(level)
             {
             case 2:
-                i++;
-                flag=0;
+				if(flag)
+				{
+					i++;
+					flag=0;
+				}
                 break;
             default:
                 break;
@@ -253,7 +256,7 @@ void MainWindow::on_create_clicked()
 		
 		tempfilename=QString("%1/%2_def.h").arg(projectdir).arg(funcmodulename);
 		fileinfo.setFile(tempfilename);
-		if(fileinfo.exists()&&QMessageBox::information(this, QString("File Overwrite"),QString("%1 exists, overwrite or not?").arg(tempfilename),QMessageBox::Yes,QMessageBox::No)==QMessageBox::Yes)
+		if(!fileinfo.exists()||QMessageBox::information(this, QString("File Overwrite"),QString("%1 exists, overwrite or not?").arg(tempfilename),QMessageBox::Yes,QMessageBox::No)==QMessageBox::Yes)
 		{
 			output.setFileName(tempfilename);
 			output.open(QFile::WriteOnly | QFile::Text);
@@ -279,7 +282,7 @@ void MainWindow::on_create_clicked()
 		}
 		tempfilename=QString("%1/%2.h").arg(projectdir).arg(funcmodulename);
 		fileinfo.setFile(tempfilename);
-		if(fileinfo.exists()&&QMessageBox::information(this, QString("File Overwrite"),QString("%1 exists, overwrite or not?").arg(tempfilename),QMessageBox::Yes,QMessageBox::No)==QMessageBox::Yes)
+		if(!fileinfo.exists()||QMessageBox::information(this, QString("File Overwrite"),QString("%1 exists, overwrite or not?").arg(tempfilename),QMessageBox::Yes,QMessageBox::No)==QMessageBox::Yes)
 		{			
 			output.setFileName(tempfilename);
 			output.open(QFile::WriteOnly | QFile::Text);
@@ -288,7 +291,7 @@ void MainWindow::on_create_clicked()
 		}
 		tempfilename=QString("%1/%2.cpp").arg(projectdir).arg(funcmodulename);
 		fileinfo.setFile(tempfilename);
-		if(fileinfo.exists()&&QMessageBox::information(this, QString("File Overwrite"),QString("%1 exists, overwrite or not?").arg(tempfilename),QMessageBox::Yes,QMessageBox::No)==QMessageBox::Yes)
+		if(!fileinfo.exists()||QMessageBox::information(this, QString("File Overwrite"),QString("%1 exists, overwrite or not?").arg(tempfilename),QMessageBox::Yes,QMessageBox::No)==QMessageBox::Yes)
 		{
 			output.setFileName(tempfilename);
 			output.open(QFile::WriteOnly | QFile::Text);
@@ -336,7 +339,7 @@ void MainWindow::on_create_clicked()
 
 			tempfilename=QString("%1/%2_%3.cpp").arg(projectdir).arg(funcmodulename).arg(nodestate[i].nodefunc[j].filesuffix);
 			fileinfo.setFile(tempfilename);
-			if(fileinfo.exists()&&QMessageBox::information(this, QString("File Overwrite"),QString("%1 exists, overwrite or not?").arg(tempfilename),QMessageBox::Yes,QMessageBox::No)==QMessageBox::Yes)
+			if(!fileinfo.exists()||QMessageBox::information(this, QString("File Overwrite"),QString("%1 exists, overwrite or not?").arg(tempfilename),QMessageBox::Yes,QMessageBox::No)==QMessageBox::Yes)
 			{
 				output.setFileName(tempfilename);
 				output.open(QFile::WriteOnly | QFile::Text);
@@ -413,7 +416,7 @@ void MainWindow::on_create_clicked()
 
 				tempfilename=QString("%1/%2_%3.cpp").arg(projectdir).arg(funcmodulename).arg(nodestate[i].widgetfunc[j].filesuffix);
 				fileinfo.setFile(tempfilename);
-				if(fileinfo.exists()&&QMessageBox::information(this, QString("File Overwrite"),QString("%1 exists, overwrite or not?").arg(tempfilename),QMessageBox::Yes,QMessageBox::No)==QMessageBox::Yes)
+				if(!fileinfo.exists()||QMessageBox::information(this, QString("File Overwrite"),QString("%1 exists, overwrite or not?").arg(tempfilename),QMessageBox::Yes,QMessageBox::No)==QMessageBox::Yes)
 				{
 					output.setFileName(tempfilename);
 					output.open(QFile::WriteOnly | QFile::Text);

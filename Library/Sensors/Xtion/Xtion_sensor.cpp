@@ -40,9 +40,10 @@ void releaseParamsSensor(void ** params)	//release params
 	}
 }
 
-bool openSensor(void * params)	//open the sensor using params
+bool openSensor(void * params, QObject ** trigger, QString & triggersignal)	//open the sensor using params
 {
 	XTIONSENSORPARAMS * Xtionparams=(XTIONSENSORPARAMS *)params;
+
 	openni::Status rc;
 
 	rc = openni::OpenNI::initialize();
@@ -159,7 +160,7 @@ bool captureData(void * params, void ** data)	//capture data using params and st
 	return 1;
 }
 
-bool closeSensor(void * params)	//close the sensor using params
+bool closeSensor(void * params, QObject ** trigger, QString & triggersignal)	//close the sensor using params
 {
 	XTIONSENSORPARAMS * Xtionparams=(XTIONSENSORPARAMS *)params;
 	Xtionparams->depth.destroy();

@@ -1,18 +1,23 @@
-﻿Build started 2013-10-15 23:31:52.
-     1>Project "D:\WorkStation\Research\GitHub\SensorPlatformSDK\Tools\FuncModuleCreator\FuncModuleCreator.vcxproj" on node 2 (build target(s)).
-     1>InitializeBuildStatus:
+﻿Build started 2013-10-16 09:18:50.
+     1>Project "D:\WorkStation\Research\GitHub\SensorPlatformSDK\Tools\FuncModuleCreator\FuncModuleCreator.vcxproj" on node 2 (rebuild target(s)).
+     1>_PrepareForClean:
+         Deleting file "x64\Debug\FuncModuleCreator.lastbuildstate".
+       InitializeBuildStatus:
          Creating "x64\Debug\FuncModuleCreator.unsuccessfulbuild" because "AlwaysCreate" was specified.
        CustomBuild:
+         Rcc'ing funcmodulecreator.qrc...
+     1>RCC : warning : No resources in 'D:\WorkStation\Research\GitHub\SensorPlatformSDK\Tools\FuncModuleCreator\funcmodulecreator.qrc'.
+         
          Moc'ing mainwindow.h...
+         Uic'ing mainwindow.ui...
        ClCompile:
          D:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\x86_amd64\CL.exe /c /I.\GeneratedFiles /I. /I"D:\SDK\Qt\qt-4.8.5\include" /I.\GeneratedFiles\Debug /I"D:\SDK\Qt\qt-4.8.5\include\QtGui" /I"D:\SDK\Qt\qt-4.8.5\include\QtCore" /Zi /nologo /W1 /WX- /Od /D UNICODE /D WIN32 /D QT_DLL /D QT_GUI_LIB /D QT_CORE_LIB /Gm- /EHsc /MDd /GS /fp:precise /Zc:wchar_t- /Zc:forScope /Fo"x64\Debug\\" /Fd"x64\Debug\vc100.pdb" /Gd /TP /errorReport:prompt GeneratedFiles\Debug\moc_mainwindow.cpp main.cpp mainwindow.cpp
          moc_mainwindow.cpp
          main.cpp
          mainwindow.cpp
-     1>mainwindow.cpp(400): warning C4129: ')' : unrecognized character escape sequence
-     1>mainwindow.cpp(505): warning C4129: ')' : unrecognized character escape sequence
+     1>mainwindow.cpp(403): warning C4129: ')' : unrecognized character escape sequence
+     1>mainwindow.cpp(508): warning C4129: ')' : unrecognized character escape sequence
          Generating Code...
-         All outputs are up-to-date.
          D:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\x86_amd64\CL.exe /c /I.\GeneratedFiles /I. /I"D:\SDK\Qt\qt-4.8.5\include" /I.\GeneratedFiles\Debug /I"D:\SDK\Qt\qt-4.8.5\include\QtGui" /I"D:\SDK\Qt\qt-4.8.5\include\QtCore" /Zi /nologo /W1 /WX- /Od /D UNICODE /D WIN32 /D QT_DLL /D QT_GUI_LIB /D QT_CORE_LIB /Gm- /EHsc /MDd /GS /fp:precise /Zc:wchar_t- /Zc:forScope /Fo"x64\Debug\\" /Fd"x64\Debug\vc100.pdb" /Gd /TP /errorReport:prompt GeneratedFiles\qrc_funcmodulecreator.cpp
          qrc_funcmodulecreator.cpp
        Link:
@@ -20,7 +25,6 @@
          x64\Debug\qrc_funcmodulecreator.obj
          x64\Debug\main.obj
          x64\Debug\mainwindow.obj
-         LINK : D:\WorkStation\Research\GitHub\SensorPlatformSDK\Tools\x64\Debug\\FuncModuleCreator.exe not found or not built by the last incremental link; performing full link
      1>qtmaind.lib(qtmain_win.obj) : warning LNK4099: PDB 'vc100.pdb' was not found with 'qtmaind.lib(qtmain_win.obj)' or at 'D:\WorkStation\Research\GitHub\SensorPlatformSDK\Tools\x64\Debug\vc100.pdb'; linking object as if no debug info
          FuncModuleCreator.vcxproj -> D:\WorkStation\Research\GitHub\SensorPlatformSDK\Tools\x64\Debug\FuncModuleCreator.exe
        Manifest:
@@ -28,8 +32,8 @@
        FinalizeBuildStatus:
          Deleting file "x64\Debug\FuncModuleCreator.unsuccessfulbuild".
          Touching "x64\Debug\FuncModuleCreator.lastbuildstate".
-     1>Done Building Project "D:\WorkStation\Research\GitHub\SensorPlatformSDK\Tools\FuncModuleCreator\FuncModuleCreator.vcxproj" (build target(s)).
+     1>Done Building Project "D:\WorkStation\Research\GitHub\SensorPlatformSDK\Tools\FuncModuleCreator\FuncModuleCreator.vcxproj" (rebuild target(s)).
 
 Build succeeded.
 
-Time Elapsed 00:00:03.91
+Time Elapsed 00:00:04.01
