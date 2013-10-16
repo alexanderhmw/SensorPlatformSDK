@@ -1,5 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <FuncModule>
+	<Communicator>
+		<nodestruct>
+			<params comment="communicator parameters">COMMUNICATORPARAMS</params>
+			<receivedata comment="communicator receive data">COMMUNICATORRECEIVEDATA</receivedata>
+			<senddata comment="communicator send data">COMMUNICATORSENDDATA</senddata>
+		</nodestruct>
+		<nodefunc>
+			<communicator comment="communicator function">communicatorfunc.h</communicator>
+		</nodefunc>
+		<widgetstruct>
+			<widgets comment="communicator widgets">COMMUNICATORWIDGETS</widgets>
+		</widgetstruct>
+		<widgetfunc>
+			<communicatorwidget comment="communicator widget function">communicatorwidgetfunc.h</communicatorwidget>
+		</widgetfunc>
+	</Communicator>
 	<Distribution>
 		<nodestruct>
 			<params comment="distribution parameters">DISTRIBUTIONPARAMS</params>

@@ -6,6 +6,6 @@
 
 void setNodeClass(QString & nodeclass)	//Set the node class
 {
-	nodeclass="UDPReceiver";
+	nodeclass=QString("UDPReceiver");
 }
 

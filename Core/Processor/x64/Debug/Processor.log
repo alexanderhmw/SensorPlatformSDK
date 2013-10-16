@@ -1,4 +1,4 @@
-﻿Build started 2013-10-16 12:22:18.
+﻿Build started 2013-10-16 22:04:21.
      1>Project "D:\WorkStation\Research\GitHub\SensorPlatformSDK\Core\Processor\Processor.vcxproj" on node 4 (rebuild target(s)).
      1>_PrepareForClean:
          Deleting file "x64\Debug\Processor.lastbuildstate".
@@ -22,4 +22,4 @@
 
 Build succeeded.
 
-Time Elapsed 00:00:02.45
+Time Elapsed 00:00:03.68

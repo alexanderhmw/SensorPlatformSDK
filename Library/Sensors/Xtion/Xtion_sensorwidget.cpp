@@ -107,7 +107,7 @@ void dataCapture(void * widgets,void * data)	//handle capturedata signal
 	if(Xtionwidgets->showdepth.isChecked())
 	{
 		QImage img;
-		img = QImage((const uchar*)(Xtiondata->depth.data),Xtiondata->depth.cols,Xtiondata->depth.rows,QImage::Format_Indexed8);
+		img=QImage((const uchar*)(Xtiondata->depth.data),Xtiondata->depth.cols,Xtiondata->depth.rows,QImage::Format_Indexed8);
 		Xtionwidgets->depthimage.setPixmap(QPixmap::fromImage(img));  
 	}
 	else
@@ -117,7 +117,7 @@ void dataCapture(void * widgets,void * data)	//handle capturedata signal
 	if(Xtionwidgets->showcolor.isChecked())
 	{
 		QImage img;
-		img = QImage((const uchar*)(Xtiondata->color.data),Xtiondata->color.cols,Xtiondata->color.rows,QImage::Format_RGB888);
+		img=QImage((const uchar*)(Xtiondata->color.data),Xtiondata->color.cols,Xtiondata->color.rows,QImage::Format_RGB888);
 		Xtionwidgets->colorimage.setPixmap(QPixmap::fromImage(img));  
 	}
 	else

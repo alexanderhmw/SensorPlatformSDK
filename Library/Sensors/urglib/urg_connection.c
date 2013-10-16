@@ -14,7 +14,7 @@ int connection_open(urg_connection_t *connection,
                     urg_connection_type_t connection_type,
                     const char *device, long baudrate_or_port)
 {
-    connection->type = connection_type;
+    connection->type=connection_type;
 
     switch (connection_type) {
     case URG_SERIAL:
@@ -46,15 +46,15 @@ void connection_close(urg_connection_t *connection)
 
 int connection_set_baudrate(urg_connection_t *connection, long baudrate)
 {
-    int ret = -1;
+    int ret=-1;
 
     switch (connection->type) {
     case URG_SERIAL:
-        ret = serial_set_baudrate(&connection->serial, baudrate);
+        ret=serial_set_baudrate(&connection->serial, baudrate);
         break;
 
     case URG_ETHERNET:
-        ret = 0;
+        ret=0;
         break;
     }
 

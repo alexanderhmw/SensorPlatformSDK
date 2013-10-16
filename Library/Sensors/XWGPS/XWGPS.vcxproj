@@ -19,13 +19,15 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="datatransfer.h" />
     <ClInclude Include="XWGPS.h" />
     <ClInclude Include="XWGPS_def.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="datatransfer.cpp" />
     <ClCompile Include="XWGPS.cpp" />
-    <ClCompile Include="XWGPS_sensor.cpp" />
-    <ClCompile Include="XWGPS_sensorwidget.cpp" />
+    <ClCompile Include="XWGPS_communicator.cpp" />
+    <ClCompile Include="XWGPS_communicatorwidget.cpp" />
     <ClCompile Include="XWGPS_storage.cpp" />
     <ClCompile Include="XWGPS_storagewidget.cpp" />
   </ItemGroup>
@@ -68,7 +70,7 @@
     <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(SolutionDir)$(Platform)\$(Configuration)\</OutDir>
     <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(SolutionDir)$(Platform)\$(Configuration)\</OutDir>
     <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(SolutionDir)$(Platform)\$(Configuration)\</OutDir>
-    <IncludePath Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(SensorPlatformSDK)\Core;$(SensorPlatformSDK)\Common;$(SensorPlatformSDK)\Library\Sensors\CoordinateConvertion;$(IncludePath)</IncludePath>
+    <IncludePath Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(SensorPlatformSDK)\Core;$(SensorPlatformSDK)\Common;$(SensorPlatformSDK)\Library\Sensors\coordinateconvertionlib;$(SensorPlatformSDK)\Library\Sensors\serialportlib;$(IncludePath)</IncludePath>
     <LibraryPath Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(SensorPlatformSDK)\Common\x64\Debug;$(SensorPlatformSDK)\Library\Sensors\x64\Debug;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">

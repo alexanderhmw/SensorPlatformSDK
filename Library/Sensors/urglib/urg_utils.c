@@ -36,7 +36,7 @@ const char *urg_error(const urg_t *urg)
     } error_messages_t;
 
 
-    error_messages_t errors[] = {
+    error_messages_t errors[]={
         { URG_NO_ERROR, "no error." },
         { URG_UNKNOWN_ERROR, "unknown error." },
         { URG_NOT_CONNECTED, "not connected." },
@@ -57,10 +57,10 @@ const char *urg_error(const urg_t *urg)
         { URG_DATA_SIZE_PARAMETER_ERROR, "data size parameter error." },
     };
 
-    int n = sizeof(errors) / sizeof(errors[0]);
+    int n=sizeof(errors) / sizeof(errors[0]);
     int i;
 
-    for (i = 0; i < n; ++i) {
+    for (i=0; i < n; ++i) {
         if (errors[i].no == urg->last_errno) {
             return errors[i].message;
         }
@@ -74,12 +74,12 @@ void urg_distance_min_max(const urg_t *urg,
                           long *min_distance, long *max_distance)
 {
     if (!urg->is_active) {
-        *min_distance = 1;
-        *max_distance = 0;
+        *min_distance=1;
+        *max_distance=0;
         return;
     }
 
-    *min_distance = urg->min_distance;
+    *min_distance=urg->min_distance;
 
     // urg_set_communication_data_size() ‚ð”½‰f‚µ‚½‹——£‚ð•Ô‚·
     *max_distance =
@@ -91,13 +91,13 @@ void urg_distance_min_max(const urg_t *urg,
 void urg_step_min_max(const urg_t *urg, int *min_index, int *max_index)
 {
     if (!urg->is_active) {
-        *min_index = 1;
-        *max_index = 0;
+        *min_index=1;
+        *max_index=0;
         return;
     }
 
-    *min_index = urg->first_data_index - urg->front_data_index;
-    *max_index = urg->last_data_index - urg->front_data_index;
+    *min_index=urg->first_data_index - urg->front_data_index;
+    *max_index=urg->last_data_index - urg->front_data_index;
 }
 
 
@@ -129,8 +129,8 @@ double urg_index2rad(const urg_t *urg, int index)
         return URG_NOT_CONNECTED;
     }
 
-    actual_index = min(max(0, index), urg->last_data_index);
-    step = actual_index - urg->front_data_index + urg->received_first_index;
+    actual_index=min(max(0, index), urg->last_data_index);
+    step=actual_index - urg->front_data_index + urg->received_first_index;
     return urg_step2rad(urg, step);
 }
 
@@ -203,7 +203,7 @@ int urg_step2index(const urg_t *urg, int step)
         return URG_NOT_CONNECTED;
     }
 
-    measure_step = step - urg->received_first_index;
+    measure_step=step - urg->received_first_index;
     return min(max(0, measure_step + urg->front_data_index),
                urg->last_data_index);
 }

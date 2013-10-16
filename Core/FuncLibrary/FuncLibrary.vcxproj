@@ -112,6 +112,8 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="communicatorfunc.h" />
+    <ClInclude Include="communicatorwidgetfunc.h" />
     <ClInclude Include="distributionfunc.h" />
     <ClInclude Include="fusionfunc.h" />
     <ClInclude Include="nodebasefunc.h" />

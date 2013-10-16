@@ -31,21 +31,27 @@
     <ClInclude Include="XWGPS_def.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="datatransfer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="XWGPS.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="XWGPS_sensor.cpp">
+    <ClCompile Include="XWGPS_communicator.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="XWGPS_sensorwidget.cpp">
+    <ClCompile Include="XWGPS_communicatorwidget.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="XWGPS_storage.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="XWGPS_storagewidget.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="datatransfer.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

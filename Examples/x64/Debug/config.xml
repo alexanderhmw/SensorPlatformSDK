@@ -1,49 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Cameras>
-	<Sensor Class="USBCamera" Name="camera0">
-		<deviceid ValueType="Value" DataType="int">
-			<Default>0</Default>
-		</deviceid>
-		<width ValueType="Value" DataType="int">
-			<Default>640</Default>
-		</width>
-		<height ValueType="Value" DataType="int">
-			<Default>480</Default>
-		</height>
-	</Sensor>
-	<Storage Class="USBCamera" Name="camera0">
-		<fps Valuetype="Value" DataType="double">
-			<Default>20</Default>
-		</fps>
-		<storagepath ValueType="Value" DataType="string">
-			<Default>D:\WorkStation\Data</Default>
-		</storagepath>
-		<extension ValueType="Value" DataType="string">
-			<Default>mpeg</Default>
-		</extension>
-	</Storage>
-	<Sensor Class="USBCamera" Name="camera1">
-		<deviceid ValueType="Value" DataType="int">
-			<Default>1</Default>
-		</deviceid>
-		<width ValueType="Value" DataType="int">
-			<Default>640</Default>
-		</width>
-		<height ValueType="Value" DataType="int">
-			<Default>480</Default>
-		</height>
-	</Sensor>
-	<Storage Class="USBCamera" Name="camera1">
-		<fps Valuetype="Value" DataType="double">
-			<Default>20</Default>
-		</fps>
-		<storagepath ValueType="Value" DataType="string">
-			<Default>D:\data\urg</Default>
-		</storagepath>
-		<extension ValueType="Value" DataType="string">
-			<Default>mpeg</Default>
-		</extension>
-	</Storage>
+<Sensors>
 	<Sensor Class="URG" Name="urg">
 		<connection_type ValueType="Options" DataType="urg_connection_type_t">
 			<URG_SERIAL>0</URG_SERIAL>
@@ -80,7 +36,7 @@
 	</Sensor>
 	<Storage Class="URG" Name="urg">
 		<storagepath ValueType="Value" DataType="string">
-			<Default>D:\data\urg</Default>
+			<Default>D:\WorkStation\Data</Default>
 		</storagepath>
 		<extension ValueType="Value" DataType="string">
 			<Default>lms</Default>
@@ -99,13 +55,88 @@
 	</Sensor>
 	<Storage Class="Xtion" Name="Xtion">
 		<fps Valuetype="Value" DataType="double">
-			<Default>30</Default>
+			<Default>20</Default>
 		</fps>
 		<storagepath ValueType="Value" DataType="string">
-			<Default>D:\data\urg</Default>
+			<Default>D:\WorkStation\Data</Default>
 		</storagepath>
 		<extension ValueType="Value" DataType="string">
 			<Default>mpeg</Default>
 		</extension>
 	</Storage>
-</Cameras>
+	<Sensor Class="UDPReceiver" Name="UDPReceiver">
+		<port ValueType="Value" DataType="int">
+			<Default>7777</Default>
+		</port>
+	</Sensor>
+	<Storage Class="UDPReceiver" Name="UDPReceiver">
+		<storagepath ValueType="Value" DataType="string">
+			<Default>D:\WorkStation\Data</Default>
+		</storagepath>
+		<extension ValueType="Value" DataType="string">
+			<Default>udplog</Default>
+		</extension>
+	</Storage>
+	<Communicator Class="XWGPS" Name="XWGPS">
+		<port ValueType="Value" DataType="string">
+			<Default>COM2</Default>
+		</port>
+		<baudrate ValueType="Options" DataType="BaudRateType">
+			<BAUD9600>9600</BAUD9600>
+			<BAUD14400>14400</BAUD14400>
+			<BAUD19200>19200</BAUD19200>
+			<BAUD38400>38400</BAUD38400>
+			<BAUD56000>56000</BAUD56000>
+			<BAUD57600>57600</BAUD57600>
+			<BAUD76800>76800</BAUD76800>
+			<BAUD115200>115200</BAUD115200>
+			<Default>115200</Default>
+		</baudrate>
+		<databitstype ValueType="Options" DataType="DataBitsType">
+			<DATA_5>5</DATA_5>
+			<DATA_6>6</DATA_6>
+			<DATA_7>7</DATA_7>
+			<DATA_8>8</DATA_8>
+			<Default>8</Default>
+		</databitstype>
+		<paritytype ValueType="Options" DataType="ParityType">
+			<PAR_NONE>0</PAR_NONE>
+			<PAR_ODD>1</PAR_ODD>
+			<PAR_EVEN>2</PAR_EVEN>
+			<PAR_MARK>3</PAR_MARK>
+			<PAR_SPACE>4</PAR_SPACE>
+			<Default>0</Default>
+		</paritytype>
+		<stopbitstype ValueType="Options" DataType="StopBitsType">
+			<STOP_1>0</STOP_1>
+			<STOP_1_5>1</STOP_1_5>
+			<STOP_2>2</STOP_2>
+			<Default>0</Default>
+		</stopbitstype>
+		<flowtype ValueType="Options" DataType="FlowType">
+			<FLOW_OFF>0</FLOW_OFF>
+			<FLOW_HARDWARE>1</FLOW_HARDWARE>
+			<FLOW_XONXOFF>2</FLOW_XONXOFF>
+			<Default>0</Default>
+		</flowtype>
+		<timeout ValueType="Value" DataType="long">
+			<Default>500</Default>
+		</timeout>
+		<querymode ValueType="Options" DataType="QextSerialBase::QueryMode">
+			<Polling>0</Polling>
+			<EventDriven>1</EventDriven>
+			<Default>1</Default>
+		</querymode>
+		<recvpacksize ValueType="Value" DataType="int">
+			<Default>1</Default>
+		</recvpacksize>
+	</Communicator>
+	<Storage Class="UDPReceiver" Name="UDPReceiver">
+		<storagepath ValueType="Value" DataType="string">
+			<Default>D:\WorkStation\Data</Default>
+		</storagepath>
+		<extension ValueType="Value" DataType="string">
+			<Default>pos</Default>
+		</extension>
+	</Storage>	
+</Sensors>

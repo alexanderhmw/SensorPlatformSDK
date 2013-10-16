@@ -45,5 +45,11 @@
     <ClInclude Include="distributionfunc.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="communicatorfunc.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="communicatorwidgetfunc.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

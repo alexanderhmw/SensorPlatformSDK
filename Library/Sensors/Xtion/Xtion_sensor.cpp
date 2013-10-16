@@ -46,7 +46,7 @@ bool openSensor(void * params, QObject ** trigger, QString & triggersignal)	//op
 
 	openni::Status rc;
 
-	rc = openni::OpenNI::initialize();
+	rc=openni::OpenNI::initialize();
 
 	rc=Xtionparams->device.open(NULL);
 	if(rc!=openni::STATUS_OK)

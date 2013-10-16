@@ -1,0 +1,28 @@
+﻿Build started 2013-10-16 22:06:02.
+     1>Project "D:\WorkStation\Research\GitHub\SensorPlatformSDK\Library\Sensors\serialportlib\serialportlib.vcxproj" on node 4 (rebuild target(s)).
+     1>_PrepareForClean:
+         Deleting file "x64\Debug\serialportlib.lastbuildstate".
+       InitializeBuildStatus:
+         Creating "x64\Debug\serialportlib.unsuccessfulbuild" because "AlwaysCreate" was specified.
+       CustomBuild:
+         Moc'ing qextserialenumerator.h...
+         Moc'ing qextserialport.h...
+       ClCompile:
+         D:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\x86_amd64\CL.exe /c /I.\GeneratedFiles /I. /I"D:\SDK\Qt\qt-4.8.5\include" /I.\GeneratedFiles\Debug /I"D:\SDK\Qt\qt-4.8.5\include\QtCore" /Zi /nologo /W1 /WX- /Od /D UNICODE /D WIN32 /D QT_DLL /D QT_CORE_LIB /D SERIALPORTLIB_LIB /Gm- /EHsc /MDd /GS /fp:precise /Zc:wchar_t- /Zc:forScope /Fo"x64\Debug\\" /Fd"x64\Debug\vc100.pdb" /Gd /TP /errorReport:prompt qextserialenumerator.cpp qextserialport.cpp qextserialport_win.cpp
+         qextserialenumerator.cpp
+         qextserialport.cpp
+         qextserialport_win.cpp
+         Generating Code...
+       Lib:
+         D:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\x86_amd64\Lib.exe /OUT:"D:\WorkStation\Research\GitHub\SensorPlatformSDK\Library\Sensors\x64\Debug\\serialportlib.lib" /LIBPATH:"D:\SDK\Qt\qt-4.8.5\lib" /NOLOGO x64\Debug\qextserialenumerator.obj
+         x64\Debug\qextserialport.obj
+         x64\Debug\qextserialport_win.obj
+         serialportlib.vcxproj -> D:\WorkStation\Research\GitHub\SensorPlatformSDK\Library\Sensors\x64\Debug\serialportlib.lib
+       FinalizeBuildStatus:
+         Deleting file "x64\Debug\serialportlib.unsuccessfulbuild".
+         Touching "x64\Debug\serialportlib.lastbuildstate".
+     1>Done Building Project "D:\WorkStation\Research\GitHub\SensorPlatformSDK\Library\Sensors\serialportlib\serialportlib.vcxproj" (rebuild target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:07.85

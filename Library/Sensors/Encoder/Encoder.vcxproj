@@ -18,17 +18,6 @@
       <Platform>x64</Platform>
     </ProjectConfiguration>
   </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="Encoder.h" />
-    <ClInclude Include="Encoder_def.h" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClCompile Include="Encoder.cpp" />
-    <ClCompile Include="Encoder_sensor.cpp" />
-    <ClCompile Include="Encoder_sensorwidget.cpp" />
-    <ClCompile Include="Encoder_storage.cpp" />
-    <ClCompile Include="Encoder_storagewidget.cpp" />
-  </ItemGroup>
   <PropertyGroup Label="Globals">
     <ProjectGuid>{DB0856C1-6727-4A9E-B4C0-C62AC80252EB}</ProjectGuid>
     <Keyword>Qt4VSv1.0</Keyword>

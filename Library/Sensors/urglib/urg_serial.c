@@ -11,7 +11,7 @@
 
 
 enum {
-    False = 0,
+    False=0,
     True,
 };
 
@@ -32,33 +32,33 @@ static int is_linefeed(const char ch)
 
 static void serial_ungetc(urg_serial_t *serial, char ch)
 {
-    serial->has_last_ch = True;
-    serial->last_ch = ch;
+    serial->has_last_ch=True;
+    serial->last_ch=ch;
 }
 
 
 int serial_readline(urg_serial_t *serial, char *data, int max_size, int timeout)
 {
     /* ‚P•¶š‚¸‚Â“Ç‚İo‚µ‚Ä•]‰¿‚·‚é */
-    int filled = 0;
-    int is_timeout = 0;
+    int filled=0;
+    int is_timeout=0;
 
     while (filled < max_size) {
         char recv_ch;
-        int n = serial_read(serial, &recv_ch, 1, timeout);
+        int n=serial_read(serial, &recv_ch, 1, timeout);
         if (n <= 0) {
-            is_timeout = 1;
+            is_timeout=1;
             break;
         } else if (is_linefeed(recv_ch)) {
             break;
         }
-        data[filled++] = recv_ch;
+        data[filled++]=recv_ch;
     }
     if (filled >= max_size) {
         --filled;
         serial_ungetc(serial, data[filled]);
     }
-    data[filled] = '\0';
+    data[filled]='\0';
 
     if ((filled == 0) && is_timeout) {
         return -1;

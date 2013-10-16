@@ -54,7 +54,7 @@ void SENSORXWGPS::openSensor()
 	f_name.append(QDateTime::currentDateTime().toString("_yyyyMMdd_hhmmss"));
 	f_name.append(".log");
 
-	//fout = fopen(f_name.toAscii(),"w");
+	//fout=fopen(f_name.toAscii(),"w");
 
 	
 	fp.setFileName(f_name);
@@ -82,9 +82,9 @@ void SENSORXWGPS::openSensor()
 	return;
 }
 
-static const char *HeaderGLL = "$GPGLL" ;
-static const char *HeaderZDA = "$GPZDA" ;
-static const char *HeaderFPD = "$GPFPD" ;
+static const char *HeaderGLL="$GPGLL" ;
+static const char *HeaderZDA="$GPZDA" ;
+static const char *HeaderFPD="$GPFPD" ;
 static const char *EndGLL= "\r\n";
 static const char *Invalid=",,,";
 void SENSORXWGPS::captureData()
@@ -94,10 +94,10 @@ void SENSORXWGPS::captureData()
 		QByteArray tmp_data=serialcom.readAll();
 		XWGPS_databuf.append(tmp_data);
 
-		int startindex = XWGPS_databuf.indexOf(HeaderFPD); 
+		int startindex=XWGPS_databuf.indexOf(HeaderFPD); 
 		if(startindex>=0)
 		{
-			int endindex = XWGPS_databuf.indexOf(EndGLL,startindex);
+			int endindex=XWGPS_databuf.indexOf(EndGLL,startindex);
 			int valid= XWGPS_databuf.indexOf(Invalid,startindex);
 			if(endindex>startindex)
 			{
@@ -168,28 +168,28 @@ void SENSORXWGPS::datatransfer(int startindex, int endindex, int valid)
 	tempdata->valid=valid;
 	//if (tempdata->valid==-1) {
 	//	sscanf(tempdata->FPDdatagram.data(),"%d,%lf,%lf,%lf,%lf",&dumy,&gpstime,&heading,&pitch,&roll);
-	//	xyz[0] = xyz[1] = xyz[2] = 0;
+	//	xyz[0]=xyz[1]=xyz[2]=0;
 	//	gpsOn=false;
 	//}
 	//else
 	{
 		sscanf(tempdata->FPDdatagram.data(),"%d,%lf,%lf,%lf,%lf,%lf,%lf,%lf",&dumy,&gpstime,&heading,&pitch,&roll,
 			&lat,&lon,&altitude);
-		lbh[0] = lat;
-		lbh[1] = lon;
-		lbh[2] = altitude;
+		lbh[0]=lat;
+		lbh[1]=lon;
+		lbh[2]=altitude;
 		CCoordinateConvertion	ctest;
 		SetCoordinateParameters(_BEIJINGLOCAL);
 		ctest.GPS84LBH_LocalXYZ (lbh, xyz);
 	}
 	tempdata->gpstime=gpstime;
-	tempdata->data.ang.x = pitch*PI/180.0;
-	tempdata->data.ang.y = roll*PI/180.0;
-	tempdata->data.ang.z = -heading*PI/180.0;
-	tempdata->data.shv.y = xyz[0];
-	tempdata->data.shv.x = xyz[1];
-	tempdata->data.shv.z = xyz[2];
-	tempdata->data.gpsstatus = gpsOn?1:0;
+	tempdata->data.ang.x=pitch*PI/180.0;
+	tempdata->data.ang.y=roll*PI/180.0;
+	tempdata->data.ang.z=-heading*PI/180.0;
+	tempdata->data.shv.y=xyz[0];
+	tempdata->data.shv.x=xyz[1];
+	tempdata->data.shv.z=xyz[2];
+	tempdata->data.gpsstatus=gpsOn?1:0;
 
 
 	emit sensorCapture();

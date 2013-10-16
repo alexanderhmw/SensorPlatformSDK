@@ -1,5 +1,5 @@
-﻿Build started 2013-10-16 12:22:20.
-     1>Project "D:\WorkStation\Research\GitHub\SensorPlatformSDK\Core\Storage\Storage.vcxproj" on node 3 (rebuild target(s)).
+﻿Build started 2013-10-16 22:04:21.
+     1>Project "D:\WorkStation\Research\GitHub\SensorPlatformSDK\Core\Storage\Storage.vcxproj" on node 2 (rebuild target(s)).
      1>_PrepareForClean:
          Deleting file "x64\Debug\Storage.lastbuildstate".
        InitializeBuildStatus:
@@ -27,4 +27,4 @@
 
 Build succeeded.
 
-Time Elapsed 00:00:03.20
+Time Elapsed 00:00:03.25
