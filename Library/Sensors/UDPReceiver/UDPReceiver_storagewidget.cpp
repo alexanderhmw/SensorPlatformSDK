@@ -20,6 +20,8 @@ void setWidgetsStorage(QWidget * widget, void ** widgets)	//initial the widget
 	UDPReceiverwidgets->status.setFrameStyle(QFrame::Box);
 	UDPReceiverwidgets->status.setAlignment(Qt::AlignHCenter | Qt::AlignCenter);
 	UDPReceiverwidgets->status.setText("Standby");
+	UDPReceiverwidgets->filename.setToolTip("Filename");
+	UDPReceiverwidgets->filename.setText("No File");
 	UDPReceiverwidgets->framenum.setToolTip("Frame count");
 	UDPReceiverwidgets->framenum.setText("0");
 	UDPReceiverwidgets->info.setToolTip("Data Timestamp");

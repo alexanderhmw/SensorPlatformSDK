@@ -18,6 +18,17 @@
       <Platform>x64</Platform>
     </ProjectConfiguration>
   </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Encoder.cpp" />
+    <ClCompile Include="Encoder_communicator.cpp" />
+    <ClCompile Include="Encoder_communicatorwidget.cpp" />
+    <ClCompile Include="Encoder_storage.cpp" />
+    <ClCompile Include="Encoder_storagewidget.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Encoder.h" />
+    <ClInclude Include="Encoder_def.h" />
+  </ItemGroup>
   <PropertyGroup Label="Globals">
     <ProjectGuid>{DB0856C1-6727-4A9E-B4C0-C62AC80252EB}</ProjectGuid>
     <Keyword>Qt4VSv1.0</Keyword>
@@ -57,6 +68,8 @@
     <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(SolutionDir)$(Platform)\$(Configuration)\</OutDir>
     <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(SolutionDir)$(Platform)\$(Configuration)\</OutDir>
     <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(SolutionDir)$(Platform)\$(Configuration)\</OutDir>
+    <IncludePath Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(SensorPlatformSDK)\Core;$(SensorPlatformSDK)\Common;$(SensorPlatformSDK)\Library\Sensors\serialportlib;$(IncludePath)</IncludePath>
+    <LibraryPath Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(SensorPlatformSDK)\Common\x64\Debug;$(SensorPlatformSDK)\Library\Sensors\x64\Debug;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
@@ -131,7 +144,7 @@
   </ImportGroup>
   <ProjectExtensions>
     <VisualStudio>
-      <UserProperties UicDir=".\GeneratedFiles" MocDir=".\GeneratedFiles\$(ConfigurationName)" MocOptions="" RccDir=".\GeneratedFiles" lupdateOnBuild="0" lupdateOptions="" lreleaseOptions="" QtVersion_x0020_x64="$(DefaultQtVersion)" />
+      <UserProperties UicDir=".\GeneratedFiles" MocDir=".\GeneratedFiles\$(ConfigurationName)" MocOptions="" RccDir=".\GeneratedFiles" lupdateOnBuild="0" lupdateOptions="" lreleaseOptions="" QtVersion_x0020_x64="qt-4.8.5" />
     </VisualStudio>
   </ProjectExtensions>
 </Project>

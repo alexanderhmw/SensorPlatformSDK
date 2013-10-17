@@ -33,6 +33,7 @@ void setWidgetsStorage(QWidget * widget, void ** widgets)	//initial the widget
 
 	hlayout1->addWidget(&(URGwidgets->label));
 	hlayout1->addWidget(&(URGwidgets->status));
+	vlayout->addWidget(&(URGwidgets->filename));
 	hlayout2->addWidget(&(URGwidgets->framenum));
 	hlayout2->addWidget(&(URGwidgets->info));
 	vlayout->addLayout(hlayout1);

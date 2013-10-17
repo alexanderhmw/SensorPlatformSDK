@@ -1,0 +1,32 @@
+﻿Build started 2013/10/17 11:13:00.
+     1>Project "C:\PossDemo\GitHub\HMW-Alexander\SensorPlatformSDK\Library\Sensors\Encoder\Encoder.vcxproj" on node 4 (rebuild target(s)).
+     1>_PrepareForClean:
+         Deleting file "x64\Debug\Encoder.lastbuildstate".
+       InitializeBuildStatus:
+         Creating "x64\Debug\Encoder.unsuccessfulbuild" because "AlwaysCreate" was specified.
+       ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\x86_amd64\CL.exe /c /I.\GeneratedFiles /I. /I"C:\SDK\Qt\qt-4.8.5\include" /I.\GeneratedFiles\Debug /I"C:\SDK\Qt\qt-4.8.5\include\QtCore" /I"C:\SDK\Qt\qt-4.8.5\include\QtGui" /Zi /nologo /W1 /WX- /Od /D UNICODE /D WIN32 /D QT_DLL /D QT_CORE_LIB /D QT_GUI_LIB /D ENCODER_LIB /D _WINDLL /Gm- /EHsc /MDd /GS /fp:precise /Zc:wchar_t- /Zc:forScope /Fo"x64\Debug\\" /Fd"x64\Debug\vc100.pdb" /Gd /TP /errorReport:prompt Encoder.cpp Encoder_communicator.cpp Encoder_communicatorwidget.cpp Encoder_storage.cpp Encoder_storagewidget.cpp
+         Encoder.cpp
+         Encoder_communicator.cpp
+         Encoder_communicatorwidget.cpp
+         Encoder_storage.cpp
+         Encoder_storagewidget.cpp
+         Generating Code...
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\x86_amd64\link.exe /ERRORREPORT:PROMPT /OUT:"C:\PossDemo\GitHub\HMW-Alexander\SensorPlatformSDK\Library\Sensors\x64\Debug\\Encoder.dll" /NOLOGO /LIBPATH:"C:\SDK\Qt\qt-4.8.5\lib" qtmaind.lib QtCored4.lib QtGuid4.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"x64\Debug\Encoder.dll.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"C:\PossDemo\GitHub\HMW-Alexander\SensorPlatformSDK\Library\Sensors\x64\Debug\Encoder.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\PossDemo\GitHub\HMW-Alexander\SensorPlatformSDK\Library\Sensors\x64\Debug\Encoder.lib" /MACHINE:X64 /DLL x64\Debug\Encoder.obj
+         x64\Debug\Encoder_communicator.obj
+         x64\Debug\Encoder_communicatorwidget.obj
+         x64\Debug\Encoder_storage.obj
+         x64\Debug\Encoder_storagewidget.obj
+            Creating library C:\PossDemo\GitHub\HMW-Alexander\SensorPlatformSDK\Library\Sensors\x64\Debug\Encoder.lib and object C:\PossDemo\GitHub\HMW-Alexander\SensorPlatformSDK\Library\Sensors\x64\Debug\Encoder.exp
+         Encoder.vcxproj -> C:\PossDemo\GitHub\HMW-Alexander\SensorPlatformSDK\Library\Sensors\x64\Debug\Encoder.dll
+       Manifest:
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /outputresource:"C:\PossDemo\GitHub\HMW-Alexander\SensorPlatformSDK\Library\Sensors\x64\Debug\\Encoder.dll;#2" /manifest x64\Debug\Encoder.dll.intermediate.manifest
+       FinalizeBuildStatus:
+         Deleting file "x64\Debug\Encoder.unsuccessfulbuild".
+         Touching "x64\Debug\Encoder.lastbuildstate".
+     1>Done Building Project "C:\PossDemo\GitHub\HMW-Alexander\SensorPlatformSDK\Library\Sensors\Encoder\Encoder.vcxproj" (rebuild target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:05.98

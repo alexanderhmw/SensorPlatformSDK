@@ -29,8 +29,6 @@ bool loadParamsCommunicator(QString configfilename,QString nodetype, QString nod
 	flag&=loader.getParam("timeout",XWGPSparams->timeout);
 	flag&=loader.getEnumParam("querymode",XWGPSparams->querymode);
 	flag&=loader.getParam("recvpacksize",XWGPSparams->recvpacksize);
-	flag&=loader.getParam("packhead",XWGPSparams->packhead);
-	flag&=loader.getParam("packtail",XWGPSparams->packtail);
 	return flag;
 }
 
@@ -62,6 +60,7 @@ bool openCommunicator(void * params, QObject ** trigger, QString & triggersignal
 	XWGPSparams->serialport.setFlowControl(XWGPSparams->flowtype);
 	XWGPSparams->serialport.setTimeout(XWGPSparams->timeout);
 	XWGPSparams->serialport.setQueryMode(XWGPSparams->querymode);
+	XWGPSparams->databuffer.clear();
 	if(!(XWGPSparams->serialport.open(QIODevice::ReadWrite)))
 	{
 		return 0;

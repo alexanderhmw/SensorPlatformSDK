@@ -20,6 +20,8 @@ void setWidgetsStorage(QWidget * widget, void ** widgets)	//initial the widget
 	XWGPSwidgets->receivestatus.setFrameStyle(QFrame::Box);
 	XWGPSwidgets->receivestatus.setAlignment(Qt::AlignHCenter | Qt::AlignCenter);
 	XWGPSwidgets->receivestatus.setText("Standby");
+	XWGPSwidgets->filename.setToolTip("Filename");
+	XWGPSwidgets->filename.setText("No File");
 	XWGPSwidgets->receiveframenum.setToolTip("Frame count");
 	XWGPSwidgets->receiveframenum.setText("0");
 	XWGPSwidgets->receiveinfo.setToolTip("Data Timestamp");
@@ -33,6 +35,7 @@ void setWidgetsStorage(QWidget * widget, void ** widgets)	//initial the widget
 
 	hlayout1->addWidget(&(XWGPSwidgets->receivelabel));
 	hlayout1->addWidget(&(XWGPSwidgets->receivestatus));
+	vlayout->addWidget(&(XWGPSwidgets->filename));
 	hlayout2->addWidget(&(XWGPSwidgets->receiveframenum));
 	hlayout2->addWidget(&(XWGPSwidgets->receiveinfo));
 	vlayout->addLayout(hlayout1);
@@ -63,6 +66,7 @@ void storageOpen(void * widgets, void * params)	//handle openstorage signal
 	XWGPSSTORAGEWIDGETS * XWGPSwidgets=(XWGPSSTORAGEWIDGETS *)widgets;
 	XWGPSSTORAGEPARAMS * XWGPSparams=(XWGPSSTORAGEPARAMS *)params;
 	XWGPSwidgets->receivestatus.setText(QString("Opened"));
+	XWGPSwidgets->filename.setText(XWGPSparams->file.fileName());
 	XWGPSwidgets->receiveframenum.setText("0");
 	XWGPSwidgets->receiveinfo.setText("No Data");
 	XWGPSwidgets->receivedatagram.clear();
@@ -72,6 +76,7 @@ void storageOpenError(void * widgets)	//handle openstorageerror signal
 {
 	XWGPSSTORAGEWIDGETS * XWGPSwidgets=(XWGPSSTORAGEWIDGETS *)widgets;
 	XWGPSwidgets->receivestatus.setText(QString("Open Error"));
+	XWGPSwidgets->filename.setText("No File");
 	XWGPSwidgets->receiveframenum.setText("0");
 	XWGPSwidgets->receiveinfo.setText("No Data");
 	XWGPSwidgets->receivedatagram.clear();
@@ -104,7 +109,7 @@ void storageClose(void * widgets)	//handle closestoragesignal
 void storageCloseError(void * widgets)	//handle closestorageerror signal
 {
 	XWGPSSTORAGEWIDGETS * XWGPSwidgets=(XWGPSSTORAGEWIDGETS *)widgets;
-	XWGPSwidgets->receivestatus.setText(QString("Closed"));
+	XWGPSwidgets->receivestatus.setText(QString("Close Error"));
 }
 
 //==========================================================

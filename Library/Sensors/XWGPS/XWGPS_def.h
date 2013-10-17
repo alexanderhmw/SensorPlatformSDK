@@ -24,15 +24,13 @@ struct Q_DECL_EXPORT XWGPSCOMMUNICATORPARAMS	//communicator parameters
 	long timeout;
 	QextSerialPort::QueryMode querymode;
 	int recvpacksize;
-	QByteArray packhead;
-	QByteArray packtail;
 	QByteArray databuffer;
 };
 
 struct Q_DECL_EXPORT XWGPSCOMMUNICATORRECEIVEDATA	//communicator data
 {
-	QByteArray datagram;
 	QTime qtimestamp;
+	QByteArray datagram;
 	double gpstime;
 	double rx,ry,rz;
 	double sx,sy,sz;
@@ -81,6 +79,7 @@ struct Q_DECL_EXPORT XWGPSSTORAGEWIDGETS	//storage widgets
 {
 	QLabel receivelabel;
 	QLabel receivestatus;
+	QLineEdit filename;
 	QLineEdit receiveframenum;
 	QLineEdit receiveinfo;
 	QPlainTextEdit receivedatagram;

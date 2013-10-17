@@ -29,6 +29,9 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "XWGPS", "XWGPS\XWGPS.vcxpro
 	EndProjectSection
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Encoder", "Encoder\Encoder.vcxproj", "{DB0856C1-6727-4A9E-B4C0-C62AC80252EB}"
+	ProjectSection(ProjectDependencies) = postProject
+		{8D8C0C55-9268-40E8-A66C-79BA10CE01D0} = {8D8C0C55-9268-40E8-A66C-79BA10CE01D0}
+	EndProjectSection
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "serialportlib", "serialportlib\serialportlib.vcxproj", "{8D8C0C55-9268-40E8-A66C-79BA10CE01D0}"
 EndProject
@@ -86,6 +89,7 @@ Global
 		{DB0856C1-6727-4A9E-B4C0-C62AC80252EB}.Debug|Win32.ActiveCfg = Debug|Win32
 		{DB0856C1-6727-4A9E-B4C0-C62AC80252EB}.Debug|Win32.Build.0 = Debug|Win32
 		{DB0856C1-6727-4A9E-B4C0-C62AC80252EB}.Debug|x64.ActiveCfg = Debug|x64
+		{DB0856C1-6727-4A9E-B4C0-C62AC80252EB}.Debug|x64.Build.0 = Debug|x64
 		{DB0856C1-6727-4A9E-B4C0-C62AC80252EB}.Release|Win32.ActiveCfg = Release|Win32
 		{DB0856C1-6727-4A9E-B4C0-C62AC80252EB}.Release|Win32.Build.0 = Release|Win32
 		{DB0856C1-6727-4A9E-B4C0-C62AC80252EB}.Release|x64.ActiveCfg = Release|x64
@@ -123,6 +127,6 @@ Global
 		{DB0856C1-6727-4A9E-B4C0-C62AC80252EB} = {D4931DB1-4CAB-4202-A98B-D864B2855A6E}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		QtVersion = $(DefaultQtVersion)
+		QtVersion = qt-4.8.5
 	EndGlobalSection
 EndGlobal

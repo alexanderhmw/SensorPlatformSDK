@@ -68,8 +68,8 @@
     <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(SolutionDir)$(Platform)\$(Configuration)\</OutDir>
     <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(SolutionDir)$(Platform)\$(Configuration)\</OutDir>
     <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(SolutionDir)$(Platform)\$(Configuration)\</OutDir>
-    <IncludePath Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(SensorPlatformSDK)\Common;$(SensorPlatformSDK)\Core;D:\SDK\OpenNI2\Include;D:\SDK\OpenCV\opencv\build\include;$(IncludePath)</IncludePath>
-    <LibraryPath Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(SensorPlatformSDK)\Common\x64\Debug;D:\SDK\OpenNI2\Lib;D:\SDK\OpenCV\opencv\build\x64\vc10\lib;$(LibraryPath)</LibraryPath>
+    <IncludePath Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(SensorPlatformSDK)\Common;$(SensorPlatformSDK)\Core;C:\SDK\OpenNI2\Include;C:\SDK\OpenCV\opencv\build\include;$(IncludePath)</IncludePath>
+    <LibraryPath Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(SensorPlatformSDK)\Common\x64\Debug;C:\SDK\OpenNI2\Lib;C:\SDK\OpenCV\opencv\build\x64\vc10\lib;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
