@@ -1,0 +1,30 @@
+﻿Build started 2013/10/26 13:36:55.
+     1>Project "C:\PossDemo\GitHub\HMW-Alexander\SensorPlatformSDK\Library\Sensors\serialportlib\serialportlib.vcxproj" on node 2 (rebuild target(s)).
+     1>PrepareForBuild:
+         Creating directory "C:\PossDemo\GitHub\HMW-Alexander\SensorPlatformSDK\Library\Sensors\x64\Release\".
+       InitializeBuildStatus:
+         Creating "x64\Release\serialportlib.unsuccessfulbuild" because "AlwaysCreate" was specified.
+       ComputeCustomBuildOutput:
+         Creating directory "C:\PossDemo\GitHub\HMW-Alexander\SensorPlatformSDK\Library\Sensors\serialportlib\GeneratedFiles\Release\".
+       CustomBuild:
+         Moc'ing qextserialenumerator.h...
+         Moc'ing qextserialport.h...
+       ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\x86_amd64\CL.exe /c /I.\GeneratedFiles /I. /I"C:\SDK\Qt\qt-4.8.5\include" /I.\GeneratedFiles\Release /I"C:\SDK\Qt\qt-4.8.5\include\QtCore" /nologo /W1 /WX- /O2 /D UNICODE /D WIN32 /D QT_DLL /D QT_NO_DEBUG /D NDEBUG /D QT_CORE_LIB /D SERIALPORTLIB_LIB /Gm- /EHsc /MD /GS /fp:precise /Zc:wchar_t- /Zc:forScope /Fo"x64\Release\\" /Fd"x64\Release\vc100.pdb" /Gd /TP /errorReport:prompt qextserialenumerator.cpp qextserialport.cpp qextserialport_win.cpp
+         qextserialenumerator.cpp
+         qextserialport.cpp
+         qextserialport_win.cpp
+         Generating Code...
+       Lib:
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\x86_amd64\Lib.exe /OUT:"C:\PossDemo\GitHub\HMW-Alexander\SensorPlatformSDK\Library\Sensors\x64\Release\\serialportlib.lib" /LIBPATH:"C:\SDK\Qt\qt-4.8.5\lib" /NOLOGO x64\Release\qextserialenumerator.obj
+         x64\Release\qextserialport.obj
+         x64\Release\qextserialport_win.obj
+         serialportlib.vcxproj -> C:\PossDemo\GitHub\HMW-Alexander\SensorPlatformSDK\Library\Sensors\x64\Release\serialportlib.lib
+       FinalizeBuildStatus:
+         Deleting file "x64\Release\serialportlib.unsuccessfulbuild".
+         Touching "x64\Release\serialportlib.lastbuildstate".
+     1>Done Building Project "C:\PossDemo\GitHub\HMW-Alexander\SensorPlatformSDK\Library\Sensors\serialportlib\serialportlib.vcxproj" (rebuild target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:03.97

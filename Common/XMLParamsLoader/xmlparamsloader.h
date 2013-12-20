@@ -6,6 +6,8 @@
 #include<qfile.h>
 #include<qxmlstream.h>
 
+#define IndexOfValueList(param,valuenamelist) valuenamelist.indexOf(#param)
+
 struct ParamContent
 {
 	QString valuetype;

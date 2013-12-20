@@ -1,0 +1,20 @@
+﻿Build started 2013/12/20 18:17:14.
+     1>Project "C:\PossDemo\GitHub\HMW-Alexander\SensorPlatformSDK\Common\GLViewer\GLViewer.vcxproj" on node 3 (rebuild target(s)).
+     1>InitializeBuildStatus:
+         Creating "x64\Release\GLViewer.unsuccessfulbuild" because "AlwaysCreate" was specified.
+       ComputeCustomBuildOutput:
+         Creating directory "C:\PossDemo\GitHub\HMW-Alexander\SensorPlatformSDK\Common\GLViewer\GeneratedFiles\Release\".
+       CustomBuild:
+         Moc'ing glviewer.h...
+       ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\x86_amd64\CL.exe /c /I.\GeneratedFiles /I. /I"C:\SDK\Qt\qt-4.8.5\include" /I.\GeneratedFiles\Release /I"C:\SDK\Qt\qt-4.8.5\include\QtCore" /I"C:\SDK\Qt\qt-4.8.5\include\QtGui" /I"C:\SDK\Qt\qt-4.8.5\include\QtOpenGL" /nologo /W1 /WX- /O2 /D UNICODE /D WIN32 /D QT_DLL /D QT_NO_DEBUG /D NDEBUG /D QT_CORE_LIB /D QT_GUI_LIB /D QT_OPENGL_LIB /D GLVIEWER_LIB /Gm- /EHsc /MD /GS /fp:precise /Zc:wchar_t- /Zc:forScope /Fo"x64\Release\\" /Fd"x64\Release\vc100.pdb" /Gd /TP /errorReport:prompt GeneratedFiles\Release\moc_glviewer.cpp glviewer.cpp
+         moc_glviewer.cpp
+     1>c:\possdemo\github\hmw-alexander\sensorplatformsdk\common\glviewer\generatedfiles\release\../../glviewer.h(6): fatal error C1083: Cannot open include file: 'Eigen/Dense': No such file or directory
+         glviewer.cpp
+     1>c:\possdemo\github\hmw-alexander\sensorplatformsdk\common\glviewer\glviewer.h(6): fatal error C1083: Cannot open include file: 'Eigen/Dense': No such file or directory
+         Generating Code...
+     1>Done Building Project "C:\PossDemo\GitHub\HMW-Alexander\SensorPlatformSDK\Common\GLViewer\GLViewer.vcxproj" (rebuild target(s)) -- FAILED.
+
+Build FAILED.
+
+Time Elapsed 00:00:05.09

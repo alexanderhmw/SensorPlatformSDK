@@ -31,10 +31,10 @@ public:
 	QThread sensorthread;
 	QThread storagethread;
 
-	//Sensor * sensor;
-	//SensorWidget * sensorwidget;
-	Communicator * sensor;
-	CommunicatorWidget * sensorwidget;
+	Sensor * sensor;
+	SensorWidget * sensorwidget;
+	//Communicator * sensor;
+	//CommunicatorWidget * sensorwidget;
 	
 	Storage * storage;
 	StorageWidget * storagewidget;

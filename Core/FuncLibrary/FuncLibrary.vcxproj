@@ -116,6 +116,7 @@
     <ClInclude Include="communicatorwidgetfunc.h" />
     <ClInclude Include="distributionfunc.h" />
     <ClInclude Include="fusionfunc.h" />
+    <ClInclude Include="fusionwidgetfunc.h" />
     <ClInclude Include="nodebasefunc.h" />
     <ClInclude Include="processorfunc.h" />
     <ClInclude Include="sensorfunc.h" />

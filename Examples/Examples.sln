@@ -5,6 +5,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Sensor_Storage", "Sensor_St
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Tsukuba", "Tsukuba\Tsukuba.vcxproj", "{74F9B494-E906-45F6-B029-39593759E213}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "POSS_GOBLIN", "POSS_GOBLIN\POSS_GOBLIN.vcxproj", "{7847E34C-9F57-4B84-8A3B-926B37F7438C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Win32 = Debug|Win32
@@ -29,6 +31,14 @@ Global
 		{74F9B494-E906-45F6-B029-39593759E213}.Release|Win32.Build.0 = Release|Win32
 		{74F9B494-E906-45F6-B029-39593759E213}.Release|x64.ActiveCfg = Release|x64
 		{74F9B494-E906-45F6-B029-39593759E213}.Release|x64.Build.0 = Release|x64
+		{7847E34C-9F57-4B84-8A3B-926B37F7438C}.Debug|Win32.ActiveCfg = Debug|Win32
+		{7847E34C-9F57-4B84-8A3B-926B37F7438C}.Debug|Win32.Build.0 = Debug|Win32
+		{7847E34C-9F57-4B84-8A3B-926B37F7438C}.Debug|x64.ActiveCfg = Debug|x64
+		{7847E34C-9F57-4B84-8A3B-926B37F7438C}.Debug|x64.Build.0 = Debug|x64
+		{7847E34C-9F57-4B84-8A3B-926B37F7438C}.Release|Win32.ActiveCfg = Release|Win32
+		{7847E34C-9F57-4B84-8A3B-926B37F7438C}.Release|Win32.Build.0 = Release|Win32
+		{7847E34C-9F57-4B84-8A3B-926B37F7438C}.Release|x64.ActiveCfg = Release|x64
+		{7847E34C-9F57-4B84-8A3B-926B37F7438C}.Release|x64.Build.0 = Release|x64
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

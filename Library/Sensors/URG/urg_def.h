@@ -2,8 +2,8 @@
 #define URG_DEF_H
 
 #include <QtCore/qglobal.h>
-#include <urg_sensor.h>
-#include <urg_utils.h>
+#include <urglib\urg_sensor.h>
+#include <urglib\urg_utils.h>
 #include<qdatetime.h>
 #include<qstring.h>
 #include<qfile.h>

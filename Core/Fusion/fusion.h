@@ -4,6 +4,7 @@
 #include<NodeBase\nodebase.h>
 #include<qvector.h>
 #include<qstring.h>
+#include<qdatetime.h>
 
 class InputLinker : public QObject
 {
@@ -58,11 +59,11 @@ public slots:
 	void fuseDataSlot();
 	void closeFusionSlot();
 signals:
-	void inputLinkersGeneratedSignal();
+	void inputLinkersGeneratedSignal(QVector<QString> supporttypeclass, QVector<QVector<QString>> supportname);
 	void inputLinkersGeneratedErrorSignal();
 	void fusionOpenSignal();
 	void fusionOpenErrorSignal();
-	void dataInputSignal(int typeclassid, int nameid);
+	void dataInputSignal(int typeclassid, int nameid, void * data);
 	void dataInputErrorSignal();
 	void dataFusedSignal(void * data);
 	void dataFusedErrorSignal();

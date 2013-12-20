@@ -1,5 +1,5 @@
-﻿Build started 2013/10/17 11:13:05.
-     1>Project "C:\PossDemo\GitHub\HMW-Alexander\SensorPlatformSDK\Library\Sensors\XWGPS\XWGPS.vcxproj" on node 3 (rebuild target(s)).
+﻿Build started 2013-12-20 20:07:41.
+     1>Project "C:\POSS_Demo\GitHub\HMW-Alexander\SensorPlatformSDK\Library\Sensors\XWGPS\XWGPS.vcxproj" on node 4 (rebuild target(s)).
      1>_PrepareForClean:
          Deleting file "x64\Debug\XWGPS.lastbuildstate".
        InitializeBuildStatus:
@@ -14,21 +14,22 @@
          XWGPS_storagewidget.cpp
          Generating Code...
        Link:
-         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\x86_amd64\link.exe /ERRORREPORT:PROMPT /OUT:"C:\PossDemo\GitHub\HMW-Alexander\SensorPlatformSDK\Library\Sensors\x64\Debug\\XWGPS.dll" /NOLOGO /LIBPATH:"C:\SDK\Qt\qt-4.8.5\lib" qtmaind.lib QtGuid4.lib QtCored4.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"x64\Debug\XWGPS.dll.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"C:\PossDemo\GitHub\HMW-Alexander\SensorPlatformSDK\Library\Sensors\x64\Debug\XWGPS.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\PossDemo\GitHub\HMW-Alexander\SensorPlatformSDK\Library\Sensors\x64\Debug\XWGPS.lib" /MACHINE:X64 /DLL x64\Debug\datatransfer.obj
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\x86_amd64\link.exe /ERRORREPORT:PROMPT /OUT:"C:\POSS_Demo\GitHub\HMW-Alexander\SensorPlatformSDK\Library\Sensors\x64\Debug\\XWGPS.dll" /NOLOGO /LIBPATH:"C:\SDK\Qt\qt-4.8.5\lib" qtmaind.lib QtGuid4.lib QtCored4.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"x64\Debug\XWGPS.dll.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"C:\POSS_Demo\GitHub\HMW-Alexander\SensorPlatformSDK\Library\Sensors\x64\Debug\XWGPS.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\POSS_Demo\GitHub\HMW-Alexander\SensorPlatformSDK\Library\Sensors\x64\Debug\XWGPS.lib" /MACHINE:X64 /DLL x64\Debug\datatransfer.obj
          x64\Debug\XWGPS.obj
          x64\Debug\XWGPS_communicator.obj
          x64\Debug\XWGPS_communicatorwidget.obj
          x64\Debug\XWGPS_storage.obj
          x64\Debug\XWGPS_storagewidget.obj
-            Creating library C:\PossDemo\GitHub\HMW-Alexander\SensorPlatformSDK\Library\Sensors\x64\Debug\XWGPS.lib and object C:\PossDemo\GitHub\HMW-Alexander\SensorPlatformSDK\Library\Sensors\x64\Debug\XWGPS.exp
-         XWGPS.vcxproj -> C:\PossDemo\GitHub\HMW-Alexander\SensorPlatformSDK\Library\Sensors\x64\Debug\XWGPS.dll
+            Creating library C:\POSS_Demo\GitHub\HMW-Alexander\SensorPlatformSDK\Library\Sensors\x64\Debug\XWGPS.lib and object C:\POSS_Demo\GitHub\HMW-Alexander\SensorPlatformSDK\Library\Sensors\x64\Debug\XWGPS.exp
+     1>XMLParamsLoader.lib(xmlparamsloader.obj) : warning LNK4099: PDB 'vc100.pdb' was not found with 'XMLParamsLoader.lib(xmlparamsloader.obj)' or at 'C:\POSS_Demo\GitHub\HMW-Alexander\SensorPlatformSDK\Library\Sensors\x64\Debug\vc100.pdb'; linking object as if no debug info
+         XWGPS.vcxproj -> C:\POSS_Demo\GitHub\HMW-Alexander\SensorPlatformSDK\Library\Sensors\x64\Debug\XWGPS.dll
        Manifest:
-         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /outputresource:"C:\PossDemo\GitHub\HMW-Alexander\SensorPlatformSDK\Library\Sensors\x64\Debug\\XWGPS.dll;#2" /manifest x64\Debug\XWGPS.dll.intermediate.manifest
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /outputresource:"C:\POSS_Demo\GitHub\HMW-Alexander\SensorPlatformSDK\Library\Sensors\x64\Debug\\XWGPS.dll;#2" /manifest x64\Debug\XWGPS.dll.intermediate.manifest
        FinalizeBuildStatus:
          Deleting file "x64\Debug\XWGPS.unsuccessfulbuild".
          Touching "x64\Debug\XWGPS.lastbuildstate".
-     1>Done Building Project "C:\PossDemo\GitHub\HMW-Alexander\SensorPlatformSDK\Library\Sensors\XWGPS\XWGPS.vcxproj" (rebuild target(s)).
+     1>Done Building Project "C:\POSS_Demo\GitHub\HMW-Alexander\SensorPlatformSDK\Library\Sensors\XWGPS\XWGPS.vcxproj" (rebuild target(s)).
 
 Build succeeded.
 
-Time Elapsed 00:00:05.06
+Time Elapsed 00:00:06.29

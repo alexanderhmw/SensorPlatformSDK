@@ -67,27 +67,27 @@ void Sensor_Storage::setSensor()
 	}
 	flag=1;
 //=================================
-	//sensor=new Sensor(ui.sensorclass->text(),ui.sensorname->text(),ui.buffersize->text().toInt());
-	sensor=new Communicator(ui.sensorclass->text(),ui.sensorname->text(),ui.buffersize->text().toInt());
+	sensor=new Sensor(ui.sensorclass->text(),ui.sensorname->text(),ui.buffersize->text().toInt());
+	//sensor=new Communicator(ui.sensorclass->text(),ui.sensorname->text(),ui.buffersize->text().toInt());
 	sensor->moveToThread(&sensorthread);
 
 	storage=new Storage(sensor);
 	storage->moveToThread(&storagethread);
 
-//	flag&=sensor->connectCaptureDataSignal(&timer,SIGNAL(timeout()));
-	//flag&=sensor->connectDataCaptureSlot(storage,SLOT(storeDataSlot(void *)));
-	//flag&=sensor->connectOpenSensorSignal(ui.open,SIGNAL(clicked()));
-	//flag&=sensor->connectCloseSensorSignal(ui.close,SIGNAL(clicked()));
+	flag&=sensor->connectCaptureDataSignal(&timer,SIGNAL(timeout()));
+	flag&=sensor->connectDataCaptureSlot(storage,SLOT(storeDataSlot(void *)));
+	flag&=sensor->connectOpenSensorSignal(ui.open,SIGNAL(clicked()));
+	flag&=sensor->connectCloseSensorSignal(ui.close,SIGNAL(clicked()));
 
-	flag&=sensor->connectDataReceivedSlot(storage,SLOT(storeDataSlot(void *)));
-	flag&=sensor->connectOpenCommunicatorSignal(ui.open,SIGNAL(clicked()));
-	flag&=sensor->connectCloseCommunicatorSignal(ui.close,SIGNAL(clicked()));
+	//flag&=sensor->connectDataReceivedSlot(storage,SLOT(storeDataSlot(void *)));
+	//flag&=sensor->connectOpenCommunicatorSignal(ui.open,SIGNAL(clicked()));
+	//flag&=sensor->connectCloseCommunicatorSignal(ui.close,SIGNAL(clicked()));
 
 	flag&=storage->connectOpenStorageSignal(ui.openstorage,SIGNAL(clicked()));
 	flag&=storage->connectCloseStorageSignal(ui.closestorage,SIGNAL(clicked()));
 //=================================
-	//sensorwidget=new SensorWidget(sensor);
-	sensorwidget=new CommunicatorWidget(sensor);
+	sensorwidget=new SensorWidget(sensor);
+	//sensorwidget=new CommunicatorWidget(sensor);
 	ui.sensorlayout->addWidget(sensorwidget);
 	sensorwidget->connectSignals();
 

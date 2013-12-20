@@ -1,0 +1,35 @@
+﻿Build started 2013/10/26 14:26:18.
+     1>Project "C:\PossDemo\GitHub\HMW-Alexander\SensorPlatformSDK\Library\Sensors\URG\URG.vcxproj" on node 3 (rebuild target(s)).
+     1>_PrepareForClean:
+         Deleting file "x64\Release\URG.lastbuildstate".
+       InitializeBuildStatus:
+         Touching "x64\Release\URG.unsuccessfulbuild".
+       ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\x86_amd64\CL.exe /c /I.\GeneratedFiles /I. /I"C:\SDK\Qt\qt-4.8.5\include" /I.\GeneratedFiles\Release /I"C:\SDK\Qt\qt-4.8.5\include\QtGui" /I"C:\SDK\Qt\qt-4.8.5\include\QtCore" /nologo /W1 /WX- /O2 /D UNICODE /D WIN32 /D QT_DLL /D QT_NO_DEBUG /D NDEBUG /D URG_LIB /D QT_GUI_LIB /D QT_CORE_LIB /D _WINDLL /Gm- /EHsc /MD /GS /fp:precise /Zc:wchar_t- /Zc:forScope /Fo"x64\Release\\" /Fd"x64\Release\vc100.pdb" /Gd /TP /errorReport:prompt URG.cpp URG_sensor.cpp URG_sensorwidget.cpp URG_storage.cpp URG_storagewidget.cpp
+         URG.cpp
+         URG_sensor.cpp
+         URG_sensorwidget.cpp
+         URG_storage.cpp
+         URG_storagewidget.cpp
+         Generating Code...
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\x86_amd64\link.exe /ERRORREPORT:PROMPT /OUT:"C:\PossDemo\GitHub\HMW-Alexander\SensorPlatformSDK\Library\Sensors\x64\Release\\URG.dll" /NOLOGO /LIBPATH:"C:\SDK\Qt\qt-4.8.5\lib" qtmain.lib QtGui4.lib QtCore4.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"x64\Release\URG.dll.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /PDB:"C:\PossDemo\GitHub\HMW-Alexander\SensorPlatformSDK\Library\Sensors\x64\Release\URG.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\PossDemo\GitHub\HMW-Alexander\SensorPlatformSDK\Library\Sensors\x64\Release\URG.lib" /MACHINE:X64 /DLL x64\Release\URG.obj
+         x64\Release\URG_sensor.obj
+         x64\Release\URG_sensorwidget.obj
+         x64\Release\URG_storage.obj
+         x64\Release\URG_storagewidget.obj
+         urglib.lib(urg_sensor.obj) : MSIL .netmodule or module compiled with /GL found; restarting link with /LTCG; add /LTCG to the link command line to improve linker performance
+            Creating library C:\PossDemo\GitHub\HMW-Alexander\SensorPlatformSDK\Library\Sensors\x64\Release\URG.lib and object C:\PossDemo\GitHub\HMW-Alexander\SensorPlatformSDK\Library\Sensors\x64\Release\URG.exp
+         Generating code
+         Finished generating code
+         URG.vcxproj -> C:\PossDemo\GitHub\HMW-Alexander\SensorPlatformSDK\Library\Sensors\x64\Release\URG.dll
+       Manifest:
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /outputresource:"C:\PossDemo\GitHub\HMW-Alexander\SensorPlatformSDK\Library\Sensors\x64\Release\\URG.dll;#2" /manifest x64\Release\URG.dll.intermediate.manifest
+       FinalizeBuildStatus:
+         Deleting file "x64\Release\URG.unsuccessfulbuild".
+         Touching "x64\Release\URG.lastbuildstate".
+     1>Done Building Project "C:\PossDemo\GitHub\HMW-Alexander\SensorPlatformSDK\Library\Sensors\URG\URG.vcxproj" (rebuild target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:05.27

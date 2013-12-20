@@ -39,6 +39,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Encode", "Encode", "{D4931D
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "coordinateconvertionlib", "coordinateconvertionlib\coordinateconvertionlib.vcxproj", "{A64F66F3-D961-4629-8CAB-4A2A860E0281}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Camera", "Camera", "{AF96B453-3C37-436E-9A16-E453779639E2}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "PointGreyFlea2", "PointGreyFlea2\PointGreyFlea2.vcxproj", "{39906F3B-4F41-467B-BC94-1C828C075AA6}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Win32 = Debug|Win32
@@ -61,7 +65,8 @@ Global
 		{56CFE621-1F45-4444-BCD1-3C7AD3E87002}.Debug|x64.Build.0 = Debug|x64
 		{56CFE621-1F45-4444-BCD1-3C7AD3E87002}.Release|Win32.ActiveCfg = Release|Win32
 		{56CFE621-1F45-4444-BCD1-3C7AD3E87002}.Release|Win32.Build.0 = Release|Win32
-		{56CFE621-1F45-4444-BCD1-3C7AD3E87002}.Release|x64.ActiveCfg = Release|Win32
+		{56CFE621-1F45-4444-BCD1-3C7AD3E87002}.Release|x64.ActiveCfg = Release|x64
+		{56CFE621-1F45-4444-BCD1-3C7AD3E87002}.Release|x64.Build.0 = Release|x64
 		{9B2350B7-8704-4B50-85A2-33AC8197D3EF}.Debug|Win32.ActiveCfg = Debug|Win32
 		{9B2350B7-8704-4B50-85A2-33AC8197D3EF}.Debug|Win32.Build.0 = Debug|Win32
 		{9B2350B7-8704-4B50-85A2-33AC8197D3EF}.Debug|x64.ActiveCfg = Debug|x64
@@ -110,6 +115,14 @@ Global
 		{A64F66F3-D961-4629-8CAB-4A2A860E0281}.Release|Win32.Build.0 = Release|Win32
 		{A64F66F3-D961-4629-8CAB-4A2A860E0281}.Release|x64.ActiveCfg = Release|x64
 		{A64F66F3-D961-4629-8CAB-4A2A860E0281}.Release|x64.Build.0 = Release|x64
+		{39906F3B-4F41-467B-BC94-1C828C075AA6}.Debug|Win32.ActiveCfg = Debug|Win32
+		{39906F3B-4F41-467B-BC94-1C828C075AA6}.Debug|Win32.Build.0 = Debug|Win32
+		{39906F3B-4F41-467B-BC94-1C828C075AA6}.Debug|x64.ActiveCfg = Debug|x64
+		{39906F3B-4F41-467B-BC94-1C828C075AA6}.Debug|x64.Build.0 = Debug|x64
+		{39906F3B-4F41-467B-BC94-1C828C075AA6}.Release|Win32.ActiveCfg = Release|Win32
+		{39906F3B-4F41-467B-BC94-1C828C075AA6}.Release|Win32.Build.0 = Release|Win32
+		{39906F3B-4F41-467B-BC94-1C828C075AA6}.Release|x64.ActiveCfg = Release|x64
+		{39906F3B-4F41-467B-BC94-1C828C075AA6}.Release|x64.Build.0 = Release|x64
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -125,6 +138,7 @@ Global
 		{83B9ABDC-6828-4EA8-BB99-4040EFE0F63F} = {CC76760A-2292-47FD-AF25-E443E82F8885}
 		{A64F66F3-D961-4629-8CAB-4A2A860E0281} = {CC76760A-2292-47FD-AF25-E443E82F8885}
 		{DB0856C1-6727-4A9E-B4C0-C62AC80252EB} = {D4931DB1-4CAB-4202-A98B-D864B2855A6E}
+		{39906F3B-4F41-467B-BC94-1C828C075AA6} = {AF96B453-3C37-436E-9A16-E453779639E2}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		QtVersion = qt-4.8.5

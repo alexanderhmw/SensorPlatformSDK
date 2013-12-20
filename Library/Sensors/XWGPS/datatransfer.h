@@ -9,7 +9,7 @@
 #define EndGLL "\r\n"
 #define Invalid ",,,"
 
-extern "C" Q_DECL_EXPORT void dataTransfer(int startid, int endid, XWGPSCOMMUNICATORRECEIVEDATA * XWGPSreceivedata);
+Q_DECL_EXPORT void dataTransfer(int startid, int endid, XWGPSCOMMUNICATORRECEIVEDATA * XWGPSreceivedata);
 
 
 #endif

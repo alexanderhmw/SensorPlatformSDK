@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Sensors>
-	<Sensor Class="URG" Name="urg">
+	<Sensor Class="URG" Name="URG">
 		<connection_type ValueType="Options" DataType="urg_connection_type_t">
 			<URG_SERIAL>0</URG_SERIAL>
 			<URG_ETHERNET>1</URG_ETHERNET>
 			<Default>0</Default>
 		</connection_type>
 		<device_or_address ValueType="Value" DataType="string">
-			<Default>COM4</Default>
+			<Default>COM12</Default>
 		</device_or_address>
 		<baudrate_or_port ValueType="Value" DataType="int">
 			<Default>115200</Default>
@@ -34,9 +34,9 @@
 			<Default>2</Default>
 		</skip_step>
 	</Sensor>
-	<Storage Class="URG" Name="urg">
+	<Storage Class="URG" Name="URG">
 		<storagepath ValueType="Value" DataType="string">
-			<Default>D:\WorkStation\Data</Default>
+			<Default>D:\Data</Default>
 		</storagepath>
 		<extension ValueType="Value" DataType="string">
 			<Default>lms</Default>
@@ -58,7 +58,7 @@
 			<Default>20</Default>
 		</fps>
 		<storagepath ValueType="Value" DataType="string">
-			<Default>D:\WorkStation\Data</Default>
+			<Default>D:\Data</Default>
 		</storagepath>
 		<extension ValueType="Value" DataType="string">
 			<Default>mpeg</Default>
@@ -71,7 +71,7 @@
 	</Sensor>
 	<Storage Class="UDPReceiver" Name="UDPReceiver">
 		<storagepath ValueType="Value" DataType="string">
-			<Default>D:\WorkStation\Data</Default>
+			<Default>D:\Data</Default>
 		</storagepath>
 		<extension ValueType="Value" DataType="string">
 			<Default>udplog</Default>
@@ -133,7 +133,7 @@
 	</Communicator>
 	<Storage Class="UDPReceiver" Name="UDPReceiver">
 		<storagepath ValueType="Value" DataType="string">
-			<Default>D:\WorkStation\Data</Default>
+			<Default>D:\Data</Default>
 		</storagepath>
 		<extension ValueType="Value" DataType="string">
 			<Default>pos</Default>
@@ -201,10 +201,64 @@
 	</Communicator>
 	<Storage Class="Encoder" Name="Encoder">
 		<storagepath ValueType="Value" DataType="string">
-			<Default>D:\WorkStation\Data</Default>
+			<Default>D:\Data</Default>
 		</storagepath>
 		<extension ValueType="Value" DataType="string">
 			<Default>encoder</Default>
 		</extension>
 	</Storage>		
+	<Sensor Class="PointGreyFlea2" Name="PointGreyFlea2">
+		<videomode ValueType="Options" DataType="VideoMode">
+			<VIDEOMODE_160x120YUV444>0</VIDEOMODE_160x120YUV444>
+			<VIDEOMODE_320x240YUV422>1</VIDEOMODE_320x240YUV422>
+			<VIDEOMODE_640x480YUV411>2</VIDEOMODE_640x480YUV411>
+			<VIDEOMODE_640x480YUV422>3</VIDEOMODE_640x480YUV422>
+			<VIDEOMODE_640x480RGB>4</VIDEOMODE_640x480RGB>
+			<VIDEOMODE_640x480Y8>5</VIDEOMODE_640x480Y8>
+			<Default>4</Default>
+		</videomode>
+		<framerate ValueType="Options" DataType="FrameRate">
+			<FRAMERATE_1_875>0</FRAMERATE_1_875>
+			<FRAMERATE_3_75>1</FRAMERATE_3_75>
+			<FRAMERATE_7_5>2</FRAMERATE_7_5>
+			<FRAMERATE_15>3</FRAMERATE_15>
+			<FRAMERATE_30>4</FRAMERATE_30>
+			<FRAMERATE_60>5</FRAMERATE_60>
+			<Default>3</Default>
+		</framerate>
+		<pixelformat ValueType="Options" DataType="PixelFormat" Base="16">
+			<PIXEL_FORMAT_MONO8>0x80000000</PIXEL_FORMAT_MONO8>
+			<PIXEL_FORMAT_411YUV8>0x40000000</PIXEL_FORMAT_411YUV8>
+        	<PIXEL_FORMAT_422YUV8>0x20000000</PIXEL_FORMAT_422YUV8>
+        	<PIXEL_FORMAT_444YUV8>0x10000000</PIXEL_FORMAT_444YUV8>
+        	<PIXEL_FORMAT_RGB8>0x08000000</PIXEL_FORMAT_RGB8>
+        	<PIXEL_FORMAT_MONO16>0x04000000</PIXEL_FORMAT_MONO16> 
+        	<PIXEL_FORMAT_RGB16>0x02000000</PIXEL_FORMAT_RGB16>
+        	<PIXEL_FORMAT_S_MONO16>0x01000000</PIXEL_FORMAT_S_MONO16>
+        	<PIXEL_FORMAT_S_RGB16>0x00800000</PIXEL_FORMAT_S_RGB16>
+        	<PIXEL_FORMAT_RAW8>0x00400000</PIXEL_FORMAT_RAW8>
+        	<PIXEL_FORMAT_RAW16>0x00200000</PIXEL_FORMAT_RAW16>
+        	<PIXEL_FORMAT_MONO12>0x00100000</PIXEL_FORMAT_MONO12>
+        	<PIXEL_FORMAT_RAW12>0x00080000</PIXEL_FORMAT_RAW12>
+        	<PIXEL_FORMAT_BGR>0x80000008</PIXEL_FORMAT_BGR>
+        	<PIXEL_FORMAT_BGRU>0x40000008</PIXEL_FORMAT_BGRU>
+        	<PIXEL_FORMAT_RGB>0x08000000</PIXEL_FORMAT_RGB>
+        	<PIXEL_FORMAT_RGBU>0x40000002</PIXEL_FORMAT_RGBU>
+        	<PIXEL_FORMAT_BGR16>0x02000001</PIXEL_FORMAT_BGR16>
+			<PIXEL_FORMAT_BGRU16>0x02000002</PIXEL_FORMAT_BGRU16>
+        	<PIXEL_FORMAT_422YUV8_JPEG>0x40000001</PIXEL_FORMAT_422YUV8_JPEG>
+			<Default>0x80000008</Default>
+		</pixelformat>
+	</Sensor>
+	<Storage Class="PointGreyFlea2" Name="PointGreyFlea2">
+		<fps Valuetype="Value" DataType="double">
+			<Default>20</Default>
+		</fps>
+		<storagepath ValueType="Value" DataType="string">
+			<Default>D:\Data</Default>
+		</storagepath>
+		<extension ValueType="Value" DataType="string">
+			<Default>mpeg</Default>
+		</extension>
+	</Storage>
 </Sensors>

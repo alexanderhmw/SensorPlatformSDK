@@ -3,7 +3,7 @@
 
 #include <QtCore/qglobal.h>
 #include <QtCore/qglobal.h>
-#include <qextserialport.h>
+#include <serialportlib\qextserialport.h>
 #include <qfile.h>
 #include <qboxlayout.h>
 #include<qlabel.h>

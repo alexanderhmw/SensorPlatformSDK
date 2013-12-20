@@ -33,6 +33,12 @@
 		<nodefunc>
 			<fusion comment="fusion function">fusionfunc.h</fusion>
 		</nodefunc>
+		<widgetstruct>
+			<widgets comment="fusion widgets">FUSIONWIDGETS</widgets>
+		</widgetstruct>
+		<widgetfunc>
+			<fusionwidget comment="fusion widget function">fusionwidgetfunc.h</fusionwidget>
+		</widgetfunc>
 	</Fusion>
 	<Processor>
 		<nodestruct>

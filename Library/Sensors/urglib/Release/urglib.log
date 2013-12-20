@@ -1,0 +1,50 @@
+﻿Build started 2013/10/26 13:42:22.
+     1>Project "C:\PossDemo\GitHub\HMW-Alexander\SensorPlatformSDK\Library\Sensors\urglib\urglib.vcxproj" on node 2 (rebuild target(s)).
+     1>_PrepareForClean:
+         Deleting file "Release\urglib.lastbuildstate".
+       InitializeBuildStatus:
+         Creating "Release\urglib.unsuccessfulbuild" because "AlwaysCreate" was specified.
+       ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /Zi /nologo /W3 /WX- /O2 /Oi /Oy- /GL /D WIN32 /D NDEBUG /D _LIB /D _UNICODE /D UNICODE /Gm- /EHsc /MD /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Release\\" /Fd"Release\vc100.pdb" /Gd /TC /analyze- /errorReport:prompt urg_connection.c urg_debug.c urg_ring_buffer.c urg_sensor.c urg_serial.c urg_serial_utils.c urg_tcpclient.c urg_utils.c
+         urg_connection.c
+         urg_debug.c
+         urg_ring_buffer.c
+         urg_sensor.c
+     1>urg_sensor.c(190): warning C4996: '_snprintf': This function or variable may be unsafe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(363) : see declaration of '_snprintf'
+     1>urg_sensor.c(853): warning C4996: '_snprintf': This function or variable may be unsafe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(363) : see declaration of '_snprintf'
+     1>urg_sensor.c(860): warning C4996: '_snprintf': This function or variable may be unsafe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(363) : see declaration of '_snprintf'
+         urg_serial.c
+     1>c:\possdemo\github\hmw-alexander\sensorplatformsdk\library\sensors\urglib\urg_serial_windows.c(49): warning C4996: '_snprintf': This function or variable may be unsafe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(363) : see declaration of '_snprintf'
+         urg_serial_utils.c
+     1>c:\possdemo\github\hmw-alexander\sensorplatformsdk\library\sensors\urglib\urg_serial_utils_windows.c(51): warning C4996: 'strncpy': This function or variable may be unsafe. Consider using strncpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\string.h(188) : see declaration of 'strncpy'
+     1>c:\possdemo\github\hmw-alexander\sensorplatformsdk\library\sensors\urglib\urg_serial_utils_windows.c(52): warning C4996: 'strncpy': This function or variable may be unsafe. Consider using strncpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\string.h(188) : see declaration of 'strncpy'
+     1>c:\possdemo\github\hmw-alexander\sensorplatformsdk\library\sensors\urglib\urg_serial_utils_windows.c(53): warning C4996: 'strncpy': This function or variable may be unsafe. Consider using strncpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\string.h(188) : see declaration of 'strncpy'
+     1>c:\possdemo\github\hmw-alexander\sensorplatformsdk\library\sensors\urglib\urg_serial_utils_windows.c(134): warning C4996: '_snprintf': This function or variable may be unsafe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(363) : see declaration of '_snprintf'
+         urg_tcpclient.c
+         urg_utils.c
+       Lib:
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\Lib.exe /OUT:"C:\PossDemo\GitHub\HMW-Alexander\SensorPlatformSDK\Library\Sensors\Win32\Release\urglib.lib" /NOLOGO /LTCG Release\urg_connection.obj
+         Release\urg_debug.obj
+         Release\urg_ring_buffer.obj
+         Release\urg_sensor.obj
+         Release\urg_serial.obj
+         Release\urg_serial_utils.obj
+         Release\urg_tcpclient.obj
+         Release\urg_utils.obj
+         urglib.vcxproj -> C:\PossDemo\GitHub\HMW-Alexander\SensorPlatformSDK\Library\Sensors\Win32\Release\urglib.lib
+       FinalizeBuildStatus:
+         Deleting file "Release\urglib.unsuccessfulbuild".
+         Touching "Release\urglib.lastbuildstate".
+     1>Done Building Project "C:\PossDemo\GitHub\HMW-Alexander\SensorPlatformSDK\Library\Sensors\urglib\urglib.vcxproj" (rebuild target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:01.80

@@ -1,9 +1,9 @@
-﻿Build started 2013/10/17 14:10:19.
-     1>Project "C:\PossDemo\GitHub\HMW-Alexander\SensorPlatformSDK\Examples\Tsukuba\Tsukuba.vcxproj" on node 2 (rebuild target(s)).
+﻿Build started 2013/12/20 18:22:18.
+     1>Project "C:\PossDemo\GitHub\HMW-Alexander\SensorPlatformSDK\Examples\Tsukuba\Tsukuba.vcxproj" on node 3 (rebuild target(s)).
      1>_PrepareForClean:
          Deleting file "x64\Debug\Tsukuba.lastbuildstate".
        InitializeBuildStatus:
-         Touching "x64\Debug\Tsukuba.unsuccessfulbuild".
+         Creating "x64\Debug\Tsukuba.unsuccessfulbuild" because "AlwaysCreate" was specified.
        CustomBuild:
          Moc'ing tsukuba.h...
          Uic'ing tsukuba.ui...
@@ -24,22 +24,6 @@
          x64\Debug\main.obj
          x64\Debug\tsukuba.obj
      1>qtmaind.lib(qtmain_win.obj) : warning LNK4099: PDB 'vc100.pdb' was not found with 'qtmaind.lib(qtmain_win.obj)' or at 'C:\PossDemo\GitHub\HMW-Alexander\SensorPlatformSDK\Examples\x64\Debug\vc100.pdb'; linking object as if no debug info
-     1>Sensor.lib(moc_sensor.obj) : warning LNK4099: PDB 'vc100.pdb' was not found with 'Sensor.lib(moc_sensor.obj)' or at 'C:\PossDemo\GitHub\HMW-Alexander\SensorPlatformSDK\Examples\x64\Debug\vc100.pdb'; linking object as if no debug info
-     1>Sensor.lib(moc_sensorwidget.obj) : warning LNK4099: PDB 'vc100.pdb' was not found with 'Sensor.lib(moc_sensorwidget.obj)' or at 'C:\PossDemo\GitHub\HMW-Alexander\SensorPlatformSDK\Examples\x64\Debug\vc100.pdb'; linking object as if no debug info
-     1>Sensor.lib(sensor.obj) : warning LNK4099: PDB 'vc100.pdb' was not found with 'Sensor.lib(sensor.obj)' or at 'C:\PossDemo\GitHub\HMW-Alexander\SensorPlatformSDK\Examples\x64\Debug\vc100.pdb'; linking object as if no debug info
-     1>Sensor.lib(sensorwidget.obj) : warning LNK4099: PDB 'vc100.pdb' was not found with 'Sensor.lib(sensorwidget.obj)' or at 'C:\PossDemo\GitHub\HMW-Alexander\SensorPlatformSDK\Examples\x64\Debug\vc100.pdb'; linking object as if no debug info
-     1>Communicator.lib(communicator.obj) : warning LNK4099: PDB 'vc100.pdb' was not found with 'Communicator.lib(communicator.obj)' or at 'C:\PossDemo\GitHub\HMW-Alexander\SensorPlatformSDK\Examples\x64\Debug\vc100.pdb'; linking object as if no debug info
-     1>Communicator.lib(communicatorwidget.obj) : warning LNK4099: PDB 'vc100.pdb' was not found with 'Communicator.lib(communicatorwidget.obj)' or at 'C:\PossDemo\GitHub\HMW-Alexander\SensorPlatformSDK\Examples\x64\Debug\vc100.pdb'; linking object as if no debug info
-     1>Communicator.lib(moc_communicator.obj) : warning LNK4099: PDB 'vc100.pdb' was not found with 'Communicator.lib(moc_communicator.obj)' or at 'C:\PossDemo\GitHub\HMW-Alexander\SensorPlatformSDK\Examples\x64\Debug\vc100.pdb'; linking object as if no debug info
-     1>Communicator.lib(moc_communicatorwidget.obj) : warning LNK4099: PDB 'vc100.pdb' was not found with 'Communicator.lib(moc_communicatorwidget.obj)' or at 'C:\PossDemo\GitHub\HMW-Alexander\SensorPlatformSDK\Examples\x64\Debug\vc100.pdb'; linking object as if no debug info
-     1>Storage.lib(moc_storage.obj) : warning LNK4099: PDB 'vc100.pdb' was not found with 'Storage.lib(moc_storage.obj)' or at 'C:\PossDemo\GitHub\HMW-Alexander\SensorPlatformSDK\Examples\x64\Debug\vc100.pdb'; linking object as if no debug info
-     1>Storage.lib(moc_storagewidget.obj) : warning LNK4099: PDB 'vc100.pdb' was not found with 'Storage.lib(moc_storagewidget.obj)' or at 'C:\PossDemo\GitHub\HMW-Alexander\SensorPlatformSDK\Examples\x64\Debug\vc100.pdb'; linking object as if no debug info
-     1>Storage.lib(storage.obj) : warning LNK4099: PDB 'vc100.pdb' was not found with 'Storage.lib(storage.obj)' or at 'C:\PossDemo\GitHub\HMW-Alexander\SensorPlatformSDK\Examples\x64\Debug\vc100.pdb'; linking object as if no debug info
-     1>Storage.lib(storagewidget.obj) : warning LNK4099: PDB 'vc100.pdb' was not found with 'Storage.lib(storagewidget.obj)' or at 'C:\PossDemo\GitHub\HMW-Alexander\SensorPlatformSDK\Examples\x64\Debug\vc100.pdb'; linking object as if no debug info
-     1>NodeBase.lib(moc_nodebase.obj) : warning LNK4099: PDB 'vc100.pdb' was not found with 'NodeBase.lib(moc_nodebase.obj)' or at 'C:\PossDemo\GitHub\HMW-Alexander\SensorPlatformSDK\Examples\x64\Debug\vc100.pdb'; linking object as if no debug info
-     1>NodeBase.lib(moc_nodewidgetbase.obj) : warning LNK4099: PDB 'vc100.pdb' was not found with 'NodeBase.lib(moc_nodewidgetbase.obj)' or at 'C:\PossDemo\GitHub\HMW-Alexander\SensorPlatformSDK\Examples\x64\Debug\vc100.pdb'; linking object as if no debug info
-     1>NodeBase.lib(nodebase.obj) : warning LNK4099: PDB 'vc100.pdb' was not found with 'NodeBase.lib(nodebase.obj)' or at 'C:\PossDemo\GitHub\HMW-Alexander\SensorPlatformSDK\Examples\x64\Debug\vc100.pdb'; linking object as if no debug info
-     1>NodeBase.lib(nodewidgetbase.obj) : warning LNK4099: PDB 'vc100.pdb' was not found with 'NodeBase.lib(nodewidgetbase.obj)' or at 'C:\PossDemo\GitHub\HMW-Alexander\SensorPlatformSDK\Examples\x64\Debug\vc100.pdb'; linking object as if no debug info
          Tsukuba.vcxproj -> C:\PossDemo\GitHub\HMW-Alexander\SensorPlatformSDK\Examples\x64\Debug\Tsukuba.exe
        Manifest:
          C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /outputresource:"C:\PossDemo\GitHub\HMW-Alexander\SensorPlatformSDK\Examples\x64\Debug\\Tsukuba.exe;#1" /manifest x64\Debug\Tsukuba.exe.intermediate.manifest
@@ -50,4 +34,4 @@
 
 Build succeeded.
 
-Time Elapsed 00:00:04.62
+Time Elapsed 00:00:04.86

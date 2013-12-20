@@ -1,0 +1,27 @@
+﻿Build started 2013/12/20 18:22:18.
+     1>Project "C:\PossDemo\GitHub\HMW-Alexander\SensorPlatformSDK\Examples\POSS_GOBLIN\POSS_GOBLIN.vcxproj" on node 2 (rebuild target(s)).
+     1>InitializeBuildStatus:
+         Creating "x64\Debug\POSS_GOBLIN.unsuccessfulbuild" because "AlwaysCreate" was specified.
+       CustomBuild:
+         Moc'ing poss_goblin.h...
+         Uic'ing poss_goblin.ui...
+         Rcc'ing poss_goblin.qrc...
+     1>RCC : warning : No resources in 'C:\PossDemo\GitHub\HMW-Alexander\SensorPlatformSDK\Examples\POSS_GOBLIN\poss_goblin.qrc'.
+         
+       ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\x86_amd64\CL.exe /c /I.\GeneratedFiles /I. /I"C:\SDK\Qt\qt-4.8.5\include" /I.\GeneratedFiles\Debug /I"C:\SDK\Qt\qt-4.8.5\include\QtCore" /I"C:\SDK\Qt\qt-4.8.5\include\QtGui" /Zi /nologo /W1 /WX- /Od /D UNICODE /D WIN32 /D QT_DLL /D QT_CORE_LIB /D QT_GUI_LIB /Gm- /EHsc /MDd /GS /fp:precise /Zc:wchar_t- /Zc:forScope /Fo"x64\Debug\\" /Fd"x64\Debug\vc100.pdb" /Gd /TP /errorReport:prompt GeneratedFiles\Debug\moc_poss_goblin.cpp main.cpp poss_goblin.cpp
+         moc_poss_goblin.cpp
+     1>c:\possdemo\github\hmw-alexander\sensorplatformsdk\examples\poss_goblin\generatedfiles\debug\../../poss_goblin.h(25): error C2143: syntax error : missing ';' before '}'
+     1>c:\possdemo\github\hmw-alexander\sensorplatformsdk\examples\poss_goblin\generatedfiles\debug\../../poss_goblin.h(25): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+         main.cpp
+     1>c:\possdemo\github\hmw-alexander\sensorplatformsdk\examples\poss_goblin\poss_goblin.h(25): error C2143: syntax error : missing ';' before '}'
+     1>c:\possdemo\github\hmw-alexander\sensorplatformsdk\examples\poss_goblin\poss_goblin.h(25): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+         poss_goblin.cpp
+     1>c:\possdemo\github\hmw-alexander\sensorplatformsdk\examples\poss_goblin\poss_goblin.h(25): error C2143: syntax error : missing ';' before '}'
+     1>c:\possdemo\github\hmw-alexander\sensorplatformsdk\examples\poss_goblin\poss_goblin.h(25): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+         Generating Code...
+     1>Done Building Project "C:\PossDemo\GitHub\HMW-Alexander\SensorPlatformSDK\Examples\POSS_GOBLIN\POSS_GOBLIN.vcxproj" (rebuild target(s)) -- FAILED.
+
+Build FAILED.
+
+Time Elapsed 00:00:03.88

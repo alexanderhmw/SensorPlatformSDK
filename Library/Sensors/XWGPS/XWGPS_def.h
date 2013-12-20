@@ -2,8 +2,8 @@
 #define XWGPS_DEF_H
 
 #include <QtCore/qglobal.h>
-#include <qextserialport.h>
-#include <coordinateconvertion.h>
+#include <serialportlib\qextserialport.h>
+#include <coordinateconvertionlib\coordinateconvertion.h>
 #include <qfile.h>
 #include <qboxlayout.h>
 #include<qlabel.h>

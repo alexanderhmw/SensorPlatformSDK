@@ -109,7 +109,7 @@ void Fusion::generateInputLinkersSlot()
 		}
 		if(flag)
 		{
-			emit inputLinkersGeneratedSignal();
+			emit inputLinkersGeneratedSignal(supportnodetypeclass,supportnodename);
 		}
 		else
 		{
@@ -139,7 +139,7 @@ void Fusion::inputDataSlot(int typeclassid, int nameid, void * data)
 {
 	if(openflag&&inputData(_params,typeclassid,nameid,data,&(inputdatabuffer[typeclassid][nameid][curinputdataid[typeclassid][nameid]])))
 	{
-		emit dataInputSignal(typeclassid,nameid);
+		emit dataInputSignal(typeclassid,nameid,data);
 		curinputdataid[typeclassid][nameid]=(curinputdataid[typeclassid][nameid]+1)%inputdatabuffer[typeclassid][nameid].size();
 	}
 	else
@@ -272,7 +272,7 @@ bool Fusion::disconnectCloseFusionSignal(QObject * sender, const char * signal)
 
 bool Fusion::connectInputLinkersGeneratedSlot(QObject * receiver, const char * slot)
 {
-	return connect(this,SIGNAL(inputLinkersGeneratedSignal()),receiver,slot);
+	return connect(this,SIGNAL(inputLinkersGeneratedSignal(QVector<QString>,QVector<QVector<QString>>)),receiver,slot);
 }
 
 bool Fusion::connectInputLinkersGeneratedErrorSlot(QObject * receiver, const char * slot)
@@ -292,7 +292,7 @@ bool Fusion::connectFusionOpenErrorSlot(QObject * receiver, const char * slot)
 
 bool Fusion::connectDataInputSlot(QObject * receiver, const char * slot)
 {
-	return connect(this,SIGNAL(dataInputSignal(int,int)),receiver,slot);
+	return connect(this,SIGNAL(dataInputSignal(int,int,void *)),receiver,slot);
 }
 
 bool Fusion::connectDataInputErrorSlot(QObject * receiver, const char * slot)
@@ -322,7 +322,7 @@ bool Fusion::connectFusionCloseErrorSlot(QObject * receiver, const char * slot)
 
 bool Fusion::disconnectInputLinkersGeneratedSlot(QObject * receiver, const char * slot)
 {
-	return disconnect(this,SIGNAL(inputLinkersGeneratedSignal()),receiver,slot);
+	return disconnect(this,SIGNAL(inputLinkersGeneratedSignal(QVector<QString>,QVector<QVector<QString>>)),receiver,slot);
 }
 
 bool Fusion::disconnectInputLinkersGeneratedErrorSlot(QObject * receiver, const char * slot)
@@ -342,7 +342,7 @@ bool Fusion::disconnectFusionOpenErrorSlot(QObject * receiver, const char * slot
 
 bool Fusion::disconnectDataInputSlot(QObject * receiver, const char * slot)
 {
-	return disconnect(this,SIGNAL(dataInputSignal(int,int)),receiver,slot);
+	return disconnect(this,SIGNAL(dataInputSignal(int,int,void *)),receiver,slot);
 }
 
 bool Fusion::disconnectDataInputErrorSlot(QObject * receiver, const char * slot)
