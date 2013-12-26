@@ -7,7 +7,7 @@
 			<Default>0</Default>
 		</connection_type>
 		<device_or_address ValueType="Value" DataType="string">
-			<Default>COM12</Default>
+			<Default>COM4</Default>
 		</device_or_address>
 		<baudrate_or_port ValueType="Value" DataType="int">
 			<Default>115200</Default>

@@ -108,7 +108,14 @@ bool XMLParamsLoader::getParam(QString name, int & param)
 		return 0;
 	}
 	bool flag=1;
-	param=_paramcontents[index].value.back().toUInt(&flag,_paramcontents[index].valuebase);
+	if(_paramcontents[index].valuebase==16)
+	{
+		param=_paramcontents[index].value.back().toUInt(&flag,_paramcontents[index].valuebase);
+	}
+	else
+	{
+		param=_paramcontents[index].value.back().toInt(&flag,_paramcontents[index].valuebase);
+	}
 	return flag;
 }
 
@@ -132,7 +139,14 @@ bool XMLParamsLoader::getParam(QString name, short & param)
 		return 0;
 	}
 	bool flag=1;
-	param=_paramcontents[index].value.back().toUShort(&flag,_paramcontents[index].valuebase);
+	if(_paramcontents[index].valuebase==16)
+	{
+		param=_paramcontents[index].value.back().toUShort(&flag,_paramcontents[index].valuebase);
+	}
+	else
+	{
+		param=_paramcontents[index].value.back().toShort(&flag,_paramcontents[index].valuebase);
+	}	
 	return flag;
 }
 
@@ -156,7 +170,14 @@ bool XMLParamsLoader::getParam(QString name, long & param)
 		return 0;
 	}
 	bool flag=1;
-	param=_paramcontents[index].value.back().toULong(&flag,_paramcontents[index].valuebase);
+	if(_paramcontents[index].valuebase==16)
+	{
+		param=_paramcontents[index].value.back().toLong(&flag,_paramcontents[index].valuebase);
+	}
+	else
+	{
+		param=_paramcontents[index].value.back().toULong(&flag,_paramcontents[index].valuebase);
+	}	
 	return flag;
 }
 

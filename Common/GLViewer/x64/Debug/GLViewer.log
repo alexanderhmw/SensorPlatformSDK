@@ -1,4 +1,4 @@
-﻿Build started 2013/12/20 18:27:29.
+﻿Build started 2013/12/26 16:45:14.
      1>Project "C:\PossDemo\GitHub\HMW-Alexander\SensorPlatformSDK\Common\GLViewer\GLViewer.vcxproj" on node 3 (rebuild target(s)).
      1>_PrepareForClean:
          Deleting file "x64\Debug\GLViewer.lastbuildstate".
@@ -22,4 +22,4 @@
 
 Build succeeded.
 
-Time Elapsed 00:00:08.36
+Time Elapsed 00:00:08.37

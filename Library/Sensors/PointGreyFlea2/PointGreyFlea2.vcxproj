@@ -69,8 +69,8 @@
     <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(SolutionDir)$(Platform)\$(Configuration)\</OutDir>
     <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(SolutionDir)$(Platform)\$(Configuration)\</OutDir>
     <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(SolutionDir)$(Platform)\$(Configuration)\</OutDir>
-    <IncludePath Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(SensorPlatformSDK)\Common;$(SensorPlatformSDK)\Core;C:\Program Files\Point Grey Research\FlyCapture2\include;C:\SDK\OpenCV\opencv\build\include;$(IncludePath)</IncludePath>
-    <LibraryPath Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(SensorPlatformSDK)\Common\x64\Debug;C:\Program Files\Point Grey Research\FlyCapture2\lib64;C:\SDK\OpenCV\opencv\build\x64\vc10\lib;$(LibraryPath)</LibraryPath>
+    <IncludePath Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(SensorPlatformSDK)\Common;$(SensorPlatformSDK)\Core;C:\SDK\Point Grey Research\FlyCapture2\include;C:\SDK\OpenCV\opencv\build\include;$(IncludePath)</IncludePath>
+    <LibraryPath Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(SensorPlatformSDK)\Common\x64\Debug;C:\SDK\Point Grey Research\FlyCapture2\lib64;C:\SDK\OpenCV\opencv\build\x64\vc10\lib;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
