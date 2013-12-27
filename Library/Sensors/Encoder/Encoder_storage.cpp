@@ -68,7 +68,9 @@ bool storeData(void * params, void * data)	//store data
 	{
 		long timestamp=((Encoderdata->qtimestamp.hour()*60+Encoderdata->qtimestamp.minute())*60
 		+Encoderdata->qtimestamp.second())*1000+Encoderdata->qtimestamp.msec();
-		Encoderparams->file.write(QString("%1\t%2\n").arg(timestamp).arg(QString(Encoderdata->datagram)).toUtf8());
+		short angle=*((short *)(Encoderdata->datagram.data()));
+		short encoder=*((short *)(Encoderdata->datagram.data()+sizeof(angle)));
+		Encoderparams->file.write(QString("%1\t%2\t%3\n").arg(timestamp).arg(angle).arg(encoder).toUtf8());
 		return 1;
 	}
 	else

@@ -84,7 +84,9 @@ void dataStore(void * widgets,void * data)	//handle storedata signal
 	Encoderwidgets->receivestatus.setText(QString("Stored"));
 	int num=Encoderwidgets->receiveframenum.text().toInt()+1;
 	Encoderwidgets->receiveframenum.setText(QString("%1").arg(num));
-	Encoderwidgets->receiveinfo.setText(QString("%1_%2").arg(Encoderdata->qtimestamp.toString("hh:mm:ss:zzz")).arg(QString(Encoderdata->datagram)));
+	short angle=*((short *)(Encoderdata->datagram.data()));
+	short encoder=*((short *)(Encoderdata->datagram.data()+sizeof(angle)));
+	Encoderwidgets->receiveinfo.setText(QString("%1 - %2 - %3").arg(Encoderdata->qtimestamp.toString("hh:mm:ss:zzz")).arg(angle).arg(encoder));
 }
 
 void dataStoreError(void * widgets)	//handle storedataerror signal

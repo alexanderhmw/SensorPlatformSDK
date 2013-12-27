@@ -95,6 +95,7 @@ void dataCapture(void * widgets,void * data)	//handle capturedata signal
 	PointGreyFlea2widgets->status.setText(QString("Captured"));
 	int num=PointGreyFlea2widgets->framenum.text().toInt()+1;
 	PointGreyFlea2widgets->framenum.setText(QString("%1").arg(num));
+	PointGreyFlea2widgets->info.setText(QString("%1").arg(pointgreyflea2data->timestamp.toString("hh:mm:ss:zzz")));
 	if(PointGreyFlea2widgets->showimage.isChecked())
 	{
 		QImage img;

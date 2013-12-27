@@ -13,6 +13,8 @@
 #include <qthread.h>
 #include<qfiledialog.h>
 
+#define COMMUNICATOR
+
 class Sensor_Storage : public QMainWindow
 {
 	Q_OBJECT
@@ -31,11 +33,13 @@ public:
 	QThread sensorthread;
 	QThread storagethread;
 
+#ifndef COMMUNICATOR
 	Sensor * sensor;
 	SensorWidget * sensorwidget;
-	//Communicator * sensor;
-	//CommunicatorWidget * sensorwidget;
-	
+#else
+	Communicator * sensor;
+	CommunicatorWidget * sensorwidget;
+#endif
 	Storage * storage;
 	StorageWidget * storagewidget;
 public slots:

@@ -7,7 +7,7 @@
 			<Default>0</Default>
 		</connection_type>
 		<device_or_address ValueType="Value" DataType="string">
-			<Default>COM4</Default>
+			<Default>COM12</Default>
 		</device_or_address>
 		<baudrate_or_port ValueType="Value" DataType="int">
 			<Default>115200</Default>
@@ -247,7 +247,7 @@
         	<PIXEL_FORMAT_BGR16>0x02000001</PIXEL_FORMAT_BGR16>
 			<PIXEL_FORMAT_BGRU16>0x02000002</PIXEL_FORMAT_BGRU16>
         	<PIXEL_FORMAT_422YUV8_JPEG>0x40000001</PIXEL_FORMAT_422YUV8_JPEG>
-			<Default>0x80000008</Default>
+			<Default>0x80000000</Default>
 		</pixelformat>
 	</Sensor>
 	<Storage Class="PointGreyFlea2" Name="PointGreyFlea2">

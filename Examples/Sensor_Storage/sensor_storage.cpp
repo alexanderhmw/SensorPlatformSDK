@@ -67,27 +67,34 @@ void Sensor_Storage::setSensor()
 	}
 	flag=1;
 //=================================
+#ifndef COMMUNICATOR
 	sensor=new Sensor(ui.sensorclass->text(),ui.sensorname->text(),ui.buffersize->text().toInt());
-	//sensor=new Communicator(ui.sensorclass->text(),ui.sensorname->text(),ui.buffersize->text().toInt());
+#else
+	sensor=new Communicator(ui.sensorclass->text(),ui.sensorname->text(),ui.buffersize->text().toInt());
+#endif
 	sensor->moveToThread(&sensorthread);
 
 	storage=new Storage(sensor);
 	storage->moveToThread(&storagethread);
 
+#ifndef COMMUNICATOR
 	flag&=sensor->connectCaptureDataSignal(&timer,SIGNAL(timeout()));
 	flag&=sensor->connectDataCaptureSlot(storage,SLOT(storeDataSlot(void *)));
 	flag&=sensor->connectOpenSensorSignal(ui.open,SIGNAL(clicked()));
 	flag&=sensor->connectCloseSensorSignal(ui.close,SIGNAL(clicked()));
-
-	//flag&=sensor->connectDataReceivedSlot(storage,SLOT(storeDataSlot(void *)));
-	//flag&=sensor->connectOpenCommunicatorSignal(ui.open,SIGNAL(clicked()));
-	//flag&=sensor->connectCloseCommunicatorSignal(ui.close,SIGNAL(clicked()));
-
+#else
+	flag&=sensor->connectDataReceivedSlot(storage,SLOT(storeDataSlot(void *)));
+	flag&=sensor->connectOpenCommunicatorSignal(ui.open,SIGNAL(clicked()));
+	flag&=sensor->connectCloseCommunicatorSignal(ui.close,SIGNAL(clicked()));
+#endif
 	flag&=storage->connectOpenStorageSignal(ui.openstorage,SIGNAL(clicked()));
 	flag&=storage->connectCloseStorageSignal(ui.closestorage,SIGNAL(clicked()));
 //=================================
+#ifndef COMMUNICATOR
 	sensorwidget=new SensorWidget(sensor);
-	//sensorwidget=new CommunicatorWidget(sensor);
+#else
+	sensorwidget=new CommunicatorWidget(sensor);
+#endif
 	ui.sensorlayout->addWidget(sensorwidget);
 	sensorwidget->connectSignals();
 

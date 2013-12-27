@@ -104,6 +104,7 @@ void dataCapture(void * widgets,void * data)	//handle capturedata signal
 	Xtionwidgets->status.setText(QString("Captured"));
 	int num=Xtionwidgets->framenum.text().toInt()+1;
 	Xtionwidgets->framenum.setText(QString("%1").arg(num));
+	Xtionwidgets->info.setText(QString("%1 - %2").arg(Xtiondata->colortimestamp.toString("hh:mm:ss:zzz")).arg(Xtiondata->depthtimestamp.toString("hh:mm:ss:zzz")));
 	if(Xtionwidgets->showdepth.isChecked())
 	{
 		QImage img;

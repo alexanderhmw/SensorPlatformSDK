@@ -104,7 +104,9 @@ void dataReceived(void * widgets,void * receivedata)	//handle capturedata signal
 	Encoderwidgets->receivestatus.setText(QString("Received"));
 	int num=Encoderwidgets->receiveframenum.text().toInt()+1;
 	Encoderwidgets->receiveframenum.setText(QString("%1").arg(num));
-	Encoderwidgets->receiveinfo.setText(QString("%1_%2").arg(Encoderreceivedata->qtimestamp.toString("hh:mm:ss:zzz")).arg(QString(Encoderreceivedata->datagram)));
+	short angle=*((short *)(Encoderreceivedata->datagram.data()));
+	short encoder=*((short *)(Encoderreceivedata->datagram.data()+sizeof(angle)));
+	Encoderwidgets->receiveinfo.setText(QString("%1 - %2 - %3").arg(Encoderreceivedata->qtimestamp.toString("hh:mm:ss:zzz")).arg(angle).arg(encoder));
 }
 
 void dataReceivedError(void * widgets)	//handle capturedataerror signal
