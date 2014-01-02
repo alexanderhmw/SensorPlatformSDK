@@ -5,6 +5,10 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Planning", "Planning\Planni
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Planning", "Planning", "{2DBD99CC-E7BB-4696-9ECC-837E53923B83}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Odometry", "Odometry", "{BC65136C-411A-4596-9CAD-069E5ECD34DA}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Odometry", "Odometry\Odometry.vcxproj", "{74502AE4-9E5C-4AF1-8D40-7597738792B9}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Win32 = Debug|Win32
@@ -16,17 +20,25 @@ Global
 		{21389426-3EE6-44C1-B257-BE3660DE9209}.Debug|Win32.ActiveCfg = Debug|Win32
 		{21389426-3EE6-44C1-B257-BE3660DE9209}.Debug|Win32.Build.0 = Debug|Win32
 		{21389426-3EE6-44C1-B257-BE3660DE9209}.Debug|x64.ActiveCfg = Debug|x64
-		{21389426-3EE6-44C1-B257-BE3660DE9209}.Debug|x64.Build.0 = Debug|x64
 		{21389426-3EE6-44C1-B257-BE3660DE9209}.Release|Win32.ActiveCfg = Release|Win32
 		{21389426-3EE6-44C1-B257-BE3660DE9209}.Release|Win32.Build.0 = Release|Win32
 		{21389426-3EE6-44C1-B257-BE3660DE9209}.Release|x64.ActiveCfg = Release|x64
 		{21389426-3EE6-44C1-B257-BE3660DE9209}.Release|x64.Build.0 = Release|x64
+		{74502AE4-9E5C-4AF1-8D40-7597738792B9}.Debug|Win32.ActiveCfg = Debug|Win32
+		{74502AE4-9E5C-4AF1-8D40-7597738792B9}.Debug|Win32.Build.0 = Debug|Win32
+		{74502AE4-9E5C-4AF1-8D40-7597738792B9}.Debug|x64.ActiveCfg = Debug|x64
+		{74502AE4-9E5C-4AF1-8D40-7597738792B9}.Debug|x64.Build.0 = Debug|x64
+		{74502AE4-9E5C-4AF1-8D40-7597738792B9}.Release|Win32.ActiveCfg = Release|Win32
+		{74502AE4-9E5C-4AF1-8D40-7597738792B9}.Release|Win32.Build.0 = Release|Win32
+		{74502AE4-9E5C-4AF1-8D40-7597738792B9}.Release|x64.ActiveCfg = Release|x64
+		{74502AE4-9E5C-4AF1-8D40-7597738792B9}.Release|x64.Build.0 = Release|x64
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{21389426-3EE6-44C1-B257-BE3660DE9209} = {2DBD99CC-E7BB-4696-9ECC-837E53923B83}
+		{74502AE4-9E5C-4AF1-8D40-7597738792B9} = {BC65136C-411A-4596-9CAD-069E5ECD34DA}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		QtVersion = qt-4.8.5

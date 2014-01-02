@@ -4,13 +4,13 @@
 		<connection_type ValueType="Options" DataType="urg_connection_type_t">
 			<URG_SERIAL>0</URG_SERIAL>
 			<URG_ETHERNET>1</URG_ETHERNET>
-			<Default>1</Default>
+			<Default>0</Default>
 		</connection_type>
 		<device_or_address ValueType="Value" DataType="string">
-			<Default>192.168.0.10</Default>
+			<Default>COM12</Default>
 		</device_or_address>
 		<baudrate_or_port ValueType="Value" DataType="int">
-			<Default>10940</Default>
+			<Default>115200</Default>
 		</baudrate_or_port>
 		<measurement_type ValueType="Options" DataType="urg_measurement_type_t">
 			<URG_DISTANCE>0</URG_DISTANCE>
@@ -247,7 +247,7 @@
         	<PIXEL_FORMAT_BGR16>0x02000001</PIXEL_FORMAT_BGR16>
 			<PIXEL_FORMAT_BGRU16>0x02000002</PIXEL_FORMAT_BGRU16>
         	<PIXEL_FORMAT_422YUV8_JPEG>0x40000001</PIXEL_FORMAT_422YUV8_JPEG>
-			<Default>0x80000008</Default>
+			<Default>0x80000000</Default>
 		</pixelformat>
 	</Sensor>
 	<Storage Class="PointGreyFlea2" Name="PointGreyFlea2">
@@ -259,6 +259,28 @@
 		</storagepath>
 		<extension ValueType="Value" DataType="string">
 			<Default>mpeg</Default>
+		</extension>
+	</Storage>
+	<Processor Class="Odometry" Name="Odometry">
+		<curx Valuetype="Value" DataType="double">
+			<Default>0</Default>
+		</curx>
+		<cury Valuetype="Value" DataType="double">
+			<Default>0</Default>
+		</cury>
+		<curtheta Valuetype="Value" DataType="double">
+			<Default>0</Default>
+		</curtheta>
+		<stepsize Valuetype="Value" DataType="double">
+			<Default>0.001077943615</Default>
+		</stepsize>
+	</Processor>
+	<Storage Class="Odometry" Name="Odometry">
+		<storagepath ValueType="Value" DataType="string">
+			<Default>D:\Data</Default>
+		</storagepath>
+		<extension ValueType="Value" DataType="string">
+			<Default>nav</Default>
 		</extension>
 	</Storage>
 </Sensors>

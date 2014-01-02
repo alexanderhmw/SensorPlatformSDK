@@ -71,6 +71,8 @@ public:
 	bool disconnectDataProcessedErrorSlot(QObject * receiver, const char * slot);
 	bool disconnectProcessorCloseSlot(QObject * receiver, const char * slot);
 	bool disconnectProcessorCloseErrorSlot(QObject * receiver, const char * slot);
+public:
+	bool inputDataDriven(QObject * sender, const char * signal);
 };
 
 #endif // PROCESSOR_H

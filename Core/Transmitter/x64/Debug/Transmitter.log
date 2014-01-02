@@ -1,11 +1,9 @@
-﻿Build started 2013/10/19 13:17:20.
-     1>Project "C:\PossDemo\GitHub\HMW-Alexander\SensorPlatformSDK\Core\Transmitter\Transmitter.vcxproj" on node 2 (rebuild target(s)).
+﻿Build started 2014-01-02 21:22:22.
+     1>Project "C:\POSS_Demo\GitHub\HMW-Alexander\SensorPlatformSDK\Core\Transmitter\Transmitter.vcxproj" on node 2 (rebuild target(s)).
      1>_PrepareForClean:
          Deleting file "x64\Debug\Transmitter.lastbuildstate".
        InitializeBuildStatus:
          Creating "x64\Debug\Transmitter.unsuccessfulbuild" because "AlwaysCreate" was specified.
-       ComputeCustomBuildOutput:
-         Creating directory "C:\PossDemo\GitHub\HMW-Alexander\SensorPlatformSDK\Core\Transmitter\GeneratedFiles\Debug\".
        CustomBuild:
          Moc'ing transmitter.h...
        ClCompile:
@@ -14,14 +12,14 @@
          transmitter.cpp
          Generating Code...
        Lib:
-         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\x86_amd64\Lib.exe /OUT:"C:\PossDemo\GitHub\HMW-Alexander\SensorPlatformSDK\Core\x64\Debug\\Transmitter.lib" /LIBPATH:"C:\SDK\Qt\qt-4.8.5\lib" /NOLOGO x64\Debug\moc_transmitter.obj
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\x86_amd64\Lib.exe /OUT:"C:\POSS_Demo\GitHub\HMW-Alexander\SensorPlatformSDK\Core\x64\Debug\\Transmitter.lib" /LIBPATH:"C:\SDK\Qt\qt-4.8.5\lib" /NOLOGO x64\Debug\moc_transmitter.obj
          x64\Debug\transmitter.obj
-         Transmitter.vcxproj -> C:\PossDemo\GitHub\HMW-Alexander\SensorPlatformSDK\Core\x64\Debug\Transmitter.lib
+         Transmitter.vcxproj -> C:\POSS_Demo\GitHub\HMW-Alexander\SensorPlatformSDK\Core\x64\Debug\Transmitter.lib
        FinalizeBuildStatus:
          Deleting file "x64\Debug\Transmitter.unsuccessfulbuild".
          Touching "x64\Debug\Transmitter.lastbuildstate".
-     1>Done Building Project "C:\PossDemo\GitHub\HMW-Alexander\SensorPlatformSDK\Core\Transmitter\Transmitter.vcxproj" (rebuild target(s)).
+     1>Done Building Project "C:\POSS_Demo\GitHub\HMW-Alexander\SensorPlatformSDK\Core\Transmitter\Transmitter.vcxproj" (rebuild target(s)).
 
 Build succeeded.
 
-Time Elapsed 00:00:02.38
+Time Elapsed 00:00:03.19

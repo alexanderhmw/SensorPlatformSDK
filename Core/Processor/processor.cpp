@@ -57,8 +57,8 @@ void Processor::inputDataSlot(void * data)
 {
 	if(openflag&&inputData(_params,data,&(inputdatabuffer[curinputdataid])))
 	{
-		emit dataInputSignal();
 		curinputdataid=(curinputdataid+1)%inputdatabuffer.size();
+		emit dataInputSignal();
 	}
 	else
 	{
@@ -223,4 +223,12 @@ bool Processor::disconnectProcessorCloseSlot(QObject * receiver, const char * sl
 bool Processor::disconnectProcessorCloseErrorSlot(QObject * receiver, const char * slot)
 {
 	return disconnect(this,SIGNAL(processorCloseErrorSignal()),receiver,slot);
+}
+
+bool Processor::inputDataDriven(QObject * sender, const char * signal)
+{
+	bool flag=1;
+	flag&=connectInputDataSignal(sender,signal);
+	flag&=connectProcessDataSignal(this,SIGNAL(dataInputSignal()));
+	return flag;
 }

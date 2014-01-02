@@ -58,13 +58,13 @@ bool openSensor(void * params, QObject ** trigger, QString & triggersignal)	//op
 	{
 		return 0;
 	}
-	urg_start_measurement(&(URGparams->urg),URGparams->measurement_type,0,URGparams->skip_scan);
 	return 1;
 }
 
 bool captureData(void * params, void ** data)	//capture data using params and store in data
 {
 	URGSENSORPARAMS * URGparams=(URGSENSORPARAMS *)params;
+	urg_start_measurement(&(URGparams->urg),URGparams->measurement_type,1,URGparams->skip_scan);
 	long urgdata[URGMAXSIZE];
 	long timestamp;
 	int n=urg_get_distance(&(URGparams->urg),urgdata,&timestamp);

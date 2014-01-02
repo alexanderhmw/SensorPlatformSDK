@@ -49,12 +49,12 @@ void setWidgetsCommunicator(QWidget * widget, void ** widgets)	//initial the wid
 	vlayout->addLayout(hlayout1);
 	vlayout->addLayout(hlayout2);
 
-	hlayout3->addWidget(&(Encoderwidgets->sendlabel));
-	hlayout3->addWidget(&(Encoderwidgets->sendstatus));
-	hlayout4->addWidget(&(Encoderwidgets->sendframenum));
-	hlayout4->addWidget(&(Encoderwidgets->sendinfo));
-	vlayout->addLayout(hlayout3);
-	vlayout->addLayout(hlayout4);
+	//hlayout3->addWidget(&(Encoderwidgets->sendlabel));
+	//hlayout3->addWidget(&(Encoderwidgets->sendstatus));
+	//hlayout4->addWidget(&(Encoderwidgets->sendframenum));
+	//hlayout4->addWidget(&(Encoderwidgets->sendinfo));
+	//vlayout->addLayout(hlayout3);
+	//vlayout->addLayout(hlayout4);
 
 	widget->setLayout(vlayout);
 	widget->adjustSize();
@@ -106,7 +106,7 @@ void dataReceived(void * widgets,void * receivedata)	//handle capturedata signal
 	Encoderwidgets->receiveframenum.setText(QString("%1").arg(num));
 	short angle=*((short *)(Encoderreceivedata->datagram.data()));
 	short encoder=*((short *)(Encoderreceivedata->datagram.data()+sizeof(angle)));
-	Encoderwidgets->receiveinfo.setText(QString("%1 - %2 - %3").arg(Encoderreceivedata->qtimestamp.toString("hh:mm:ss:zzz")).arg(angle).arg(encoder));
+	Encoderwidgets->receiveinfo.setText(QString("Time: %1  Angle:  %2  Encoder:  %3").arg(Encoderreceivedata->qtimestamp.toString("hh:mm:ss:zzz")).arg(angle).arg(encoder));
 }
 
 void dataReceivedError(void * widgets)	//handle capturedataerror signal
@@ -116,7 +116,7 @@ void dataReceivedError(void * widgets)	//handle capturedataerror signal
 	Encoderwidgets->receiveinfo.setText("No Data");
 }
 
-void dataSent(void * widgets,void * senddata)	//handle capturedata signal
+void dataSent(void * widgets,void * senddata)	//handle capture data signal
 {
 	ENCODERCOMMUNICATORWIDGETS * Encoderwidgets=(ENCODERCOMMUNICATORWIDGETS *)widgets;
 	ENCODERCOMMUNICATORSENDDATA * Encodersenddata=(ENCODERCOMMUNICATORSENDDATA *)senddata;

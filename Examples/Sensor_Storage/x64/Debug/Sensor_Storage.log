@@ -1,5 +1,5 @@
-﻿Build started 2013-12-27 18:44:11.
-     1>Project "C:\POSS_Demo\GitHub\HMW-Alexander\SensorPlatformSDK\Examples\Sensor_Storage\Sensor_Storage.vcxproj" on node 2 (rebuild target(s)).
+﻿Build started 2014-01-02 21:22:49.
+     1>Project "C:\POSS_Demo\GitHub\HMW-Alexander\SensorPlatformSDK\Examples\Sensor_Storage\Sensor_Storage.vcxproj" on node 4 (rebuild target(s)).
      1>_PrepareForClean:
          Deleting file "x64\Debug\Sensor_Storage.lastbuildstate".
        InitializeBuildStatus:
@@ -24,18 +24,6 @@
          x64\Debug\main.obj
          x64\Debug\sensor_storage.obj
      1>qtmaind.lib(qtmain_win.obj) : warning LNK4099: PDB 'vc100.pdb' was not found with 'qtmaind.lib(qtmain_win.obj)' or at 'C:\POSS_Demo\GitHub\HMW-Alexander\SensorPlatformSDK\Examples\x64\Debug\vc100.pdb'; linking object as if no debug info
-     1>Communicator.lib(communicator.obj) : warning LNK4099: PDB 'vc100.pdb' was not found with 'Communicator.lib(communicator.obj)' or at 'C:\POSS_Demo\GitHub\HMW-Alexander\SensorPlatformSDK\Examples\x64\Debug\vc100.pdb'; linking object as if no debug info
-     1>Communicator.lib(communicatorwidget.obj) : warning LNK4099: PDB 'vc100.pdb' was not found with 'Communicator.lib(communicatorwidget.obj)' or at 'C:\POSS_Demo\GitHub\HMW-Alexander\SensorPlatformSDK\Examples\x64\Debug\vc100.pdb'; linking object as if no debug info
-     1>Communicator.lib(moc_communicator.obj) : warning LNK4099: PDB 'vc100.pdb' was not found with 'Communicator.lib(moc_communicator.obj)' or at 'C:\POSS_Demo\GitHub\HMW-Alexander\SensorPlatformSDK\Examples\x64\Debug\vc100.pdb'; linking object as if no debug info
-     1>Communicator.lib(moc_communicatorwidget.obj) : warning LNK4099: PDB 'vc100.pdb' was not found with 'Communicator.lib(moc_communicatorwidget.obj)' or at 'C:\POSS_Demo\GitHub\HMW-Alexander\SensorPlatformSDK\Examples\x64\Debug\vc100.pdb'; linking object as if no debug info
-     1>Storage.lib(moc_storage.obj) : warning LNK4099: PDB 'vc100.pdb' was not found with 'Storage.lib(moc_storage.obj)' or at 'C:\POSS_Demo\GitHub\HMW-Alexander\SensorPlatformSDK\Examples\x64\Debug\vc100.pdb'; linking object as if no debug info
-     1>Storage.lib(moc_storagewidget.obj) : warning LNK4099: PDB 'vc100.pdb' was not found with 'Storage.lib(moc_storagewidget.obj)' or at 'C:\POSS_Demo\GitHub\HMW-Alexander\SensorPlatformSDK\Examples\x64\Debug\vc100.pdb'; linking object as if no debug info
-     1>Storage.lib(storage.obj) : warning LNK4099: PDB 'vc100.pdb' was not found with 'Storage.lib(storage.obj)' or at 'C:\POSS_Demo\GitHub\HMW-Alexander\SensorPlatformSDK\Examples\x64\Debug\vc100.pdb'; linking object as if no debug info
-     1>Storage.lib(storagewidget.obj) : warning LNK4099: PDB 'vc100.pdb' was not found with 'Storage.lib(storagewidget.obj)' or at 'C:\POSS_Demo\GitHub\HMW-Alexander\SensorPlatformSDK\Examples\x64\Debug\vc100.pdb'; linking object as if no debug info
-     1>NodeBase.lib(moc_nodebase.obj) : warning LNK4099: PDB 'vc100.pdb' was not found with 'NodeBase.lib(moc_nodebase.obj)' or at 'C:\POSS_Demo\GitHub\HMW-Alexander\SensorPlatformSDK\Examples\x64\Debug\vc100.pdb'; linking object as if no debug info
-     1>NodeBase.lib(moc_nodewidgetbase.obj) : warning LNK4099: PDB 'vc100.pdb' was not found with 'NodeBase.lib(moc_nodewidgetbase.obj)' or at 'C:\POSS_Demo\GitHub\HMW-Alexander\SensorPlatformSDK\Examples\x64\Debug\vc100.pdb'; linking object as if no debug info
-     1>NodeBase.lib(nodebase.obj) : warning LNK4099: PDB 'vc100.pdb' was not found with 'NodeBase.lib(nodebase.obj)' or at 'C:\POSS_Demo\GitHub\HMW-Alexander\SensorPlatformSDK\Examples\x64\Debug\vc100.pdb'; linking object as if no debug info
-     1>NodeBase.lib(nodewidgetbase.obj) : warning LNK4099: PDB 'vc100.pdb' was not found with 'NodeBase.lib(nodewidgetbase.obj)' or at 'C:\POSS_Demo\GitHub\HMW-Alexander\SensorPlatformSDK\Examples\x64\Debug\vc100.pdb'; linking object as if no debug info
          Sensor_Storage.vcxproj -> C:\POSS_Demo\GitHub\HMW-Alexander\SensorPlatformSDK\Examples\x64\Debug\Sensor_Storage.exe
        Manifest:
          C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /outputresource:"C:\POSS_Demo\GitHub\HMW-Alexander\SensorPlatformSDK\Examples\x64\Debug\\Sensor_Storage.exe;#1" /manifest x64\Debug\Sensor_Storage.exe.intermediate.manifest
@@ -46,4 +34,4 @@
 
 Build succeeded.
 
-Time Elapsed 00:00:08.83
+Time Elapsed 00:00:07.12

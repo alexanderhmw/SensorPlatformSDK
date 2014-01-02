@@ -1,5 +1,5 @@
-﻿Build started 2013/10/19 13:17:16.
-     1>Project "C:\PossDemo\GitHub\HMW-Alexander\SensorPlatformSDK\Core\NodeBase\NodeBase.vcxproj" on node 2 (rebuild target(s)).
+﻿Build started 2014-01-02 21:22:17.
+     1>Project "C:\POSS_Demo\GitHub\HMW-Alexander\SensorPlatformSDK\Core\NodeBase\NodeBase.vcxproj" on node 2 (rebuild target(s)).
      1>_PrepareForClean:
          Deleting file "x64\Debug\NodeBase.lastbuildstate".
        InitializeBuildStatus:
@@ -15,16 +15,16 @@
          nodewidgetbase.cpp
          Generating Code...
        Lib:
-         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\x86_amd64\Lib.exe /OUT:"C:\PossDemo\GitHub\HMW-Alexander\SensorPlatformSDK\Core\x64\Debug\\NodeBase.lib" /LIBPATH:"C:\SDK\Qt\qt-4.8.5\lib" /NOLOGO x64\Debug\moc_nodebase.obj
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\x86_amd64\Lib.exe /OUT:"C:\POSS_Demo\GitHub\HMW-Alexander\SensorPlatformSDK\Core\x64\Debug\\NodeBase.lib" /LIBPATH:"C:\SDK\Qt\qt-4.8.5\lib" /NOLOGO x64\Debug\moc_nodebase.obj
          x64\Debug\moc_nodewidgetbase.obj
          x64\Debug\nodebase.obj
          x64\Debug\nodewidgetbase.obj
-         NodeBase.vcxproj -> C:\PossDemo\GitHub\HMW-Alexander\SensorPlatformSDK\Core\x64\Debug\NodeBase.lib
+         NodeBase.vcxproj -> C:\POSS_Demo\GitHub\HMW-Alexander\SensorPlatformSDK\Core\x64\Debug\NodeBase.lib
        FinalizeBuildStatus:
          Deleting file "x64\Debug\NodeBase.unsuccessfulbuild".
          Touching "x64\Debug\NodeBase.lastbuildstate".
-     1>Done Building Project "C:\PossDemo\GitHub\HMW-Alexander\SensorPlatformSDK\Core\NodeBase\NodeBase.vcxproj" (rebuild target(s)).
+     1>Done Building Project "C:\POSS_Demo\GitHub\HMW-Alexander\SensorPlatformSDK\Core\NodeBase\NodeBase.vcxproj" (rebuild target(s)).
 
 Build succeeded.
 
-Time Elapsed 00:00:03.48
+Time Elapsed 00:00:05.77

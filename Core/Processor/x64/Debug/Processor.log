@@ -1,11 +1,9 @@
-﻿Build started 2013/10/19 13:17:23.
-     1>Project "C:\PossDemo\GitHub\HMW-Alexander\SensorPlatformSDK\Core\Processor\Processor.vcxproj" on node 2 (rebuild target(s)).
+﻿Build started 2014-01-02 21:22:23.
+     1>Project "C:\POSS_Demo\GitHub\HMW-Alexander\SensorPlatformSDK\Core\Processor\Processor.vcxproj" on node 7 (rebuild target(s)).
      1>_PrepareForClean:
          Deleting file "x64\Debug\Processor.lastbuildstate".
        InitializeBuildStatus:
          Creating "x64\Debug\Processor.unsuccessfulbuild" because "AlwaysCreate" was specified.
-       ComputeCustomBuildOutput:
-         Creating directory "C:\PossDemo\GitHub\HMW-Alexander\SensorPlatformSDK\Core\Processor\GeneratedFiles\Debug\".
        CustomBuild:
          Moc'ing processor.h...
        ClCompile:
@@ -14,14 +12,14 @@
          processor.cpp
          Generating Code...
        Lib:
-         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\x86_amd64\Lib.exe /OUT:"C:\PossDemo\GitHub\HMW-Alexander\SensorPlatformSDK\Core\x64\Debug\\Processor.lib" /LIBPATH:"C:\SDK\Qt\qt-4.8.5\lib" /NOLOGO x64\Debug\moc_processor.obj
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\x86_amd64\Lib.exe /OUT:"C:\POSS_Demo\GitHub\HMW-Alexander\SensorPlatformSDK\Core\x64\Debug\\Processor.lib" /LIBPATH:"C:\SDK\Qt\qt-4.8.5\lib" /NOLOGO x64\Debug\moc_processor.obj
          x64\Debug\processor.obj
-         Processor.vcxproj -> C:\PossDemo\GitHub\HMW-Alexander\SensorPlatformSDK\Core\x64\Debug\Processor.lib
+         Processor.vcxproj -> C:\POSS_Demo\GitHub\HMW-Alexander\SensorPlatformSDK\Core\x64\Debug\Processor.lib
        FinalizeBuildStatus:
          Deleting file "x64\Debug\Processor.unsuccessfulbuild".
          Touching "x64\Debug\Processor.lastbuildstate".
-     1>Done Building Project "C:\PossDemo\GitHub\HMW-Alexander\SensorPlatformSDK\Core\Processor\Processor.vcxproj" (rebuild target(s)).
+     1>Done Building Project "C:\POSS_Demo\GitHub\HMW-Alexander\SensorPlatformSDK\Core\Processor\Processor.vcxproj" (rebuild target(s)).
 
 Build succeeded.
 
-Time Elapsed 00:00:02.09
+Time Elapsed 00:00:02.57
