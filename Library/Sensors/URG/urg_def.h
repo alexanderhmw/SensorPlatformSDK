@@ -56,5 +56,18 @@ struct Q_DECL_EXPORT URGSTORAGEWIDGETS	//storage widgets
 	QLineEdit framenum;
 	QLineEdit info;
 };
+struct Q_DECL_EXPORT URGSIMULATORPARAMS	//processor parameters
+{
+	QFile lmsFile;
+	QString datafile;
+	int dataNum;
+};
 
+struct Q_DECL_EXPORT URGSIMULATORDATA	//processor data
+{
+	long timestamp;
+	QTime qtimestamp;
+	int datasize;
+	short * data;
+};
 #endif

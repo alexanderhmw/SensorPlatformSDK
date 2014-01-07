@@ -5,12 +5,14 @@
 #include <QtCore/qglobal.h>
 #include <serialportlib\qextserialport.h>
 #include <qfile.h>
+#include<qtextstream.h>
 #include <qboxlayout.h>
 #include<qlabel.h>
 #include<qlineedit.h>
 #include<qcheckbox.h>
 #include <qdatetime.h>
 #include <qplaintextedit.h>
+#include <QtGlobal>
 
 struct Q_DECL_EXPORT ENCODERCOMMUNICATORPARAMS	//communicator parameters
 {
@@ -72,6 +74,19 @@ struct Q_DECL_EXPORT ENCODERSTORAGEWIDGETS	//storage widgets
 	QLineEdit filename;
 	QLineEdit receiveframenum;
 	QLineEdit receiveinfo;
+};
+
+struct Q_DECL_EXPORT ENCODERSIMULATORPARAMS	//processor parameters
+{
+	QFile file;
+	QString datafile;
+	QTextStream textstream;
+};
+
+struct Q_DECL_EXPORT ENCODERSIMULATORDATA	//processor data
+{
+	QTime qtimestamp;
+	QByteArray datagram;
 };
 
 #endif

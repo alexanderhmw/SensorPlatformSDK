@@ -207,6 +207,11 @@
 			<Default>encoder</Default>
 		</extension>
 	</Storage>		
+	<Simulator Class="Encoder" Name="Encoder">
+		<datafile ValueType="Value" DataType="string">
+			<Default>D:\Data\20140102_223503_525.encoder</Default>
+		</datafile>
+	</Simulator>
 	<Sensor Class="PointGreyFlea2" Name="PointGreyFlea2">
 		<videomode ValueType="Options" DataType="VideoMode">
 			<VIDEOMODE_160x120YUV444>0</VIDEOMODE_160x120YUV444>
@@ -259,6 +264,33 @@
 		</storagepath>
 		<extension ValueType="Value" DataType="string">
 			<Default>mpeg</Default>
+		</extension>
+	</Storage>
+	<Simulator Class="PointGreyFlea2" Name="PointGreyFlea2">
+		<datafile ValueType="Value" DataType="string">
+			<Default>D:\Data\20140102_223503_525.avi</Default>
+		</datafile>
+	</Simulator>
+	<Processor Class="Odometry" Name="Odometry">
+		<curx Valuetype="Value" DataType="double">
+			<Default>0</Default>
+		</curx>
+		<cury Valuetype="Value" DataType="double">
+			<Default>0</Default>
+		</cury>
+		<curtheta Valuetype="Value" DataType="double">
+			<Default>0</Default>
+		</curtheta>
+		<stepsize Valuetype="Value" DataType="double">
+			<Default>0.001077943615</Default>
+		</stepsize>
+	</Processor>
+	<Storage Class="Odometry" Name="Odometry">
+		<storagepath ValueType="Value" DataType="string">
+			<Default>D:\Data</Default>
+		</storagepath>
+		<extension ValueType="Value" DataType="string">
+			<Default>nav</Default>
 		</extension>
 	</Storage>
 </Sensors>

@@ -1,5 +1,4 @@
 #include "poss_goblin_collector.h"
-#include <qmessagebox.h>
 #pragma comment(lib,"Sensor.lib")
 #pragma comment(lib,"Communicator.lib")
 #pragma comment(lib,"Storage.lib")
@@ -83,7 +82,7 @@ POSS_Goblin_Collector::POSS_Goblin_Collector(QWidget *parent, Qt::WFlags flags)
 	encoder->openCommunicatorSlot();
 	odometry->openProcessorSlot();
 //==================================
-//Start timer
+//Start timer and thread
 	camerathread.start();
 	laserthread.start();
 	encoderthread.start();

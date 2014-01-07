@@ -1,5 +1,5 @@
-﻿Build started 2014-01-02 21:22:17.
-     1>Project "C:\POSS_Demo\GitHub\HMW-Alexander\SensorPlatformSDK\Core\Communicator\Communicator.vcxproj" on node 3 (rebuild target(s)).
+﻿Build started 2014/1/7 21:11:32.
+     1>Project "C:\PossDemo\GitHub\HMW-Alexander\SensorPlatformSDK\Core\Communicator\Communicator.vcxproj" on node 3 (rebuild target(s)).
      1>_PrepareForClean:
          Deleting file "x64\Debug\Communicator.lastbuildstate".
        InitializeBuildStatus:
@@ -15,16 +15,16 @@
          moc_communicatorwidget.cpp
          Generating Code...
        Lib:
-         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\x86_amd64\Lib.exe /OUT:"C:\POSS_Demo\GitHub\HMW-Alexander\SensorPlatformSDK\Core\x64\Debug\\Communicator.lib" /LIBPATH:"C:\SDK\Qt\qt-4.8.5\lib" /NOLOGO x64\Debug\communicator.obj
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\x86_amd64\Lib.exe /OUT:"C:\PossDemo\GitHub\HMW-Alexander\SensorPlatformSDK\Core\x64\Debug\\Communicator.lib" /LIBPATH:"C:\SDK\Qt\qt-4.8.5\lib" /NOLOGO x64\Debug\communicator.obj
          x64\Debug\communicatorwidget.obj
          x64\Debug\moc_communicator.obj
          x64\Debug\moc_communicatorwidget.obj
-         Communicator.vcxproj -> C:\POSS_Demo\GitHub\HMW-Alexander\SensorPlatformSDK\Core\x64\Debug\Communicator.lib
+         Communicator.vcxproj -> C:\PossDemo\GitHub\HMW-Alexander\SensorPlatformSDK\Core\x64\Debug\Communicator.lib
        FinalizeBuildStatus:
          Deleting file "x64\Debug\Communicator.unsuccessfulbuild".
          Touching "x64\Debug\Communicator.lastbuildstate".
-     1>Done Building Project "C:\POSS_Demo\GitHub\HMW-Alexander\SensorPlatformSDK\Core\Communicator\Communicator.vcxproj" (rebuild target(s)).
+     1>Done Building Project "C:\PossDemo\GitHub\HMW-Alexander\SensorPlatformSDK\Core\Communicator\Communicator.vcxproj" (rebuild target(s)).
 
 Build succeeded.
 
-Time Elapsed 00:00:05.67
+Time Elapsed 00:00:05.27

@@ -22,6 +22,7 @@
     <ClCompile Include="Encoder.cpp" />
     <ClCompile Include="Encoder_communicator.cpp" />
     <ClCompile Include="Encoder_communicatorwidget.cpp" />
+    <ClCompile Include="Encoder_simulator.cpp" />
     <ClCompile Include="Encoder_storage.cpp" />
     <ClCompile Include="Encoder_storagewidget.cpp" />
   </ItemGroup>

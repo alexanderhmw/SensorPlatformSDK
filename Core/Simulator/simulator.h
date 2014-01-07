@@ -16,11 +16,11 @@ protected:
 	QVector<void *> databuffer;
 	int curdataid;
 	bool openflag;
-	QTimer timer;
 	long curtimestamp;
 	long nexttimestamp;
 	int emitdataid;
 	bool startflag;
+	double simrate;
 protected:
 	typedef bool (*openSimulatorFptr)(void * params);
 	openSimulatorFptr openSimulator;
@@ -34,7 +34,7 @@ private slots:
 	void emitDataSlot();
 public slots:
 	void openSimulatorSlot();
-	void initialSimulatorSlot(long starttime);
+	void initialSimulatorSlot(long starttime, double rate=1);
 	void startSimulatorSlot();
 	void stopSimulatorSlot();
 	void closeSimulatorSlot();

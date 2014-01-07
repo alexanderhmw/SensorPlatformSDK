@@ -5,6 +5,7 @@
 #include<qdatetime.h>
 #include<qstring.h>
 #include<qfile.h>
+#include<qtextstream.h>
 #include <qboxlayout.h>
 #include<qlabel.h>
 #include<qlineedit.h>
@@ -38,16 +39,6 @@ struct Q_DECL_EXPORT POINTGREYFLEA2SENSORWIDGETS	//sensor widgets
 	QLabel image;
 };
 
-//struct Q_DECL_EXPORT POINTGREYFLEA2SIMULATORPARAMS	//processor parameters
-//{
-//
-//};
-//
-//struct Q_DECL_EXPORT POINTGREYFLEA2SIMULATORDATA	//processor data
-//{
-//
-//};
-
 struct Q_DECL_EXPORT POINTGREYFLEA2STORAGEPARAMS	//storage parameters
 {
 	QFile timestampwriter;
@@ -65,6 +56,20 @@ struct Q_DECL_EXPORT POINTGREYFLEA2STORAGEWIDGETS	//storage widgets
 	QLineEdit imagefilename;
 	QLineEdit framenum;
 	QLineEdit info;
+};
+
+struct Q_DECL_EXPORT POINTGREYFLEA2SIMULATORPARAMS	//processor parameters
+{
+	cv::VideoCapture videoCap;
+	QFile logFile;
+	QString datafile;
+	QTextStream textstream;
+};
+
+struct Q_DECL_EXPORT POINTGREYFLEA2SIMULATORDATA	//processor data
+{
+	QTime timestamp;
+	cv::Mat image;
 };
 
 #endif

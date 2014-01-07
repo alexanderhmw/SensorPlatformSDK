@@ -11,12 +11,9 @@ Simulator::Simulator(QString libraryname, QString simulatorname, int buffersize)
 	databuffer.resize(buffersize);
 	curdataid=0;
 	openflag=0;
-	timer.setSingleShot(1);
 	curtimestamp=0;
 	emitdataid=-1;
 	startflag=0;
-
-	connect(&timer,SIGNAL(timeout()),this,SLOT(emitDataSlot()));
 }
 
 Simulator::~Simulator()
@@ -39,14 +36,39 @@ Simulator::~Simulator()
 
 void Simulator::emitDataSlot()
 {
-	long interval=nexttimestamp-curtimestamp;
+	int interval=int((nexttimestamp-curtimestamp)*simrate+0.5);
 	if(interval>0&&startflag)
 	{
-		timer.start(interval);
+		QTimer::singleShot(interval, this, SLOT(emitDataSlot()));;
 		emit dataEmitSignal(databuffer[emitdataid]);
 		emitdataid=(emitdataid+1)%databuffer.size();
 		curtimestamp=nexttimestamp;
 		nexttimestamp=loadData(_params,&(databuffer[curdataid]));
+		curdataid=(curdataid+1)%databuffer.size();
+	}
+	else if(interval==0&&startflag)
+	{
+		while(interval==0)
+		{
+			emit dataEmitSignal(databuffer[emitdataid]);
+			emitdataid=(emitdataid+1)%databuffer.size();
+			nexttimestamp=loadData(_params,&(databuffer[curdataid]));
+			curdataid=(curdataid+1)%databuffer.size();
+			interval=nexttimestamp-curtimestamp;
+		}
+		if(interval>0)
+		{
+			QTimer::singleShot(interval, this, SLOT(emitDataSlot()));;
+			emit dataEmitSignal(databuffer[emitdataid]);
+			emitdataid=(emitdataid+1)%databuffer.size();
+			curtimestamp=nexttimestamp;
+			nexttimestamp=loadData(_params,&(databuffer[curdataid]));
+			curdataid=(curdataid+1)%databuffer.size();
+		}
+		else
+		{
+			emit dataEmitErrorSignal();
+		}
 	}
 	else
 	{
@@ -67,11 +89,12 @@ void Simulator::openSimulatorSlot()
 	}
 }
 
-void Simulator::initialSimulatorSlot(long starttime)
+void Simulator::initialSimulatorSlot(long starttime, double rate)
 {
 	if(openflag&&!startflag)
 	{
 		curtimestamp=starttime;
+		simrate=rate;
 		while(1)
 		{
 			nexttimestamp=loadData(_params,&(databuffer[curdataid]));
@@ -82,9 +105,21 @@ void Simulator::initialSimulatorSlot(long starttime)
 			}
 			else if(nexttimestamp>curtimestamp)
 			{
-				timer.setInterval(nexttimestamp-curtimestamp);
-				emit simulatorInitialSignal(starttime);
-				break;
+				emitdataid=curdataid;
+				curdataid=(curdataid+1)%databuffer.size();
+				curtimestamp=nexttimestamp;
+				nexttimestamp=loadData(_params,&(databuffer[curdataid]));
+				if(nexttimestamp<0)
+				{
+					emit simulatorInitialErrorSignal();
+					break;
+				}
+				else
+				{
+					curdataid=(curdataid+1)%databuffer.size();
+					emit simulatorInitialSignal(starttime);
+					break;
+				}
 			}
 		}
 	}
@@ -99,7 +134,8 @@ void Simulator::startSimulatorSlot()
 	if(openflag&&!startflag)
 	{
 		startflag=1;
-		timer.start();
+		int interval=int((nexttimestamp-curtimestamp)*simrate+0.5);
+		QTimer::singleShot(interval, this, SLOT(emitDataSlot()));;
 		emit simulatorStartSignal();
 	}
 	else

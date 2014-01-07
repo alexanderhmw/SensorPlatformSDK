@@ -1,5 +1,5 @@
-﻿Build started 2013-12-30 22:12:24.
-     1>Project "C:\POSS_Demo\GitHub\HMW-Alexander\SensorPlatformSDK\Library\Sensors\coordinateconvertionlib\coordinateconvertionlib.vcxproj" on node 3 (rebuild target(s)).
+﻿Build started 2014/1/3 17:16:37.
+     1>Project "C:\PossDemo\GitHub\HMW-Alexander\SensorPlatformSDK\Library\Sensors\coordinateconvertionlib\coordinateconvertionlib.vcxproj" on node 3 (rebuild target(s)).
      1>_PrepareForClean:
          Deleting file "x64\Debug\coordinateconvertionlib.lastbuildstate".
        InitializeBuildStatus:
@@ -8,13 +8,13 @@
          C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\x86_amd64\CL.exe /c /I.\GeneratedFiles /I. /I"C:\SDK\Qt\qt-4.8.5\include" /I.\GeneratedFiles\Debug /I"C:\SDK\Qt\qt-4.8.5\include\QtCore" /Zi /nologo /W1 /WX- /Od /D UNICODE /D WIN32 /D QT_DLL /D QT_CORE_LIB /D COORDINATECONVERTIONLIB_LIB /Gm- /EHsc /MDd /GS /fp:precise /Zc:wchar_t- /Zc:forScope /Fo"x64\Debug\\" /Fd"x64\Debug\vc100.pdb" /Gd /TP /errorReport:prompt coordinateconvertion.cpp
          coordinateconvertion.cpp
        Lib:
-         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\x86_amd64\Lib.exe /OUT:"C:\POSS_Demo\GitHub\HMW-Alexander\SensorPlatformSDK\Library\Sensors\x64\Debug\\coordinateconvertionlib.lib" /LIBPATH:"C:\SDK\Qt\qt-4.8.5\lib" /NOLOGO x64\Debug\coordinateconvertion.obj
-         coordinateconvertionlib.vcxproj -> C:\POSS_Demo\GitHub\HMW-Alexander\SensorPlatformSDK\Library\Sensors\x64\Debug\coordinateconvertionlib.lib
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\x86_amd64\Lib.exe /OUT:"C:\PossDemo\GitHub\HMW-Alexander\SensorPlatformSDK\Library\Sensors\x64\Debug\\coordinateconvertionlib.lib" /LIBPATH:"C:\SDK\Qt\qt-4.8.5\lib" /NOLOGO x64\Debug\coordinateconvertion.obj
+         coordinateconvertionlib.vcxproj -> C:\PossDemo\GitHub\HMW-Alexander\SensorPlatformSDK\Library\Sensors\x64\Debug\coordinateconvertionlib.lib
        FinalizeBuildStatus:
          Deleting file "x64\Debug\coordinateconvertionlib.unsuccessfulbuild".
          Touching "x64\Debug\coordinateconvertionlib.lastbuildstate".
-     1>Done Building Project "C:\POSS_Demo\GitHub\HMW-Alexander\SensorPlatformSDK\Library\Sensors\coordinateconvertionlib\coordinateconvertionlib.vcxproj" (rebuild target(s)).
+     1>Done Building Project "C:\PossDemo\GitHub\HMW-Alexander\SensorPlatformSDK\Library\Sensors\coordinateconvertionlib\coordinateconvertionlib.vcxproj" (rebuild target(s)).
 
 Build succeeded.
 
-Time Elapsed 00:00:00.46
+Time Elapsed 00:00:00.60

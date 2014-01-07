@@ -1,5 +1,5 @@
-﻿Build started 2013-12-27 19:56:19.
-     1>Project "C:\POSS_Demo\GitHub\HMW-Alexander\SensorPlatformSDK\Library\Sensors\UDPReceiver\UDPReceiver.vcxproj" on node 5 (rebuild target(s)).
+﻿Build started 2014/1/3 17:16:37.
+     1>Project "C:\PossDemo\GitHub\HMW-Alexander\SensorPlatformSDK\Library\Sensors\UDPReceiver\UDPReceiver.vcxproj" on node 5 (rebuild target(s)).
      1>_PrepareForClean:
          Deleting file "x64\Debug\UDPReceiver.lastbuildstate".
        InitializeBuildStatus:
@@ -13,20 +13,20 @@
          UDPReceiver_storagewidget.cpp
          Generating Code...
        Link:
-         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\x86_amd64\link.exe /ERRORREPORT:PROMPT /OUT:"C:\POSS_Demo\GitHub\HMW-Alexander\SensorPlatformSDK\Library\Sensors\x64\Debug\\UDPReceiver.dll" /NOLOGO /LIBPATH:"C:\SDK\Qt\qt-4.8.5\lib" qtmaind.lib QtCored4.lib QtGuid4.lib QtNetworkd4.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"x64\Debug\UDPReceiver.dll.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"C:\POSS_Demo\GitHub\HMW-Alexander\SensorPlatformSDK\Library\Sensors\x64\Debug\UDPReceiver.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\POSS_Demo\GitHub\HMW-Alexander\SensorPlatformSDK\Library\Sensors\x64\Debug\UDPReceiver.lib" /MACHINE:X64 /DLL x64\Debug\UDPReceiver.obj
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\x86_amd64\link.exe /ERRORREPORT:PROMPT /OUT:"C:\PossDemo\GitHub\HMW-Alexander\SensorPlatformSDK\Library\Sensors\x64\Debug\\UDPReceiver.dll" /NOLOGO /LIBPATH:"C:\SDK\Qt\qt-4.8.5\lib" qtmaind.lib QtCored4.lib QtGuid4.lib QtNetworkd4.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"x64\Debug\UDPReceiver.dll.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"C:\PossDemo\GitHub\HMW-Alexander\SensorPlatformSDK\Library\Sensors\x64\Debug\UDPReceiver.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\PossDemo\GitHub\HMW-Alexander\SensorPlatformSDK\Library\Sensors\x64\Debug\UDPReceiver.lib" /MACHINE:X64 /DLL x64\Debug\UDPReceiver.obj
          x64\Debug\UDPReceiver_sensor.obj
          x64\Debug\UDPReceiver_sensorwidget.obj
          x64\Debug\UDPReceiver_storage.obj
          x64\Debug\UDPReceiver_storagewidget.obj
-            Creating library C:\POSS_Demo\GitHub\HMW-Alexander\SensorPlatformSDK\Library\Sensors\x64\Debug\UDPReceiver.lib and object C:\POSS_Demo\GitHub\HMW-Alexander\SensorPlatformSDK\Library\Sensors\x64\Debug\UDPReceiver.exp
-         UDPReceiver.vcxproj -> C:\POSS_Demo\GitHub\HMW-Alexander\SensorPlatformSDK\Library\Sensors\x64\Debug\UDPReceiver.dll
+            Creating library C:\PossDemo\GitHub\HMW-Alexander\SensorPlatformSDK\Library\Sensors\x64\Debug\UDPReceiver.lib and object C:\PossDemo\GitHub\HMW-Alexander\SensorPlatformSDK\Library\Sensors\x64\Debug\UDPReceiver.exp
+         UDPReceiver.vcxproj -> C:\PossDemo\GitHub\HMW-Alexander\SensorPlatformSDK\Library\Sensors\x64\Debug\UDPReceiver.dll
        Manifest:
-         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /outputresource:"C:\POSS_Demo\GitHub\HMW-Alexander\SensorPlatformSDK\Library\Sensors\x64\Debug\\UDPReceiver.dll;#2" /manifest x64\Debug\UDPReceiver.dll.intermediate.manifest
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /outputresource:"C:\PossDemo\GitHub\HMW-Alexander\SensorPlatformSDK\Library\Sensors\x64\Debug\\UDPReceiver.dll;#2" /manifest x64\Debug\UDPReceiver.dll.intermediate.manifest
        FinalizeBuildStatus:
          Deleting file "x64\Debug\UDPReceiver.unsuccessfulbuild".
          Touching "x64\Debug\UDPReceiver.lastbuildstate".
-     1>Done Building Project "C:\POSS_Demo\GitHub\HMW-Alexander\SensorPlatformSDK\Library\Sensors\UDPReceiver\UDPReceiver.vcxproj" (rebuild target(s)).
+     1>Done Building Project "C:\PossDemo\GitHub\HMW-Alexander\SensorPlatformSDK\Library\Sensors\UDPReceiver\UDPReceiver.vcxproj" (rebuild target(s)).
 
 Build succeeded.
 
-Time Elapsed 00:00:12.51
+Time Elapsed 00:00:08.65

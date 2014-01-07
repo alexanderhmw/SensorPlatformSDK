@@ -22,6 +22,7 @@
     <ClCompile Include="URG.cpp" />
     <ClCompile Include="URG_sensor.cpp" />
     <ClCompile Include="URG_sensorwidget.cpp" />
+    <ClCompile Include="URG_simulator.cpp" />
     <ClCompile Include="URG_storage.cpp" />
     <ClCompile Include="URG_storagewidget.cpp" />
   </ItemGroup>

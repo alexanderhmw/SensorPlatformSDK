@@ -1,5 +1,5 @@
-﻿Build started 2014-01-02 21:22:23.
-     1>Project "C:\POSS_Demo\GitHub\HMW-Alexander\SensorPlatformSDK\Core\Sensor\Sensor.vcxproj" on node 9 (rebuild target(s)).
+﻿Build started 2014/1/7 21:11:42.
+     1>Project "C:\PossDemo\GitHub\HMW-Alexander\SensorPlatformSDK\Core\Sensor\Sensor.vcxproj" on node 5 (rebuild target(s)).
      1>_PrepareForClean:
          Deleting file "x64\Debug\Sensor.lastbuildstate".
        InitializeBuildStatus:
@@ -15,15 +15,15 @@
          sensorwidget.cpp
          Generating Code...
        Lib:
-         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\x86_amd64\Lib.exe /OUT:"C:\POSS_Demo\GitHub\HMW-Alexander\SensorPlatformSDK\Core\x64\Debug\\Sensor.lib" /LIBPATH:"C:\SDK\Qt\qt-4.8.5\lib" /NOLOGO x64\Debug\moc_sensor.obj
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\x86_amd64\Lib.exe /OUT:"C:\PossDemo\GitHub\HMW-Alexander\SensorPlatformSDK\Core\x64\Debug\\Sensor.lib" /LIBPATH:"C:\SDK\Qt\qt-4.8.5\lib" /NOLOGO x64\Debug\moc_sensor.obj
          x64\Debug\moc_sensorwidget.obj
          x64\Debug\sensor.obj
          x64\Debug\sensorwidget.obj
-         Sensor.vcxproj -> C:\POSS_Demo\GitHub\HMW-Alexander\SensorPlatformSDK\Core\x64\Debug\Sensor.lib
+         Sensor.vcxproj -> C:\PossDemo\GitHub\HMW-Alexander\SensorPlatformSDK\Core\x64\Debug\Sensor.lib
        FinalizeBuildStatus:
          Deleting file "x64\Debug\Sensor.unsuccessfulbuild".
          Touching "x64\Debug\Sensor.lastbuildstate".
-     1>Done Building Project "C:\POSS_Demo\GitHub\HMW-Alexander\SensorPlatformSDK\Core\Sensor\Sensor.vcxproj" (rebuild target(s)).
+     1>Done Building Project "C:\PossDemo\GitHub\HMW-Alexander\SensorPlatformSDK\Core\Sensor\Sensor.vcxproj" (rebuild target(s)).
 
 Build succeeded.
 
